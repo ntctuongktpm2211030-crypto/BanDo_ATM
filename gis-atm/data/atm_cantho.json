@@ -1,0 +1,3015 @@
+[
+  {
+    "osm_id": 948325227,
+    "lat": 10.0358311,
+    "lng": 105.7893177,
+    "bank": "Techcombank",
+    "name": null,
+    "address": "",
+    "amenity": "atm",
+    "raw_tags": {
+      "amenity": "atm",
+      "brand": "Techcombank",
+      "brand:wikidata": "Q10541776",
+      "operator": "Techcombank",
+      "operator:wikidata": "Q10541776"
+    },
+    "source": "overpass",
+    "updated_at": "2025-11-01T18:55:17.045Z"
+  },
+  {
+    "osm_id": 948325230,
+    "lat": 10.0570452,
+    "lng": 105.7690503,
+    "bank": "VPBank",
+    "name": "VPBank",
+    "address": "",
+    "amenity": "bank",
+    "raw_tags": {
+      "amenity": "bank",
+      "brand": "VPBank",
+      "brand:wikidata": "Q20025914",
+      "name": "VPBank"
+    },
+    "source": "overpass",
+    "updated_at": "2025-11-01T18:55:17.045Z"
+  },
+  {
+    "osm_id": 948325254,
+    "lat": 10.0617153,
+    "lng": 105.7640142,
+    "bank": "Maritime Bank",
+    "name": "Maritime Bank",
+    "address": "",
+    "amenity": "bank",
+    "raw_tags": {
+      "amenity": "bank",
+      "name": "Maritime Bank"
+    },
+    "source": "overpass",
+    "updated_at": "2025-11-01T18:55:17.045Z"
+  },
+  {
+    "osm_id": 948325262,
+    "lat": 10.0353126,
+    "lng": 105.7888864,
+    "bank": "VDB",
+    "name": "VDB",
+    "address": "Hai Bà Trưng",
+    "amenity": "bank",
+    "raw_tags": {
+      "addr:district": "Ninh Kiều",
+      "addr:street": "Hai Bà Trưng",
+      "amenity": "bank",
+      "brand": "VDB",
+      "brand:wikidata": "Q10800267",
+      "name": "VDB",
+      "name:en": "VDB",
+      "opening_hours": "07:00-11:00,13:00-17:00"
+    },
+    "source": "overpass",
+    "updated_at": "2025-11-01T18:55:17.045Z"
+  },
+  {
+    "osm_id": 948325270,
+    "lat": 10.0571297,
+    "lng": 105.7689694,
+    "bank": "VietinBank",
+    "name": "VietinBank",
+    "address": "",
+    "amenity": "bank",
+    "raw_tags": {
+      "amenity": "bank",
+      "brand": "VietinBank",
+      "brand:wikidata": "Q7928459",
+      "name": "VietinBank"
+    },
+    "source": "overpass",
+    "updated_at": "2025-11-01T18:55:17.045Z"
+  },
+  {
+    "osm_id": 948325305,
+    "lat": 10.0784862,
+    "lng": 105.7453061,
+    "bank": "Bank for Investment and Developmennt of Viet Nam",
+    "name": null,
+    "address": "",
+    "amenity": "atm",
+    "raw_tags": {
+      "amenity": "atm",
+      "operator": "Bank for Investment and Developmennt of Viet Nam"
+    },
+    "source": "overpass",
+    "updated_at": "2025-11-01T18:55:17.045Z"
+  },
+  {
+    "osm_id": 948325307,
+    "lat": 10.0435471,
+    "lng": 105.7822092,
+    "bank": "VietinBank",
+    "name": "VietinBank",
+    "address": "",
+    "amenity": "bank",
+    "raw_tags": {
+      "amenity": "bank",
+      "brand": "VietinBank",
+      "brand:wikidata": "Q7928459",
+      "name": "VietinBank"
+    },
+    "source": "overpass",
+    "updated_at": "2025-11-01T18:55:17.045Z"
+  },
+  {
+    "osm_id": 948325310,
+    "lat": 10.0774035,
+    "lng": 105.746896,
+    "bank": "Vietcombank",
+    "name": "Vietcombank",
+    "address": "",
+    "amenity": "bank",
+    "raw_tags": {
+      "amenity": "bank",
+      "name": "Vietcombank"
+    },
+    "source": "overpass",
+    "updated_at": "2025-11-01T18:55:17.046Z"
+  },
+  {
+    "osm_id": 948325321,
+    "lat": 10.0486728,
+    "lng": 105.7770335,
+    "bank": "VietinBank",
+    "name": null,
+    "address": "",
+    "amenity": "atm",
+    "raw_tags": {
+      "amenity": "atm",
+      "brand": "VietinBank",
+      "brand:wikidata": "Q7928459",
+      "operator": "VietinBank",
+      "operator:wikidata": "Q7928459"
+    },
+    "source": "overpass",
+    "updated_at": "2025-11-01T18:55:17.046Z"
+  },
+  {
+    "osm_id": 948325323,
+    "lat": 10.0861157,
+    "lng": 105.7333707,
+    "bank": "Vietcombank",
+    "name": null,
+    "address": "",
+    "amenity": "atm",
+    "raw_tags": {
+      "amenity": "atm",
+      "operator": "Vietcombank"
+    },
+    "source": "overpass",
+    "updated_at": "2025-11-01T18:55:17.046Z"
+  },
+  {
+    "osm_id": 948325355,
+    "lat": 10.050147,
+    "lng": 105.7757993,
+    "bank": "PG Bank",
+    "name": null,
+    "address": "",
+    "amenity": "atm",
+    "raw_tags": {
+      "amenity": "atm",
+      "operator": "PG Bank"
+    },
+    "source": "overpass",
+    "updated_at": "2025-11-01T18:55:17.046Z"
+  },
+  {
+    "osm_id": 948325374,
+    "lat": 10.0801345,
+    "lng": 105.7421532,
+    "bank": "Agribank",
+    "name": null,
+    "address": "",
+    "amenity": "atm",
+    "raw_tags": {
+      "amenity": "atm",
+      "operator": "Agribank"
+    },
+    "source": "overpass",
+    "updated_at": "2025-11-01T18:55:17.046Z"
+  },
+  {
+    "osm_id": 948325382,
+    "lat": 10.0347828,
+    "lng": 105.7889471,
+    "bank": "VietABank",
+    "name": null,
+    "address": "",
+    "amenity": "atm",
+    "raw_tags": {
+      "amenity": "atm",
+      "brand": "VietABank",
+      "brand:wikidata": "Q10800279",
+      "operator": "VietABank",
+      "operator:wikidata": "Q10800279"
+    },
+    "source": "overpass",
+    "updated_at": "2025-11-01T18:55:17.046Z"
+  },
+  {
+    "osm_id": 951963062,
+    "lat": 10.0340361,
+    "lng": 105.7872859,
+    "bank": "VDB",
+    "name": "VDB",
+    "address": "Hai Bà Trưng",
+    "amenity": "bank",
+    "raw_tags": {
+      "addr:district": "Ninh Kiều",
+      "addr:street": "Hai Bà Trưng",
+      "amenity": "bank",
+      "brand": "VDB",
+      "brand:wikidata": "Q10800267",
+      "name": "VDB",
+      "name:en": "VDB",
+      "opening_hours": "07:00-11:00,13:00-17:00"
+    },
+    "source": "overpass",
+    "updated_at": "2025-11-01T18:55:17.046Z"
+  },
+  {
+    "osm_id": 951963114,
+    "lat": 10.0345191,
+    "lng": 105.7868731,
+    "bank": "VDB",
+    "name": "VDB",
+    "address": "Hai Bà Trưng",
+    "amenity": "bank",
+    "raw_tags": {
+      "addr:district": "Ninh Kiều",
+      "addr:street": "Hai Bà Trưng",
+      "amenity": "bank",
+      "brand": "VDB",
+      "brand:wikidata": "Q10800267",
+      "name": "VDB",
+      "name:en": "VDB",
+      "opening_hours": "07:00-11:00,13:00-17:00"
+    },
+    "source": "overpass",
+    "updated_at": "2025-11-01T18:55:17.046Z"
+  },
+  {
+    "osm_id": 951963167,
+    "lat": 10.0306925,
+    "lng": 105.7867311,
+    "bank": "VDB",
+    "name": "VDB",
+    "address": "Hai Bà Trưng",
+    "amenity": "bank",
+    "raw_tags": {
+      "addr:district": "Ninh Kiều",
+      "addr:street": "Hai Bà Trưng",
+      "amenity": "bank",
+      "brand": "VDB",
+      "brand:wikidata": "Q10800267",
+      "name": "VDB",
+      "name:en": "VDB",
+      "opening_hours": "07:00-11:00,13:00-17:00"
+    },
+    "source": "overpass",
+    "updated_at": "2025-11-01T18:55:17.046Z"
+  },
+  {
+    "osm_id": 951963172,
+    "lat": 10.031617,
+    "lng": 105.7864409,
+    "bank": "ACB",
+    "name": "ACB",
+    "address": "Hai Bà Trưng",
+    "amenity": "bank",
+    "raw_tags": {
+      "addr:district": "Ninh Kiều",
+      "addr:street": "Hai Bà Trưng",
+      "amenity": "bank",
+      "brand": "ACB",
+      "brand:wikidata": "Q727019",
+      "name": "ACB",
+      "name:en": "ACB",
+      "opening_hours": "07:00-11:00,13:00-17:00"
+    },
+    "source": "overpass",
+    "updated_at": "2025-11-01T18:55:17.046Z"
+  },
+  {
+    "osm_id": 951963176,
+    "lat": 10.0320383,
+    "lng": 105.7868669,
+    "bank": "VietinBank",
+    "name": null,
+    "address": "",
+    "amenity": "atm",
+    "raw_tags": {
+      "amenity": "atm",
+      "brand": "VietinBank",
+      "brand:wikidata": "Q7928459",
+      "operator": "VietinBank",
+      "operator:wikidata": "Q7928459"
+    },
+    "source": "overpass",
+    "updated_at": "2025-11-01T18:55:17.046Z"
+  },
+  {
+    "osm_id": 951963266,
+    "lat": 10.0306263,
+    "lng": 105.7863194,
+    "bank": "Southern Bank",
+    "name": null,
+    "address": "",
+    "amenity": "atm",
+    "raw_tags": {
+      "amenity": "atm",
+      "operator": "Southern Bank"
+    },
+    "source": "overpass",
+    "updated_at": "2025-11-01T18:55:17.046Z"
+  },
+  {
+    "osm_id": 951963299,
+    "lat": 10.0319436,
+    "lng": 105.7868609,
+    "bank": "VDB",
+    "name": "VDB",
+    "address": "Hai Bà Trưng",
+    "amenity": "bank",
+    "raw_tags": {
+      "addr:district": "Ninh Kiều",
+      "addr:street": "Hai Bà Trưng",
+      "amenity": "bank",
+      "brand": "VDB",
+      "brand:wikidata": "Q10800267",
+      "name": "VDB",
+      "name:en": "VDB",
+      "opening_hours": "07:00-11:00,13:00-17:00"
+    },
+    "source": "overpass",
+    "updated_at": "2025-11-01T18:55:17.046Z"
+  },
+  {
+    "osm_id": 951963317,
+    "lat": 10.0340152,
+    "lng": 105.7873561,
+    "bank": "VietinBank",
+    "name": null,
+    "address": "",
+    "amenity": "atm",
+    "raw_tags": {
+      "amenity": "atm",
+      "brand": "VietinBank",
+      "brand:wikidata": "Q7928459",
+      "operator": "VietinBank",
+      "operator:wikidata": "Q7928459"
+    },
+    "source": "overpass",
+    "updated_at": "2025-11-01T18:55:17.046Z"
+  },
+  {
+    "osm_id": 951963351,
+    "lat": 10.0307972,
+    "lng": 105.7867517,
+    "bank": "DongA Bank",
+    "name": null,
+    "address": "",
+    "amenity": "atm",
+    "raw_tags": {
+      "amenity": "atm",
+      "operator": "DongA Bank"
+    },
+    "source": "overpass",
+    "updated_at": "2025-11-01T18:55:17.046Z"
+  },
+  {
+    "osm_id": 951963425,
+    "lat": 10.0318243,
+    "lng": 105.7868534,
+    "bank": "VDB",
+    "name": "VDB",
+    "address": "Hai Bà Trưng",
+    "amenity": "bank",
+    "raw_tags": {
+      "addr:district": "Ninh Kiều",
+      "addr:street": "Hai Bà Trưng",
+      "amenity": "bank",
+      "brand": "VDB",
+      "brand:wikidata": "Q10800267",
+      "name": "VDB",
+      "name:en": "VDB",
+      "opening_hours": "07:00-11:00,13:00-17:00"
+    },
+    "source": "overpass",
+    "updated_at": "2025-11-01T18:55:17.046Z"
+  },
+  {
+    "osm_id": 1041862890,
+    "lat": 10.0436423,
+    "lng": 105.7833225,
+    "bank": "Bac A Bank",
+    "name": "Bac A Bank",
+    "address": "",
+    "amenity": "bank",
+    "raw_tags": {
+      "amenity": "bank",
+      "name": "Bac A Bank"
+    },
+    "source": "overpass",
+    "updated_at": "2025-11-01T18:55:17.046Z"
+  },
+  {
+    "osm_id": 1041863267,
+    "lat": 10.0441414,
+    "lng": 105.7832659,
+    "bank": "SeABank",
+    "name": "SeABank",
+    "address": "",
+    "amenity": "bank",
+    "raw_tags": {
+      "amenity": "bank",
+      "brand": "SeABank",
+      "brand:wikidata": "Q10800276",
+      "name": "SeABank"
+    },
+    "source": "overpass",
+    "updated_at": "2025-11-01T18:55:17.046Z"
+  },
+  {
+    "osm_id": 1041863733,
+    "lat": 10.0385247,
+    "lng": 105.783652,
+    "bank": "Techcombank",
+    "name": null,
+    "address": "",
+    "amenity": "atm",
+    "raw_tags": {
+      "amenity": "atm",
+      "brand": "Techcombank",
+      "brand:wikidata": "Q10541776",
+      "operator": "Techcombank",
+      "operator:wikidata": "Q10541776"
+    },
+    "source": "overpass",
+    "updated_at": "2025-11-01T18:55:17.046Z"
+  },
+  {
+    "osm_id": 1041863795,
+    "lat": 10.0441101,
+    "lng": 105.7833575,
+    "bank": "SeABank",
+    "name": null,
+    "address": "",
+    "amenity": "atm",
+    "raw_tags": {
+      "amenity": "atm",
+      "brand": "SeABank",
+      "brand:wikidata": "Q10800276",
+      "operator": "SeABank",
+      "operator:wikidata": "Q10800276"
+    },
+    "source": "overpass",
+    "updated_at": "2025-11-01T18:55:17.046Z"
+  },
+  {
+    "osm_id": 1041864040,
+    "lat": 10.0349875,
+    "lng": 105.7872339,
+    "bank": "Mekong Housing Bank",
+    "name": null,
+    "address": "",
+    "amenity": "atm",
+    "raw_tags": {
+      "amenity": "atm",
+      "operator": "Mekong Housing Bank"
+    },
+    "source": "overpass",
+    "updated_at": "2025-11-01T18:55:17.046Z"
+  },
+  {
+    "osm_id": 1041864064,
+    "lat": 10.035066,
+    "lng": 105.7872725,
+    "bank": "VDB",
+    "name": "VDB",
+    "address": "Hai Bà Trưng",
+    "amenity": "bank",
+    "raw_tags": {
+      "addr:district": "Ninh Kiều",
+      "addr:street": "Hai Bà Trưng",
+      "amenity": "bank",
+      "brand": "VDB",
+      "brand:wikidata": "Q10800267",
+      "name": "VDB",
+      "name:en": "VDB",
+      "opening_hours": "07:00-11:00,13:00-17:00"
+    },
+    "source": "overpass",
+    "updated_at": "2025-11-01T18:55:17.046Z"
+  },
+  {
+    "osm_id": 1043717274,
+    "lat": 10.0460571,
+    "lng": 105.7862387,
+    "bank": "Techcombank",
+    "name": "Techcombank",
+    "address": "Tran Van Kheo",
+    "amenity": "bank",
+    "raw_tags": {
+      "addr:street": "Tran Van Kheo",
+      "amenity": "bank",
+      "brand": "Techcombank",
+      "brand:wikidata": "Q10541776",
+      "name": "Techcombank"
+    },
+    "source": "overpass",
+    "updated_at": "2025-11-01T18:55:17.046Z"
+  },
+  {
+    "osm_id": 1043717469,
+    "lat": 10.0449962,
+    "lng": 105.784566,
+    "bank": "VIB",
+    "name": "VIB",
+    "address": "52-54, Trần Văn Khéo",
+    "amenity": "bank",
+    "raw_tags": {
+      "addr:housenumber": "52-54",
+      "addr:street": "Trần Văn Khéo",
+      "amenity": "bank",
+      "brand": "VIB",
+      "brand:wikidata": "Q49054349",
+      "name": "VIB"
+    },
+    "source": "overpass",
+    "updated_at": "2025-11-01T18:55:17.046Z"
+  },
+  {
+    "osm_id": 1043717496,
+    "lat": 10.0355186,
+    "lng": 105.7879033,
+    "bank": "DongA Bank",
+    "name": null,
+    "address": "",
+    "amenity": "atm",
+    "raw_tags": {
+      "amenity": "atm",
+      "operator": "DongA Bank"
+    },
+    "source": "overpass",
+    "updated_at": "2025-11-01T18:55:17.046Z"
+  },
+  {
+    "osm_id": 1043717543,
+    "lat": 10.0459995,
+    "lng": 105.7861238,
+    "bank": "Techcombank",
+    "name": null,
+    "address": "",
+    "amenity": "atm",
+    "raw_tags": {
+      "amenity": "atm",
+      "brand": "Techcombank",
+      "brand:wikidata": "Q10541776",
+      "operator": "Techcombank",
+      "operator:wikidata": "Q10541776"
+    },
+    "source": "overpass",
+    "updated_at": "2025-11-01T18:55:17.046Z"
+  },
+  {
+    "osm_id": 1043717621,
+    "lat": 10.0356125,
+    "lng": 105.7873336,
+    "bank": "VDB",
+    "name": "VDB",
+    "address": "Hai Bà Trưng",
+    "amenity": "bank",
+    "raw_tags": {
+      "addr:district": "Ninh Kiều",
+      "addr:street": "Hai Bà Trưng",
+      "amenity": "bank",
+      "brand": "VDB",
+      "brand:wikidata": "Q10800267",
+      "name": "VDB",
+      "name:en": "VDB",
+      "opening_hours": "07:00-11:00,13:00-17:00"
+    },
+    "source": "overpass",
+    "updated_at": "2025-11-01T18:55:17.046Z"
+  },
+  {
+    "osm_id": 1043717765,
+    "lat": 10.04478,
+    "lng": 105.7843958,
+    "bank": "Sacombank",
+    "name": null,
+    "address": "Trần Văn Khéo",
+    "amenity": "atm",
+    "raw_tags": {
+      "addr:street": "Trần Văn Khéo",
+      "amenity": "atm",
+      "brand": "Sacombank",
+      "brand:wikidata": "Q6123772",
+      "operator": "Sacombank",
+      "operator:wikidata": "Q6123772"
+    },
+    "source": "overpass",
+    "updated_at": "2025-11-01T18:55:17.046Z"
+  },
+  {
+    "osm_id": 1043718134,
+    "lat": 10.0448143,
+    "lng": 105.7843475,
+    "bank": "Sacombank",
+    "name": "Sacombank",
+    "address": "Trần Văn Khéo",
+    "amenity": "bank",
+    "raw_tags": {
+      "addr:street": "Trần Văn Khéo",
+      "amenity": "bank",
+      "brand": "Sacombank",
+      "brand:wikidata": "Q6123772",
+      "name": "Sacombank"
+    },
+    "source": "overpass",
+    "updated_at": "2025-11-01T18:55:17.046Z"
+  },
+  {
+    "osm_id": 1043858438,
+    "lat": 10.0307219,
+    "lng": 105.7871364,
+    "bank": "BIDV",
+    "name": null,
+    "address": "",
+    "amenity": "atm",
+    "raw_tags": {
+      "amenity": "atm",
+      "brand": "BIDV",
+      "brand:wikidata": "Q1003180",
+      "operator": "BIDV",
+      "operator:wikidata": "Q1003180"
+    },
+    "source": "overpass",
+    "updated_at": "2025-11-01T18:55:17.046Z"
+  },
+  {
+    "osm_id": 1043858615,
+    "lat": 10.03051,
+    "lng": 105.786583,
+    "bank": "Southern Bank",
+    "name": null,
+    "address": "",
+    "amenity": "atm",
+    "raw_tags": {
+      "amenity": "atm",
+      "operator": "Southern Bank"
+    },
+    "source": "overpass",
+    "updated_at": "2025-11-01T18:55:17.046Z"
+  },
+  {
+    "osm_id": 1043858622,
+    "lat": 10.0320533,
+    "lng": 105.787378,
+    "bank": "VDB",
+    "name": "VDB",
+    "address": "Hai Bà Trưng",
+    "amenity": "bank",
+    "raw_tags": {
+      "addr:district": "Ninh Kiều",
+      "addr:street": "Hai Bà Trưng",
+      "amenity": "bank",
+      "brand": "VDB",
+      "brand:wikidata": "Q10800267",
+      "name": "VDB",
+      "name:en": "VDB",
+      "opening_hours": "07:00-11:00,13:00-17:00"
+    },
+    "source": "overpass",
+    "updated_at": "2025-11-01T18:55:17.046Z"
+  },
+  {
+    "osm_id": 1043858630,
+    "lat": 10.0321082,
+    "lng": 105.787008,
+    "bank": "Techcombank",
+    "name": null,
+    "address": "",
+    "amenity": "atm",
+    "raw_tags": {
+      "amenity": "atm",
+      "brand": "Techcombank",
+      "brand:wikidata": "Q10541776",
+      "operator": "Techcombank",
+      "operator:wikidata": "Q10541776"
+    },
+    "source": "overpass",
+    "updated_at": "2025-11-01T18:55:17.046Z"
+  },
+  {
+    "osm_id": 1043858660,
+    "lat": 10.0311858,
+    "lng": 105.7864489,
+    "bank": "VDB",
+    "name": "VDB",
+    "address": "Hai Bà Trưng",
+    "amenity": "bank",
+    "raw_tags": {
+      "addr:district": "Ninh Kiều",
+      "addr:street": "Hai Bà Trưng",
+      "amenity": "bank",
+      "brand": "VDB",
+      "brand:wikidata": "Q10800267",
+      "name": "VDB",
+      "name:en": "VDB",
+      "opening_hours": "07:00-11:00,13:00-17:00"
+    },
+    "source": "overpass",
+    "updated_at": "2025-11-01T18:55:17.046Z"
+  },
+  {
+    "osm_id": 1043858731,
+    "lat": 10.032097,
+    "lng": 105.7870833,
+    "bank": "VDB",
+    "name": "VDB",
+    "address": "Hai Bà Trưng",
+    "amenity": "bank",
+    "raw_tags": {
+      "addr:district": "Ninh Kiều",
+      "addr:street": "Hai Bà Trưng",
+      "amenity": "bank",
+      "brand": "VDB",
+      "brand:wikidata": "Q10800267",
+      "name": "VDB",
+      "name:en": "VDB",
+      "opening_hours": "07:00-11:00,13:00-17:00"
+    },
+    "source": "overpass",
+    "updated_at": "2025-11-01T18:55:17.046Z"
+  },
+  {
+    "osm_id": 1043858775,
+    "lat": 10.030443,
+    "lng": 105.786636,
+    "bank": "VDB",
+    "name": "VDB",
+    "address": "Hai Bà Trưng",
+    "amenity": "bank",
+    "raw_tags": {
+      "addr:district": "Ninh Kiều",
+      "addr:street": "Hai Bà Trưng",
+      "amenity": "bank",
+      "brand": "VDB",
+      "brand:wikidata": "Q10800267",
+      "name": "VDB",
+      "name:en": "VDB",
+      "opening_hours": "07:00-11:00,13:00-17:00"
+    },
+    "source": "overpass",
+    "updated_at": "2025-11-01T18:55:17.046Z"
+  },
+  {
+    "osm_id": 1043956935,
+    "lat": 10.0350294,
+    "lng": 105.7857033,
+    "bank": "Techcombank",
+    "name": null,
+    "address": "",
+    "amenity": "atm",
+    "raw_tags": {
+      "amenity": "atm",
+      "brand": "Techcombank",
+      "brand:wikidata": "Q10541776",
+      "operator": "Techcombank",
+      "operator:wikidata": "Q10541776"
+    },
+    "source": "overpass",
+    "updated_at": "2025-11-01T18:55:17.046Z"
+  },
+  {
+    "osm_id": 1043956939,
+    "lat": 10.0346371,
+    "lng": 105.7850203,
+    "bank": "VDB",
+    "name": "VDB",
+    "address": "Hai Bà Trưng",
+    "amenity": "bank",
+    "raw_tags": {
+      "addr:district": "Ninh Kiều",
+      "addr:street": "Hai Bà Trưng",
+      "amenity": "bank",
+      "brand": "VDB",
+      "brand:wikidata": "Q10800267",
+      "name": "VDB",
+      "name:en": "VDB",
+      "opening_hours": "07:00-11:00,13:00-17:00"
+    },
+    "source": "overpass",
+    "updated_at": "2025-11-01T18:55:17.046Z"
+  },
+  {
+    "osm_id": 1043956986,
+    "lat": 10.0341262,
+    "lng": 105.7854493,
+    "bank": "Vietcombank",
+    "name": null,
+    "address": "",
+    "amenity": "atm",
+    "raw_tags": {
+      "amenity": "atm",
+      "brand": "Vietcombank",
+      "brand:wikidata": "Q6122995",
+      "operator": "Vietcombank",
+      "operator:wikidata": "Q6122995"
+    },
+    "source": "overpass",
+    "updated_at": "2025-11-01T18:55:17.046Z"
+  },
+  {
+    "osm_id": 1043957050,
+    "lat": 10.034078,
+    "lng": 105.7854549,
+    "bank": "VPBank",
+    "name": null,
+    "address": "",
+    "amenity": "atm",
+    "raw_tags": {
+      "amenity": "atm",
+      "brand": "VPBank",
+      "brand:wikidata": "Q20025914",
+      "operator": "VPBank",
+      "operator:wikidata": "Q20025914"
+    },
+    "source": "overpass",
+    "updated_at": "2025-11-01T18:55:17.046Z"
+  },
+  {
+    "osm_id": 1043957073,
+    "lat": 10.0340984,
+    "lng": 105.7854525,
+    "bank": "ATM",
+    "name": null,
+    "address": "",
+    "amenity": "atm",
+    "raw_tags": {
+      "amenity": "atm"
+    },
+    "source": "overpass",
+    "updated_at": "2025-11-01T18:55:17.046Z"
+  },
+  {
+    "osm_id": 1043957297,
+    "lat": 10.0343281,
+    "lng": 105.7848156,
+    "bank": "VDB",
+    "name": "VDB",
+    "address": "Hai Bà Trưng",
+    "amenity": "bank",
+    "raw_tags": {
+      "addr:district": "Ninh Kiều",
+      "addr:street": "Hai Bà Trưng",
+      "amenity": "bank",
+      "brand": "VDB",
+      "brand:wikidata": "Q10800267",
+      "name": "VDB",
+      "name:en": "VDB",
+      "opening_hours": "07:00-11:00,13:00-17:00"
+    },
+    "source": "overpass",
+    "updated_at": "2025-11-01T18:55:17.046Z"
+  },
+  {
+    "osm_id": 1043957303,
+    "lat": 10.034065,
+    "lng": 105.7854674,
+    "bank": "VietABank",
+    "name": null,
+    "address": "",
+    "amenity": "atm",
+    "raw_tags": {
+      "amenity": "atm",
+      "brand": "VietABank",
+      "brand:wikidata": "Q10800279",
+      "operator": "VietABank",
+      "operator:wikidata": "Q10800279"
+    },
+    "source": "overpass",
+    "updated_at": "2025-11-01T18:55:17.046Z"
+  },
+  {
+    "osm_id": 1043957332,
+    "lat": 10.0345292,
+    "lng": 105.7850451,
+    "bank": "BIDV",
+    "name": null,
+    "address": "",
+    "amenity": "atm",
+    "raw_tags": {
+      "amenity": "atm",
+      "brand": "BIDV",
+      "brand:wikidata": "Q1003180",
+      "operator": "BIDV",
+      "operator:wikidata": "Q1003180"
+    },
+    "source": "overpass",
+    "updated_at": "2025-11-01T18:55:17.046Z"
+  },
+  {
+    "osm_id": 1043957471,
+    "lat": 10.0342896,
+    "lng": 105.7848999,
+    "bank": "ACB",
+    "name": null,
+    "address": "",
+    "amenity": "atm",
+    "raw_tags": {
+      "amenity": "atm",
+      "brand": "ACB",
+      "brand:wikidata": "Q727019",
+      "operator": "ACB",
+      "operator:wikidata": "Q727019"
+    },
+    "source": "overpass",
+    "updated_at": "2025-11-01T18:55:17.046Z"
+  },
+  {
+    "osm_id": 1043957511,
+    "lat": 10.0341125,
+    "lng": 105.7854509,
+    "bank": "Eximbank",
+    "name": null,
+    "address": "",
+    "amenity": "atm",
+    "raw_tags": {
+      "amenity": "atm",
+      "brand": "Eximbank",
+      "brand:wikidata": "Q10800271",
+      "operator": "Eximbank",
+      "operator:wikidata": "Q10800271"
+    },
+    "source": "overpass",
+    "updated_at": "2025-11-01T18:55:17.046Z"
+  },
+  {
+    "osm_id": 1043957654,
+    "lat": 10.0359584,
+    "lng": 105.7866483,
+    "bank": "VDB",
+    "name": "VDB",
+    "address": "Hai Bà Trưng",
+    "amenity": "bank",
+    "raw_tags": {
+      "addr:district": "Ninh Kiều",
+      "addr:street": "Hai Bà Trưng",
+      "amenity": "bank",
+      "brand": "VDB",
+      "brand:wikidata": "Q10800267",
+      "name": "VDB",
+      "name:en": "VDB",
+      "opening_hours": "07:00-11:00,13:00-17:00"
+    },
+    "source": "overpass",
+    "updated_at": "2025-11-01T18:55:17.046Z"
+  },
+  {
+    "osm_id": 1777848465,
+    "lat": 10.0253057,
+    "lng": 105.7734357,
+    "bank": "Sacombank",
+    "name": null,
+    "address": "",
+    "amenity": "atm",
+    "raw_tags": {
+      "amenity": "atm",
+      "operator": "Sacombank"
+    },
+    "source": "overpass",
+    "updated_at": "2025-11-01T18:55:17.046Z"
+  },
+  {
+    "osm_id": 1778746159,
+    "lat": 10.0298633,
+    "lng": 105.7729553,
+    "bank": "Ngân Hàng Phương Đông",
+    "name": "Ngân Hàng Phương Đông",
+    "address": "",
+    "amenity": "bank",
+    "raw_tags": {
+      "amenity": "bank",
+      "name": "Ngân Hàng Phương Đông"
+    },
+    "source": "overpass",
+    "updated_at": "2025-11-01T18:55:17.046Z"
+  },
+  {
+    "osm_id": 1778802986,
+    "lat": 10.0343849,
+    "lng": 105.7850072,
+    "bank": "VDB",
+    "name": "VDB",
+    "address": "Hai Bà Trưng",
+    "amenity": "bank",
+    "raw_tags": {
+      "addr:district": "Ninh Kiều",
+      "addr:street": "Hai Bà Trưng",
+      "amenity": "bank",
+      "brand": "VDB",
+      "brand:wikidata": "Q10800267",
+      "name": "VDB",
+      "name:en": "VDB",
+      "opening_hours": "07:00-11:00,13:00-17:00"
+    },
+    "source": "overpass",
+    "updated_at": "2025-11-01T18:55:17.046Z"
+  },
+  {
+    "osm_id": 1778808140,
+    "lat": 10.0336715,
+    "lng": 105.7847596,
+    "bank": "Vietcombank",
+    "name": "Vietcombank",
+    "address": "Hòa Bình",
+    "amenity": "bank",
+    "raw_tags": {
+      "addr:district": "Ninh Kiều",
+      "addr:street": "Hòa Bình",
+      "amenity": "bank",
+      "atm": "yes",
+      "brand": "Vietcombank",
+      "brand:wikidata": "Q6122995",
+      "name": "Vietcombank",
+      "name:en": "Vietcombank",
+      "opening_hours": "07:00-11:00,13:00-17:00"
+    },
+    "source": "overpass",
+    "updated_at": "2025-11-01T18:55:17.046Z"
+  },
+  {
+    "osm_id": 1778808155,
+    "lat": 10.0279271,
+    "lng": 105.7783705,
+    "bank": "Ngân hàng TMCP Đại Tín",
+    "name": "Ngân hàng TMCP Đại Tín",
+    "address": "30/4",
+    "amenity": "bank",
+    "raw_tags": {
+      "addr:street": "30/4",
+      "amenity": "bank",
+      "name": "Ngân hàng TMCP Đại Tín"
+    },
+    "source": "overpass",
+    "updated_at": "2025-11-01T18:55:17.046Z"
+  },
+  {
+    "osm_id": 1780014285,
+    "lat": 10.0342843,
+    "lng": 105.7749627,
+    "bank": "Sacombank",
+    "name": "Sacombank",
+    "address": "",
+    "amenity": "bank",
+    "raw_tags": {
+      "amenity": "bank",
+      "brand": "Sacombank",
+      "brand:wikidata": "Q6123772",
+      "name": "Sacombank"
+    },
+    "source": "overpass",
+    "updated_at": "2025-11-01T18:55:17.046Z"
+  },
+  {
+    "osm_id": 1780014288,
+    "lat": 10.0343533,
+    "lng": 105.7753799,
+    "bank": "ATM",
+    "name": null,
+    "address": "",
+    "amenity": "bank",
+    "raw_tags": {
+      "amenity": "bank"
+    },
+    "source": "overpass",
+    "updated_at": "2025-11-01T18:55:17.046Z"
+  },
+  {
+    "osm_id": 1780014955,
+    "lat": 10.0364844,
+    "lng": 105.7761425,
+    "bank": "Ngân hàng TMCP Đại Tín",
+    "name": "Ngân hàng TMCP Đại Tín",
+    "address": "",
+    "amenity": "bank",
+    "raw_tags": {
+      "amenity": "bank",
+      "atm": "yes",
+      "name": "Ngân hàng TMCP Đại Tín"
+    },
+    "source": "overpass",
+    "updated_at": "2025-11-01T18:55:17.046Z"
+  },
+  {
+    "osm_id": 1780014961,
+    "lat": 10.0369497,
+    "lng": 105.7759861,
+    "bank": "ABBank",
+    "name": "ABBank",
+    "address": "Trần Hưng Đạo",
+    "amenity": "bank",
+    "raw_tags": {
+      "addr:street": "Trần Hưng Đạo",
+      "amenity": "bank",
+      "atm": "yes",
+      "brand": "ABBank",
+      "brand:wikidata": "Q10800288",
+      "name": "ABBank"
+    },
+    "source": "overpass",
+    "updated_at": "2025-11-01T18:55:17.046Z"
+  },
+  {
+    "osm_id": 1780014967,
+    "lat": 10.0367912,
+    "lng": 105.7759057,
+    "bank": "Ngân hàng Chính sách xã hội",
+    "name": "Ngân hàng Chính sách xã hội",
+    "address": "Trần Hưng Đạo",
+    "amenity": "bank",
+    "raw_tags": {
+      "addr:street": "Trần Hưng Đạo",
+      "amenity": "bank",
+      "brand": "Ngân hàng Chính sách xã hội",
+      "brand:wikidata": "Q10800262",
+      "name": "Ngân hàng Chính sách xã hội"
+    },
+    "source": "overpass",
+    "updated_at": "2025-11-01T18:55:17.046Z"
+  },
+  {
+    "osm_id": 1780015410,
+    "lat": 10.0365398,
+    "lng": 105.7758005,
+    "bank": "HDBank",
+    "name": "HDBank",
+    "address": "Trần Hưng Đạo",
+    "amenity": "bank",
+    "raw_tags": {
+      "addr:street": "Trần Hưng Đạo",
+      "amenity": "bank",
+      "atm": "yes",
+      "brand": "HDBank",
+      "brand:wikidata": "Q10800273",
+      "name": "HDBank"
+    },
+    "source": "overpass",
+    "updated_at": "2025-11-01T18:55:17.046Z"
+  },
+  {
+    "osm_id": 1780019032,
+    "lat": 10.0330966,
+    "lng": 105.7801256,
+    "bank": "Việt Á",
+    "name": "Việt Á",
+    "address": "",
+    "amenity": "bank",
+    "raw_tags": {
+      "amenity": "bank",
+      "name": "Việt Á"
+    },
+    "source": "overpass",
+    "updated_at": "2025-11-01T18:55:17.046Z"
+  },
+  {
+    "osm_id": 1780019046,
+    "lat": 10.0344324,
+    "lng": 105.7794041,
+    "bank": "Saigonbank",
+    "name": "Saigonbank",
+    "address": "Lý Tự Trọng",
+    "amenity": "bank",
+    "raw_tags": {
+      "addr:street": "Lý Tự Trọng",
+      "amenity": "bank",
+      "atm": "yes",
+      "brand": "Saigonbank",
+      "brand:wikidata": "Q10800275",
+      "name": "Saigonbank"
+    },
+    "source": "overpass",
+    "updated_at": "2025-11-01T18:55:17.046Z"
+  },
+  {
+    "osm_id": 1780019527,
+    "lat": 10.0344536,
+    "lng": 105.7796691,
+    "bank": "SeABank",
+    "name": "SeABank",
+    "address": "",
+    "amenity": "bank",
+    "raw_tags": {
+      "amenity": "bank",
+      "brand": "SeABank",
+      "brand:wikidata": "Q10800276",
+      "name": "SeABank"
+    },
+    "source": "overpass",
+    "updated_at": "2025-11-01T18:55:17.046Z"
+  },
+  {
+    "osm_id": 1780019535,
+    "lat": 10.0362996,
+    "lng": 105.7779237,
+    "bank": "Ngân hàng VPBank",
+    "name": "Ngân hàng VPBank",
+    "address": "",
+    "amenity": "bank",
+    "raw_tags": {
+      "amenity": "bank",
+      "name": "Ngân hàng VPBank"
+    },
+    "source": "overpass",
+    "updated_at": "2025-11-01T18:55:17.046Z"
+  },
+  {
+    "osm_id": 1780019542,
+    "lat": 10.0356814,
+    "lng": 105.7785983,
+    "bank": "Agribank",
+    "name": "Agribank",
+    "address": "",
+    "amenity": "bank",
+    "raw_tags": {
+      "amenity": "bank",
+      "atm": "yes",
+      "brand": "Agribank",
+      "brand:wikidata": "Q1924723",
+      "name": "Agribank",
+      "official_name": "Ngân hàng Nông nghiệp và Phát triển Nông thôn Việt Nam",
+      "official_name:en": "Vietnam Bank for Agriculture and Rural Development",
+      "official_name:vi": "Ngân hàng Nông nghiệp và Phát triển Nông thôn Việt Nam"
+    },
+    "source": "overpass",
+    "updated_at": "2025-11-01T18:55:17.046Z"
+  },
+  {
+    "osm_id": 1780019543,
+    "lat": 10.0346762,
+    "lng": 105.779475,
+    "bank": "Ngân hàng TMCP SaiGon",
+    "name": "Ngân hàng TMCP SaiGon",
+    "address": "",
+    "amenity": "bank",
+    "raw_tags": {
+      "amenity": "bank",
+      "name": "Ngân hàng TMCP SaiGon"
+    },
+    "source": "overpass",
+    "updated_at": "2025-11-01T18:55:17.046Z"
+  },
+  {
+    "osm_id": 1780020716,
+    "lat": 10.0439191,
+    "lng": 105.7785672,
+    "bank": "Western Babk",
+    "name": "Western Babk",
+    "address": "",
+    "amenity": "bank",
+    "raw_tags": {
+      "amenity": "bank",
+      "name": "Western Babk"
+    },
+    "source": "overpass",
+    "updated_at": "2025-11-01T18:55:17.046Z"
+  },
+  {
+    "osm_id": 1780020717,
+    "lat": 10.0437344,
+    "lng": 105.7784948,
+    "bank": "Đông Á Bank",
+    "name": "Đông Á Bank",
+    "address": "",
+    "amenity": "bank",
+    "raw_tags": {
+      "amenity": "bank",
+      "name": "Đông Á Bank"
+    },
+    "source": "overpass",
+    "updated_at": "2025-11-01T18:55:17.046Z"
+  },
+  {
+    "osm_id": 1780020720,
+    "lat": 10.0365346,
+    "lng": 105.7758118,
+    "bank": "HDBank",
+    "name": "HDBank",
+    "address": "",
+    "amenity": "bank",
+    "raw_tags": {
+      "amenity": "bank",
+      "brand": "HDBank",
+      "brand:wikidata": "Q10800273",
+      "name": "HDBank"
+    },
+    "source": "overpass",
+    "updated_at": "2025-11-01T18:55:17.046Z"
+  },
+  {
+    "osm_id": 1780020722,
+    "lat": 10.0361649,
+    "lng": 105.7757152,
+    "bank": "Eximbank",
+    "name": "Eximbank",
+    "address": "",
+    "amenity": "bank",
+    "raw_tags": {
+      "amenity": "bank",
+      "brand": "Eximbank",
+      "brand:wikidata": "Q10800271",
+      "name": "Eximbank"
+    },
+    "source": "overpass",
+    "updated_at": "2025-11-01T18:55:17.046Z"
+  },
+  {
+    "osm_id": 1780020728,
+    "lat": 10.0433249,
+    "lng": 105.7783392,
+    "bank": "ABBank",
+    "name": "ABBank",
+    "address": "74-76, Hùng Vương",
+    "amenity": "bank",
+    "raw_tags": {
+      "addr:housenumber": "74-76",
+      "addr:street": "Hùng Vương",
+      "addr:subdistrict": "Quận Ninh Kiều, TP Cần Thơ",
+      "amenity": "bank",
+      "brand": "ABBank",
+      "brand:wikidata": "Q10800288",
+      "name": "ABBank",
+      "name:en": "An Binh bank",
+      "name:vi": "Ngân Hàng An Bình (AB bank)"
+    },
+    "source": "overpass",
+    "updated_at": "2025-11-01T18:55:17.046Z"
+  },
+  {
+    "osm_id": 1780020730,
+    "lat": 10.0430107,
+    "lng": 105.7782373,
+    "bank": "ACB",
+    "name": "ACB",
+    "address": "",
+    "amenity": "bank",
+    "raw_tags": {
+      "amenity": "bank",
+      "brand": "ACB",
+      "brand:wikidata": "Q727019",
+      "name": "ACB"
+    },
+    "source": "overpass",
+    "updated_at": "2025-11-01T18:55:17.046Z"
+  },
+  {
+    "osm_id": 1781217129,
+    "lat": 10.0268999,
+    "lng": 105.7698229,
+    "bank": "ATM",
+    "name": null,
+    "address": "",
+    "amenity": "atm",
+    "raw_tags": {
+      "amenity": "atm"
+    },
+    "source": "overpass",
+    "updated_at": "2025-11-01T18:55:17.046Z"
+  },
+  {
+    "osm_id": 1781218570,
+    "lat": 10.0366505,
+    "lng": 105.7719251,
+    "bank": "VietinBank",
+    "name": null,
+    "address": "",
+    "amenity": "atm",
+    "raw_tags": {
+      "amenity": "atm",
+      "brand": "VietinBank",
+      "brand:wikidata": "Q7928459",
+      "operator": "VietinBank",
+      "operator:wikidata": "Q7928459"
+    },
+    "source": "overpass",
+    "updated_at": "2025-11-01T18:55:17.046Z"
+  },
+  {
+    "osm_id": 1781226125,
+    "lat": 10.0245783,
+    "lng": 105.7676959,
+    "bank": "Sacombank",
+    "name": "Sacombank",
+    "address": "",
+    "amenity": "bank",
+    "raw_tags": {
+      "amenity": "bank",
+      "atm": "yes",
+      "name": "Sacombank"
+    },
+    "source": "overpass",
+    "updated_at": "2025-11-01T18:55:17.046Z"
+  },
+  {
+    "osm_id": 1781226460,
+    "lat": 10.0428466,
+    "lng": 105.7656595,
+    "bank": "Vietcombank",
+    "name": "Vietcombank",
+    "address": "Mậu Thân",
+    "amenity": "bank",
+    "raw_tags": {
+      "addr:street": "Mậu Thân",
+      "amenity": "bank",
+      "atm": "yes",
+      "brand": "Vietcombank",
+      "brand:wikidata": "Q6122995",
+      "name": "Vietcombank"
+    },
+    "source": "overpass",
+    "updated_at": "2025-11-01T18:55:17.046Z"
+  },
+  {
+    "osm_id": 1781226833,
+    "lat": 10.0430452,
+    "lng": 105.765963,
+    "bank": "Commercial bank",
+    "name": "Commercial bank",
+    "address": "Mậu Thân",
+    "amenity": "bank",
+    "raw_tags": {
+      "addr:street": "Mậu Thân",
+      "amenity": "bank",
+      "name": "Commercial bank"
+    },
+    "source": "overpass",
+    "updated_at": "2025-11-01T18:55:17.046Z"
+  },
+  {
+    "osm_id": 1781226966,
+    "lat": 10.0431643,
+    "lng": 105.7658662,
+    "bank": "Teckombank",
+    "name": "Teckombank",
+    "address": "",
+    "amenity": "bank",
+    "raw_tags": {
+      "amenity": "bank",
+      "atm": "yes",
+      "name": "Teckombank"
+    },
+    "source": "overpass",
+    "updated_at": "2025-11-01T18:55:17.046Z"
+  },
+  {
+    "osm_id": 1781228537,
+    "lat": 10.0321418,
+    "lng": 105.7747444,
+    "bank": "MB",
+    "name": "MB",
+    "address": "Mậu Thân",
+    "amenity": "bank",
+    "raw_tags": {
+      "addr:street": "Mậu Thân",
+      "amenity": "bank",
+      "brand": "MB",
+      "brand:wikidata": "Q10800269",
+      "name": "MB"
+    },
+    "source": "overpass",
+    "updated_at": "2025-11-01T18:55:17.046Z"
+  },
+  {
+    "osm_id": 1781247915,
+    "lat": 10.0210231,
+    "lng": 105.7647906,
+    "bank": "Vietcombank",
+    "name": "Vietcombank",
+    "address": "3/2",
+    "amenity": "bank",
+    "raw_tags": {
+      "addr:street": "3/2",
+      "amenity": "bank",
+      "atm": "yes",
+      "name": "Vietcombank"
+    },
+    "source": "overpass",
+    "updated_at": "2025-11-01T18:55:17.046Z"
+  },
+  {
+    "osm_id": 1781250876,
+    "lat": 10.0222037,
+    "lng": 105.7717026,
+    "bank": "ABC Bank",
+    "name": "ABC Bank",
+    "address": "30/4",
+    "amenity": "bank",
+    "raw_tags": {
+      "addr:street": "30/4",
+      "amenity": "bank",
+      "name": "ABC Bank"
+    },
+    "source": "overpass",
+    "updated_at": "2025-11-01T18:55:17.046Z"
+  },
+  {
+    "osm_id": 1783189359,
+    "lat": 10.0240892,
+    "lng": 105.7737948,
+    "bank": "Ngân Hàng TMCP Sài Gòn",
+    "name": "Ngân Hàng TMCP Sài Gòn",
+    "address": "30/4",
+    "amenity": "bank",
+    "raw_tags": {
+      "addr:street": "30/4",
+      "amenity": "bank",
+      "name": "Ngân Hàng TMCP Sài Gòn"
+    },
+    "source": "overpass",
+    "updated_at": "2025-11-01T18:55:17.046Z"
+  },
+  {
+    "osm_id": 1783189360,
+    "lat": 10.0241846,
+    "lng": 105.7738967,
+    "bank": "HD Bank",
+    "name": "HD Bank",
+    "address": "30/4",
+    "amenity": "bank",
+    "raw_tags": {
+      "addr:street": "30/4",
+      "amenity": "bank",
+      "name": "HD Bank"
+    },
+    "source": "overpass",
+    "updated_at": "2025-11-01T18:55:17.046Z"
+  },
+  {
+    "osm_id": 1783189763,
+    "lat": 10.0235781,
+    "lng": 105.7732637,
+    "bank": "Western Bank",
+    "name": "Western Bank",
+    "address": "30/4",
+    "amenity": "bank",
+    "raw_tags": {
+      "addr:street": "30/4",
+      "amenity": "bank",
+      "atm": "yes",
+      "name": "Western Bank"
+    },
+    "source": "overpass",
+    "updated_at": "2025-11-01T18:55:17.046Z"
+  },
+  {
+    "osm_id": 1783189783,
+    "lat": 10.023202,
+    "lng": 105.7727916,
+    "bank": "Ngân hàng TMCP Nam Việt",
+    "name": "Ngân hàng TMCP Nam Việt",
+    "address": "30/4",
+    "amenity": "bank",
+    "raw_tags": {
+      "addr:street": "30/4",
+      "amenity": "bank",
+      "name": "Ngân hàng TMCP Nam Việt"
+    },
+    "source": "overpass",
+    "updated_at": "2025-11-01T18:55:17.046Z"
+  },
+  {
+    "osm_id": 1783220813,
+    "lat": 10.0500471,
+    "lng": 105.7862515,
+    "bank": "Vietcombank",
+    "name": null,
+    "address": "",
+    "amenity": "atm",
+    "raw_tags": {
+      "amenity": "atm",
+      "brand": "Vietcombank",
+      "brand:wikidata": "Q6122995",
+      "operator": "Vietcombank",
+      "operator:wikidata": "Q6122995"
+    },
+    "source": "overpass",
+    "updated_at": "2025-11-01T18:55:17.046Z"
+  },
+  {
+    "osm_id": 1783220815,
+    "lat": 10.0500258,
+    "lng": 105.7862062,
+    "bank": "ABBank",
+    "name": null,
+    "address": "",
+    "amenity": "atm",
+    "raw_tags": {
+      "amenity": "atm",
+      "brand": "ABBank",
+      "brand:wikidata": "Q10800288",
+      "operator": "ABBank",
+      "operator:wikidata": "Q10800288"
+    },
+    "source": "overpass",
+    "updated_at": "2025-11-01T18:55:17.046Z"
+  },
+  {
+    "osm_id": 1783221444,
+    "lat": 10.0466442,
+    "lng": 105.7876879,
+    "bank": "Ngân hàng TMCP Đại Tín",
+    "name": "Ngân hàng TMCP Đại Tín",
+    "address": "",
+    "amenity": "bank",
+    "raw_tags": {
+      "amenity": "bank",
+      "name": "Ngân hàng TMCP Đại Tín"
+    },
+    "source": "overpass",
+    "updated_at": "2025-11-01T18:55:17.046Z"
+  },
+  {
+    "osm_id": 1783222952,
+    "lat": 10.0439696,
+    "lng": 105.7831773,
+    "bank": "Vietcombank",
+    "name": "Vietcombank",
+    "address": "",
+    "amenity": "bank",
+    "raw_tags": {
+      "amenity": "bank",
+      "brand": "Vietcombank",
+      "brand:wikidata": "Q6122995",
+      "name": "Vietcombank"
+    },
+    "source": "overpass",
+    "updated_at": "2025-11-01T18:55:17.046Z"
+  },
+  {
+    "osm_id": 1783224033,
+    "lat": 10.040818,
+    "lng": 105.7844665,
+    "bank": "VietBank",
+    "name": "VietBank",
+    "address": "",
+    "amenity": "bank",
+    "raw_tags": {
+      "amenity": "bank",
+      "name": "VietBank"
+    },
+    "source": "overpass",
+    "updated_at": "2025-11-01T18:55:17.046Z"
+  },
+  {
+    "osm_id": 1783264196,
+    "lat": 10.0441969,
+    "lng": 105.7859425,
+    "bank": "OCEAN Bank",
+    "name": "OCEAN Bank",
+    "address": "",
+    "amenity": "bank",
+    "raw_tags": {
+      "amenity": "bank",
+      "name": "OCEAN Bank"
+    },
+    "source": "overpass",
+    "updated_at": "2025-11-01T18:55:17.046Z"
+  },
+  {
+    "osm_id": 1792768140,
+    "lat": 10.021897,
+    "lng": 105.7655115,
+    "bank": "Eximbank",
+    "name": "Eximbank",
+    "address": "",
+    "amenity": "bank",
+    "raw_tags": {
+      "amenity": "bank",
+      "name": "Eximbank"
+    },
+    "source": "overpass",
+    "updated_at": "2025-11-01T18:55:17.046Z"
+  },
+  {
+    "osm_id": 1793977088,
+    "lat": 10.06126,
+    "lng": 105.7640027,
+    "bank": "Ngân hàng TMCP Á Châu",
+    "name": "Ngân hàng TMCP Á Châu",
+    "address": "",
+    "amenity": "bank",
+    "raw_tags": {
+      "amenity": "bank",
+      "atm": "yes",
+      "name": "Ngân hàng TMCP Á Châu"
+    },
+    "source": "overpass",
+    "updated_at": "2025-11-01T18:55:17.046Z"
+  },
+  {
+    "osm_id": 2332935465,
+    "lat": 10.1090702,
+    "lng": 105.6232816,
+    "bank": "Ngân Hàng Tmcp Đông Á",
+    "name": "Ngân Hàng Tmcp Đông Á",
+    "address": "",
+    "amenity": "bank",
+    "raw_tags": {
+      "amenity": "bank",
+      "name": "Ngân Hàng Tmcp Đông Á"
+    },
+    "source": "overpass",
+    "updated_at": "2025-11-01T18:55:17.046Z"
+  },
+  {
+    "osm_id": 2332935477,
+    "lat": 10.1092709,
+    "lng": 105.6220048,
+    "bank": "ngân hàng Tmcp An Bình;Trạm thú y",
+    "name": "ngân hàng Tmcp An Bình;Trạm thú y",
+    "address": "",
+    "amenity": "bank",
+    "raw_tags": {
+      "amenity": "bank",
+      "name": "ngân hàng Tmcp An Bình;Trạm thú y"
+    },
+    "source": "overpass",
+    "updated_at": "2025-11-01T18:55:17.046Z"
+  },
+  {
+    "osm_id": 3263355395,
+    "lat": 10.0683437,
+    "lng": 105.8207574,
+    "bank": "MHB",
+    "name": "Ngân hàng Phát triển nhà đồng bằng sông Cửu Long",
+    "address": "169/15, Ngô Quyền",
+    "amenity": "bank",
+    "raw_tags": {
+      "addr:housenumber": "169/15",
+      "addr:street": "Ngô Quyền",
+      "amenity": "bank",
+      "atm": "yes",
+      "brand": "MHB",
+      "name": "Ngân hàng Phát triển nhà đồng bằng sông Cửu Long",
+      "opening_hours": "Mo-Fr 07:30-17:00; Sa 08:00-11:30",
+      "website": "http://www.mhb.com.vn/vi/default.asp?p=branches/branch_detail.asp&city=56"
+    },
+    "source": "overpass",
+    "updated_at": "2025-11-01T18:55:17.046Z"
+  },
+  {
+    "osm_id": 3482849198,
+    "lat": 10.0337272,
+    "lng": 105.7884035,
+    "bank": "ACB",
+    "name": null,
+    "address": "",
+    "amenity": "atm",
+    "raw_tags": {
+      "amenity": "atm",
+      "brand": "ACB",
+      "brand:wikidata": "Q727019",
+      "operator": "ACB",
+      "operator:wikidata": "Q727019"
+    },
+    "source": "overpass",
+    "updated_at": "2025-11-01T18:55:17.046Z"
+  },
+  {
+    "osm_id": 3482849199,
+    "lat": 10.0337683,
+    "lng": 105.7884311,
+    "bank": "Sacombank",
+    "name": null,
+    "address": "",
+    "amenity": "atm",
+    "raw_tags": {
+      "amenity": "atm",
+      "brand": "Sacombank",
+      "brand:wikidata": "Q6123772",
+      "operator": "Sacombank",
+      "operator:wikidata": "Q6123772"
+    },
+    "source": "overpass",
+    "updated_at": "2025-11-01T18:55:17.046Z"
+  },
+  {
+    "osm_id": 4338686189,
+    "lat": 10.0325404,
+    "lng": 105.7848058,
+    "bank": "JNb",
+    "name": null,
+    "address": "",
+    "amenity": "atm",
+    "raw_tags": {
+      "amenity": "atm",
+      "operator": "JNb"
+    },
+    "source": "overpass",
+    "updated_at": "2025-11-01T18:55:17.046Z"
+  },
+  {
+    "osm_id": 4513193591,
+    "lat": 10.0458079,
+    "lng": 105.785901,
+    "bank": "CB",
+    "name": null,
+    "address": "",
+    "amenity": "atm",
+    "raw_tags": {
+      "amenity": "atm",
+      "operator": "CB"
+    },
+    "source": "overpass",
+    "updated_at": "2025-11-01T18:55:17.046Z"
+  },
+  {
+    "osm_id": 4513205989,
+    "lat": 10.0456676,
+    "lng": 105.7859714,
+    "bank": "CB",
+    "name": "CB",
+    "address": "",
+    "amenity": "bank",
+    "raw_tags": {
+      "amenity": "bank",
+      "name": "CB",
+      "name:vi": "CB"
+    },
+    "source": "overpass",
+    "updated_at": "2025-11-01T18:55:17.046Z"
+  },
+  {
+    "osm_id": 4515123690,
+    "lat": 10.0454468,
+    "lng": 105.7857298,
+    "bank": "ATM",
+    "name": null,
+    "address": "",
+    "amenity": "bank",
+    "raw_tags": {
+      "amenity": "bank",
+      "name:en": "Baoviet"
+    },
+    "source": "overpass",
+    "updated_at": "2025-11-01T18:55:17.046Z"
+  },
+  {
+    "osm_id": 4516712842,
+    "lat": 10.0426199,
+    "lng": 105.7907983,
+    "bank": "BIDV",
+    "name": null,
+    "address": "",
+    "amenity": "atm",
+    "raw_tags": {
+      "amenity": "atm",
+      "not:brand:wikidata": "Q1003180",
+      "operator": "BIDV"
+    },
+    "source": "overpass",
+    "updated_at": "2025-11-01T18:55:17.046Z"
+  },
+  {
+    "osm_id": 5177435703,
+    "lat": 10.0353334,
+    "lng": 105.7566217,
+    "bank": "ATM Đông Á Bank; Vietcombank",
+    "name": "ATM Đông Á Bank, Vietcombank",
+    "address": "",
+    "amenity": "atm",
+    "raw_tags": {
+      "amenity": "atm",
+      "brand": "ATM Đông Á Bank; Vietcombank",
+      "name": "ATM Đông Á Bank, Vietcombank"
+    },
+    "source": "overpass",
+    "updated_at": "2025-11-01T18:55:17.046Z"
+  },
+  {
+    "osm_id": 5177555814,
+    "lat": 10.044574,
+    "lng": 105.7842934,
+    "bank": "Ngân hàng EXIBANK",
+    "name": "Ngân hàng EXIBANK",
+    "address": "Trần Văn Khéo",
+    "amenity": "bank",
+    "raw_tags": {
+      "addr:street": "Trần Văn Khéo",
+      "amenity": "bank",
+      "name": "Ngân hàng EXIBANK"
+    },
+    "source": "overpass",
+    "updated_at": "2025-11-01T18:55:17.046Z"
+  },
+  {
+    "osm_id": 5177594007,
+    "lat": 10.0515521,
+    "lng": 105.7736742,
+    "bank": "Ngân hàng Phương Đông OCB",
+    "name": "Ngân hàng Phương Đông OCB",
+    "address": "153-155, Cách Mạng Tháng 8",
+    "amenity": "bank",
+    "raw_tags": {
+      "addr:housenumber": "153-155",
+      "addr:street": "Cách Mạng Tháng 8",
+      "amenity": "bank",
+      "name": "Ngân hàng Phương Đông OCB"
+    },
+    "source": "overpass",
+    "updated_at": "2025-11-01T18:55:17.046Z"
+  },
+  {
+    "osm_id": 5177655263,
+    "lat": 10.0511665,
+    "lng": 105.772655,
+    "bank": "Ngân hàng Bắc Á",
+    "name": "Ngân hàng Bắc Á",
+    "address": "",
+    "amenity": "bank",
+    "raw_tags": {
+      "amenity": "bank",
+      "atm": "yes",
+      "name": "Ngân hàng Bắc Á"
+    },
+    "source": "overpass",
+    "updated_at": "2025-11-01T18:55:17.046Z"
+  },
+  {
+    "osm_id": 5177691567,
+    "lat": 10.0354,
+    "lng": 105.757,
+    "bank": "DongA Bank",
+    "name": null,
+    "address": "",
+    "amenity": "atm",
+    "raw_tags": {
+      "amenity": "atm",
+      "brand": "Vietcombank",
+      "operator": "DongA Bank"
+    },
+    "source": "overpass",
+    "updated_at": "2025-11-01T18:55:17.046Z"
+  },
+  {
+    "osm_id": 5177691569,
+    "lat": 10.035,
+    "lng": 105.756,
+    "bank": "BIDV",
+    "name": null,
+    "address": "",
+    "amenity": "atm",
+    "raw_tags": {
+      "amenity": "atm",
+      "brand": "BIDV",
+      "opening_hours": "24/7",
+      "wheelchair": "no"
+    },
+    "source": "overpass",
+    "updated_at": "2025-11-01T18:55:17.046Z"
+  },
+  {
+    "osm_id": 5205913439,
+    "lat": 10.030225,
+    "lng": 105.7722875,
+    "bank": "ATM",
+    "name": null,
+    "address": "",
+    "amenity": "atm",
+    "raw_tags": {
+      "amenity": "atm"
+    },
+    "source": "overpass",
+    "updated_at": "2025-11-01T18:55:17.046Z"
+  },
+  {
+    "osm_id": 5205913440,
+    "lat": 10.0301986,
+    "lng": 105.772258,
+    "bank": "ATM",
+    "name": null,
+    "address": "",
+    "amenity": "atm",
+    "raw_tags": {
+      "amenity": "atm"
+    },
+    "source": "overpass",
+    "updated_at": "2025-11-01T18:55:17.046Z"
+  },
+  {
+    "osm_id": 5205913448,
+    "lat": 10.0290338,
+    "lng": 105.7711959,
+    "bank": "Agribank",
+    "name": null,
+    "address": "",
+    "amenity": "atm",
+    "raw_tags": {
+      "amenity": "atm",
+      "brand": "Agribank"
+    },
+    "source": "overpass",
+    "updated_at": "2025-11-01T18:55:17.046Z"
+  },
+  {
+    "osm_id": 5205913449,
+    "lat": 10.0277872,
+    "lng": 105.770072,
+    "bank": "Dongabank",
+    "name": null,
+    "address": "",
+    "amenity": "atm",
+    "raw_tags": {
+      "amenity": "atm",
+      "brand": "Dongabank"
+    },
+    "source": "overpass",
+    "updated_at": "2025-11-01T18:55:17.046Z"
+  },
+  {
+    "osm_id": 5211389121,
+    "lat": 10.0428102,
+    "lng": 105.7662177,
+    "bank": "VIB",
+    "name": "VIB",
+    "address": "",
+    "amenity": "bank",
+    "raw_tags": {
+      "amenity": "bank",
+      "atm": "yes",
+      "brand": "VIB",
+      "brand:wikidata": "Q49054349",
+      "name": "VIB",
+      "opening_hours": "07:30-17:00"
+    },
+    "source": "overpass",
+    "updated_at": "2025-11-01T18:55:17.046Z"
+  },
+  {
+    "osm_id": 5211440049,
+    "lat": 10.0441492,
+    "lng": 105.7648471,
+    "bank": "Sacombank",
+    "name": null,
+    "address": "",
+    "amenity": "atm",
+    "raw_tags": {
+      "amenity": "atm",
+      "brand": "Sacombank",
+      "brand:wikidata": "Q6123772",
+      "operator": "Sacombank",
+      "operator:wikidata": "Q6123772"
+    },
+    "source": "overpass",
+    "updated_at": "2025-11-01T18:55:17.046Z"
+  },
+  {
+    "osm_id": 5211440050,
+    "lat": 10.0441838,
+    "lng": 105.7648234,
+    "bank": "Đông Á",
+    "name": null,
+    "address": "",
+    "amenity": "atm",
+    "raw_tags": {
+      "amenity": "atm",
+      "brand": "Đông Á"
+    },
+    "source": "overpass",
+    "updated_at": "2025-11-01T18:55:17.046Z"
+  },
+  {
+    "osm_id": 5211499626,
+    "lat": 10.037324,
+    "lng": 105.776343,
+    "bank": "Maritime Bank",
+    "name": "Maritime Bank",
+    "address": "",
+    "amenity": "bank",
+    "raw_tags": {
+      "addr:place": "89-91, Trần Hưng Đạo, Phường An Phú, Ninh Kiều, Cần Thơ",
+      "amenity": "bank",
+      "atm": "yes",
+      "name": "Maritime Bank",
+      "phone": "0293733735 - 029373736",
+      "wheelchair": "yes"
+    },
+    "source": "overpass",
+    "updated_at": "2025-11-01T18:55:17.046Z"
+  },
+  {
+    "osm_id": 5211519525,
+    "lat": 10.0399826,
+    "lng": 105.7771292,
+    "bank": "Ngân Hàng Sài Gòn Hà Nội",
+    "name": "Ngân Hàng Sài Gòn Hà Nội",
+    "address": "",
+    "amenity": "bank",
+    "raw_tags": {
+      "addr:full": "42 Trần Hưng Đạo p. An Ngiệp",
+      "amenity": "bank",
+      "atm": "yes",
+      "name": "Ngân Hàng Sài Gòn Hà Nội",
+      "opening_hours": "07:00-11:00; 13:00-17:00",
+      "phone": "0710762039"
+    },
+    "source": "overpass",
+    "updated_at": "2025-11-01T18:55:17.046Z"
+  },
+  {
+    "osm_id": 5211609355,
+    "lat": 10.03252,
+    "lng": 105.78344,
+    "bank": "VDB",
+    "name": "VDB",
+    "address": "Hai Bà Trưng",
+    "amenity": "bank",
+    "raw_tags": {
+      "addr:district": "Ninh Kiều",
+      "addr:street": "Hai Bà Trưng",
+      "amenity": "bank",
+      "brand": "VDB",
+      "brand:wikidata": "Q10800267",
+      "name": "VDB",
+      "name:en": "VDB",
+      "opening_hours": "07:00-11:00,13:00-17:00"
+    },
+    "source": "overpass",
+    "updated_at": "2025-11-01T18:55:17.046Z"
+  },
+  {
+    "osm_id": 5224115624,
+    "lat": 10.0661809,
+    "lng": 105.8064881,
+    "bank": "NH CSXH CN Bình Minh",
+    "name": "NH CSXH CN Bình Minh",
+    "address": "",
+    "amenity": "bank",
+    "raw_tags": {
+      "amenity": "bank",
+      "name": "NH CSXH CN Bình Minh"
+    },
+    "source": "overpass",
+    "updated_at": "2025-11-01T18:55:17.046Z"
+  },
+  {
+    "osm_id": 5224263329,
+    "lat": 10.0704981,
+    "lng": 105.8203631,
+    "bank": "NH Vietinbank CN Bình Minh",
+    "name": "NH Vietinbank CN Bình Minh",
+    "address": "",
+    "amenity": "bank",
+    "raw_tags": {
+      "amenity": "bank",
+      "name": "NH Vietinbank CN Bình Minh"
+    },
+    "source": "overpass",
+    "updated_at": "2025-11-01T18:55:17.046Z"
+  },
+  {
+    "osm_id": 5224263330,
+    "lat": 10.0693782,
+    "lng": 105.8201495,
+    "bank": "NH Sacombank CN Bình Minh",
+    "name": "NH Sacombank CN Bình Minh",
+    "address": "",
+    "amenity": "bank",
+    "raw_tags": {
+      "amenity": "bank",
+      "name": "NH Sacombank CN Bình Minh"
+    },
+    "source": "overpass",
+    "updated_at": "2025-11-01T18:55:17.046Z"
+  },
+  {
+    "osm_id": 5224263331,
+    "lat": 10.0704863,
+    "lng": 105.8202274,
+    "bank": "ATM Vietinbank",
+    "name": null,
+    "address": "",
+    "amenity": "atm",
+    "raw_tags": {
+      "amenity": "atm",
+      "operator": "ATM Vietinbank"
+    },
+    "source": "overpass",
+    "updated_at": "2025-11-01T18:55:17.046Z"
+  },
+  {
+    "osm_id": 5224263332,
+    "lat": 10.0693782,
+    "lng": 105.8201495,
+    "bank": "ATM Sacombank",
+    "name": null,
+    "address": "",
+    "amenity": "atm",
+    "raw_tags": {
+      "amenity": "atm",
+      "operator": "ATM Sacombank"
+    },
+    "source": "overpass",
+    "updated_at": "2025-11-01T18:55:17.046Z"
+  },
+  {
+    "osm_id": 5224282222,
+    "lat": 10.0656728,
+    "lng": 105.8222023,
+    "bank": "NH Agribank CN Bình Minh",
+    "name": "NH Agribank CN Bình Minh",
+    "address": "",
+    "amenity": "bank",
+    "raw_tags": {
+      "amenity": "bank",
+      "name": "NH Agribank CN Bình Minh"
+    },
+    "source": "overpass",
+    "updated_at": "2025-11-01T18:55:17.046Z"
+  },
+  {
+    "osm_id": 5245298490,
+    "lat": 10.049434,
+    "lng": 105.7737473,
+    "bank": "Ngân hàng cổ phần Sài Gòn",
+    "name": "Ngân hàng cổ phần Sài Gòn",
+    "address": "",
+    "amenity": "bank",
+    "raw_tags": {
+      "addr:full": "125 Trần Việt Châu, An Hòa, Ninh Kiều, Cần thơ",
+      "amenity": "bank",
+      "atm": "yes",
+      "name": "Ngân hàng cổ phần Sài Gòn",
+      "opening_hours": "7h-11h_13h30-16h30"
+    },
+    "source": "overpass",
+    "updated_at": "2025-11-01T18:55:17.046Z"
+  },
+  {
+    "osm_id": 5245298497,
+    "lat": 10.0499186,
+    "lng": 105.7733182,
+    "bank": "Ngân hàng PTNN chi nhánh Ninh Kiều- AN Hòa",
+    "name": "Ngân hàng PTNN chi nhánh Ninh Kiều- AN Hòa",
+    "address": "",
+    "amenity": "bank",
+    "raw_tags": {
+      "addr:full": "149 Trần Việt Châu, An Hòa, Ninh Kiều, Cần thơ",
+      "amenity": "bank",
+      "atm": "yes",
+      "name": "Ngân hàng PTNN chi nhánh Ninh Kiều- AN Hòa",
+      "opening_hours": "7h-11h_13h-16h( Sunday- holiday offỉ)",
+      "phone": "07103897132"
+    },
+    "source": "overpass",
+    "updated_at": "2025-11-01T18:55:17.046Z"
+  },
+  {
+    "osm_id": 5245298980,
+    "lat": 10.0483141,
+    "lng": 105.7769444,
+    "bank": "Sacombank",
+    "name": "Sacombank",
+    "address": "51, Cách Mạng Tháng 8",
+    "amenity": "bank",
+    "raw_tags": {
+      "addr:housenumber": "51",
+      "addr:street": "Cách Mạng Tháng 8",
+      "addr:subdistrict": "Quận Ninh Kiều, TP Cần Thơ",
+      "amenity": "bank",
+      "atm": "yes",
+      "brand": "Sacombank",
+      "brand:wikidata": "Q6123772",
+      "name": "Sacombank",
+      "name:en": "Sacombank"
+    },
+    "source": "overpass",
+    "updated_at": "2025-11-01T18:55:17.046Z"
+  },
+  {
+    "osm_id": 5246556286,
+    "lat": 10.0450379,
+    "lng": 105.7846552,
+    "bank": "VPBank",
+    "name": "VPBank",
+    "address": "",
+    "amenity": "bank",
+    "raw_tags": {
+      "amenity": "bank",
+      "atm": "yes",
+      "branch": "Cai Khe",
+      "brand": "VPBank",
+      "brand:wikidata": "Q20025914",
+      "name": "VPBank",
+      "opening_hours": "08:30-12:30,15:30-20:00",
+      "wheelchair": "limited"
+    },
+    "source": "overpass",
+    "updated_at": "2025-11-01T18:55:17.046Z"
+  },
+  {
+    "osm_id": 5246557221,
+    "lat": 10.0326647,
+    "lng": 105.7744546,
+    "bank": "OCB",
+    "name": "OCB",
+    "address": "",
+    "amenity": "bank",
+    "raw_tags": {
+      "amenity": "bank",
+      "branch": "Phương Đông",
+      "brand": "OCB",
+      "brand:wikidata": "Q7102288",
+      "name": "OCB"
+    },
+    "source": "overpass",
+    "updated_at": "2025-11-01T18:55:17.046Z"
+  },
+  {
+    "osm_id": 5246574477,
+    "lat": 9.9924363,
+    "lng": 105.7488075,
+    "bank": "Ngan hang Agribank",
+    "name": "Ngan hang Agribank",
+    "address": "",
+    "amenity": "bank",
+    "raw_tags": {
+      "amenity": "bank",
+      "atm": "yes",
+      "name": "Ngan hang Agribank",
+      "opening_hours": "08:30-12:30,15:30-20:00",
+      "wheelchair": "yes"
+    },
+    "source": "overpass",
+    "updated_at": "2025-11-01T18:55:17.046Z"
+  },
+  {
+    "osm_id": 5250026198,
+    "lat": 10.0344483,
+    "lng": 105.7735723,
+    "bank": "ATM BIDV",
+    "name": null,
+    "address": "",
+    "amenity": "atm",
+    "raw_tags": {
+      "amenity": "atm",
+      "brand": "ATM BIDV",
+      "opening_hours": "24/7"
+    },
+    "source": "overpass",
+    "updated_at": "2025-11-01T18:55:17.046Z"
+  },
+  {
+    "osm_id": 5250026199,
+    "lat": 10.034414,
+    "lng": 105.7735911,
+    "bank": "BIDV",
+    "name": "BIDV",
+    "address": "",
+    "amenity": "bank",
+    "raw_tags": {
+      "address": "28-30 Mậu Thân, P. An Nghiệp, Q. Ninh Kiều, TPCT",
+      "amenity": "bank",
+      "atm": "yes",
+      "brand": "BIDV",
+      "brand:wikidata": "Q1003180",
+      "email": "taydo@bidv.com.vn",
+      "name": "BIDV",
+      "official_name": "Ngân hàng Đầu tư và Phát triển Việt Nam",
+      "official_name:en": "Bank for Investment and Development of Vietnam",
+      "official_name:vi": "Ngân hàng Đầu tư và Phát triển Việt Nam",
+      "phone": "02923 918902",
+      "website": "https://www.bidv.com.vn/"
+    },
+    "source": "overpass",
+    "updated_at": "2025-11-01T18:55:17.046Z"
+  },
+  {
+    "osm_id": 5251200994,
+    "lat": 10.0340574,
+    "lng": 105.7735214,
+    "bank": "ATM Vietin Bank",
+    "name": null,
+    "address": "",
+    "amenity": "atm",
+    "raw_tags": {
+      "amenity": "atm",
+      "brand": "ATM Vietin Bank"
+    },
+    "source": "overpass",
+    "updated_at": "2025-11-01T18:55:17.046Z"
+  },
+  {
+    "osm_id": 5251200995,
+    "lat": 10.0340298,
+    "lng": 105.7735464,
+    "bank": "Ngân hàng Vietin Bank",
+    "name": "Ngân hàng Vietin Bank",
+    "address": "",
+    "amenity": "bank",
+    "raw_tags": {
+      "addr:full": "15D Mậu Thân, P. Xuân Khánh, Q. Ninh Kiều, TPCT",
+      "amenity": "bank",
+      "atm": "yes",
+      "name": "Ngân hàng Vietin Bank",
+      "opening_hours": "07:30-11:30,13:00-16:30",
+      "phone": "0292 3 821 175",
+      "website": "www.vietinbank.com"
+    },
+    "source": "overpass",
+    "updated_at": "2025-11-01T18:55:17.046Z"
+  },
+  {
+    "osm_id": 5251465803,
+    "lat": 10.02297,
+    "lng": 105.766,
+    "bank": "Ngân hàng PV Bank",
+    "name": "Ngân hàng PV Bank",
+    "address": "3/2, Cần Thơ",
+    "amenity": "bank",
+    "raw_tags": {
+      "addr:city": "Cần Thơ",
+      "addr:district": "Ninh Kiều",
+      "addr:street": "3/2",
+      "addr:subdistrict": "Xuân Khánh",
+      "amenity": "bank",
+      "name": "Ngân hàng PV Bank"
+    },
+    "source": "overpass",
+    "updated_at": "2025-11-01T18:55:17.046Z"
+  },
+  {
+    "osm_id": 5251604550,
+    "lat": 10.0349818,
+    "lng": 105.7874045,
+    "bank": "VDB",
+    "name": "VDB",
+    "address": "Hai Bà Trưng",
+    "amenity": "bank",
+    "raw_tags": {
+      "addr:district": "Ninh Kiều",
+      "addr:street": "Hai Bà Trưng",
+      "amenity": "bank",
+      "brand": "VDB",
+      "brand:wikidata": "Q10800267",
+      "name": "VDB",
+      "name:en": "VDB",
+      "opening_hours": "07:00-11:00,13:00-17:00"
+    },
+    "source": "overpass",
+    "updated_at": "2025-11-01T18:55:17.046Z"
+  },
+  {
+    "osm_id": 5251645330,
+    "lat": 10.0210388,
+    "lng": 105.763903,
+    "bank": "Martime bank",
+    "name": "Martime bank",
+    "address": "",
+    "amenity": "bank",
+    "raw_tags": {
+      "amenity": "bank",
+      "atm": "yes",
+      "name": "Martime bank",
+      "opening_hours": "07:00-11:30,13:30-17:00"
+    },
+    "source": "overpass",
+    "updated_at": "2025-11-01T18:55:17.046Z"
+  },
+  {
+    "osm_id": 5251841868,
+    "lat": 10.0304548,
+    "lng": 105.7879409,
+    "bank": "VDB",
+    "name": "VDB",
+    "address": "Hai Bà Trưng",
+    "amenity": "bank",
+    "raw_tags": {
+      "addr:district": "Ninh Kiều",
+      "addr:street": "Hai Bà Trưng",
+      "amenity": "bank",
+      "brand": "VDB",
+      "brand:wikidata": "Q10800267",
+      "name": "VDB",
+      "name:en": "VDB",
+      "opening_hours": "07:00-11:00,13:00-17:00"
+    },
+    "source": "overpass",
+    "updated_at": "2025-11-01T18:55:17.046Z"
+  },
+  {
+    "osm_id": 5253332051,
+    "lat": 10.005143,
+    "lng": 105.7501989,
+    "bank": "Quỹ Tính Dụng Nhân Dân Nam Cần Thơ",
+    "name": null,
+    "address": "",
+    "amenity": "bank",
+    "raw_tags": {
+      "amenity": "bank",
+      "atm": "yes",
+      "brand": "Quỹ Tính Dụng Nhân Dân Nam Cần Thơ"
+    },
+    "source": "overpass",
+    "updated_at": "2025-11-01T18:55:17.046Z"
+  },
+  {
+    "osm_id": 5253404147,
+    "lat": 10.0323723,
+    "lng": 105.7841215,
+    "bank": "Sacombank",
+    "name": "Sacombank",
+    "address": "",
+    "amenity": "bank",
+    "raw_tags": {
+      "amenity": "bank",
+      "atm": "yes",
+      "brand": "Sacombank",
+      "brand:wikidata": "Q6123772",
+      "name": "Sacombank"
+    },
+    "source": "overpass",
+    "updated_at": "2025-11-01T18:55:17.046Z"
+  },
+  {
+    "osm_id": 5253408678,
+    "lat": 10.0453562,
+    "lng": 105.7665905,
+    "bank": "ATM",
+    "name": null,
+    "address": "Nguyễn Văn Cừ",
+    "amenity": "atm",
+    "raw_tags": {
+      "addr:district": "ninh kiều",
+      "addr:street": "Nguyễn Văn Cừ",
+      "addr:subdistrict": "An Hòa",
+      "amenity": "atm",
+      "brand": "ATM",
+      "opening_hours": "24/7",
+      "wheelchair": "no"
+    },
+    "source": "overpass",
+    "updated_at": "2025-11-01T18:55:17.046Z"
+  },
+  {
+    "osm_id": 5253417351,
+    "lat": 10.0185942,
+    "lng": 105.7620616,
+    "bank": "SHB Bank",
+    "name": "Ngân hàng thương mại cổ phần Sài Gòn - Hà Nội ( Sai Gon - Ha Nọi Joint-stock commercial Bank )",
+    "address": "Đường 3/2, Cần Thơ",
+    "amenity": "bank",
+    "raw_tags": {
+      "addr:city": "Cần Thơ",
+      "addr:district": "Ninh Kiều",
+      "addr:province": "Cần Thơ",
+      "addr:street": "Đường 3/2",
+      "amenity": "bank",
+      "atm": "yes",
+      "brand": "SHB Bank",
+      "name": "Ngân hàng thương mại cổ phần Sài Gòn - Hà Nội ( Sai Gon - Ha Nọi Joint-stock commercial Bank )",
+      "opening_hours": "7:00-17:00",
+      "wheelchair": "yes"
+    },
+    "source": "overpass",
+    "updated_at": "2025-11-01T18:55:17.046Z"
+  },
+  {
+    "osm_id": 5253418577,
+    "lat": 10.0450823,
+    "lng": 105.7632448,
+    "bank": "VietinBank",
+    "name": "VietinBank",
+    "address": "67, Võ Văn Kiệt",
+    "amenity": "bank",
+    "raw_tags": {
+      "addr:district": "Ninh Kiều",
+      "addr:housenumber": "67",
+      "addr:street": "Võ Văn Kiệt",
+      "addr:subdistrict": "An Hòa",
+      "amenity": "bank",
+      "atm": "yes",
+      "brand": "VietinBank",
+      "brand:wikidata": "Q7928459",
+      "building": "yes",
+      "name": "VietinBank",
+      "opening_hours": "08:00-16:00",
+      "phone": "+84 292 3898 179",
+      "wheelchair": "yes"
+    },
+    "source": "overpass",
+    "updated_at": "2025-11-01T18:55:17.046Z"
+  },
+  {
+    "osm_id": 5253418595,
+    "lat": 10.0201011,
+    "lng": 105.7671753,
+    "bank": "Sacombank",
+    "name": null,
+    "address": "Nguyễn Văn Linh",
+    "amenity": "atm",
+    "raw_tags": {
+      "addr:street": "Nguyễn Văn Linh",
+      "addr:subdistrict": "Hưng Lợi",
+      "amenity": "atm",
+      "brand": "Sacombank",
+      "opening_hours": "24/7"
+    },
+    "source": "overpass",
+    "updated_at": "2025-11-01T18:55:17.046Z"
+  },
+  {
+    "osm_id": 5253674703,
+    "lat": 10.0255448,
+    "lng": 105.7755518,
+    "bank": "PV Com",
+    "name": "PV Com Bank",
+    "address": "Đường 30 Tháng 4",
+    "amenity": "bank",
+    "raw_tags": {
+      "addr:street": "Đường 30 Tháng 4",
+      "amenity": "bank",
+      "atm": "yes",
+      "name": "PV Com Bank",
+      "opening_hours": "Mo-Fr 07:00-11:00,13:00-17:00",
+      "operator": "PV Com"
+    },
+    "source": "overpass",
+    "updated_at": "2025-11-01T18:55:17.046Z"
+  },
+  {
+    "osm_id": 5253691365,
+    "lat": 10.0324317,
+    "lng": 105.7833691,
+    "bank": "Agribank",
+    "name": "Agribank",
+    "address": "15, Đại lộ Hòa Bình",
+    "amenity": "bank",
+    "raw_tags": {
+      "addr:housenumber": "15",
+      "addr:street": "Đại lộ Hòa Bình",
+      "addr:subdistrict": "Xuân Khánh",
+      "amenity": "bank",
+      "atm": "yes",
+      "brand": "Agribank",
+      "brand:wikidata": "Q1924723",
+      "name": "Agribank",
+      "official_name": "Ngân hàng Nông nghiệp và Phát triển Nông thôn Việt Nam",
+      "official_name:en": "Vietnam Bank for Agriculture and Rural Development",
+      "official_name:vi": "Ngân hàng Nông nghiệp và Phát triển Nông thôn Việt Nam",
+      "operator": "Agribank"
+    },
+    "source": "overpass",
+    "updated_at": "2025-11-01T18:55:17.046Z"
+  },
+  {
+    "osm_id": 5257244474,
+    "lat": 10.0173383,
+    "lng": 105.7385668,
+    "bank": "ATM Vietcombank",
+    "name": "ATM Vietcombank",
+    "address": "",
+    "amenity": "atm",
+    "raw_tags": {
+      "amenity": "atm",
+      "name": "ATM Vietcombank"
+    },
+    "source": "overpass",
+    "updated_at": "2025-11-01T18:55:17.046Z"
+  },
+  {
+    "osm_id": 5257244475,
+    "lat": 10.0172009,
+    "lng": 105.7384327,
+    "bank": "VietinBank",
+    "name": "VietinBank",
+    "address": "",
+    "amenity": "atm",
+    "raw_tags": {
+      "amenity": "atm",
+      "brand": "VietinBank",
+      "brand:wikidata": "Q7928459",
+      "brand:wikipedia": "en:Vietinbank",
+      "name": "VietinBank",
+      "operator": "VietinBank",
+      "operator:wikidata": "Q7928459",
+      "operator:wikipedia": "en:Vietinbank"
+    },
+    "source": "overpass",
+    "updated_at": "2025-11-01T18:55:17.046Z"
+  },
+  {
+    "osm_id": 5311296926,
+    "lat": 10.0360193,
+    "lng": 105.7867506,
+    "bank": "Đông Á bank",
+    "name": null,
+    "address": "",
+    "amenity": "atm",
+    "raw_tags": {
+      "amenity": "atm",
+      "operator": "Đông Á bank"
+    },
+    "source": "overpass",
+    "updated_at": "2025-11-01T18:55:17.046Z"
+  },
+  {
+    "osm_id": 5311341324,
+    "lat": 10.0354371,
+    "lng": 105.7860077,
+    "bank": "Viettin bank",
+    "name": "Ngân hàng Đại Dương",
+    "address": "Hòa Bình",
+    "amenity": "bank",
+    "raw_tags": {
+      "addr:street": "Hòa Bình",
+      "amenity": "bank",
+      "name": "Ngân hàng Đại Dương",
+      "name:en": "Ocean Bank",
+      "opening_hours": "Mo-Fr 09:00-18:00",
+      "operator": "Viettin bank"
+    },
+    "source": "overpass",
+    "updated_at": "2025-11-01T18:55:17.046Z"
+  },
+  {
+    "osm_id": 6132954781,
+    "lat": 10.0298506,
+    "lng": 105.780554,
+    "bank": "Techcombank",
+    "name": "Techcom bank",
+    "address": "",
+    "amenity": "atm",
+    "raw_tags": {
+      "amenity": "atm",
+      "brand": "Techcombank",
+      "brand:wikidata": "Q10541776",
+      "name": "Techcom bank",
+      "operator": "Techcombank",
+      "operator:wikidata": "Q10541776"
+    },
+    "source": "overpass",
+    "updated_at": "2025-11-01T18:55:17.046Z"
+  },
+  {
+    "osm_id": 6132959543,
+    "lat": 10.0298887,
+    "lng": 105.7806268,
+    "bank": "ACB",
+    "name": "ACB bank",
+    "address": "",
+    "amenity": "atm",
+    "raw_tags": {
+      "amenity": "atm",
+      "brand": "ACB",
+      "brand:wikidata": "Q727019",
+      "name": "ACB bank",
+      "operator": "ACB",
+      "operator:wikidata": "Q727019"
+    },
+    "source": "overpass",
+    "updated_at": "2025-11-01T18:55:17.046Z"
+  },
+  {
+    "osm_id": 6339715691,
+    "lat": 10.0658228,
+    "lng": 105.7619834,
+    "bank": "ATM",
+    "name": null,
+    "address": "",
+    "amenity": "atm",
+    "raw_tags": {
+      "amenity": "atm"
+    },
+    "source": "overpass",
+    "updated_at": "2025-11-01T18:55:17.046Z"
+  },
+  {
+    "osm_id": 6543772649,
+    "lat": 10.0323494,
+    "lng": 105.7879386,
+    "bank": "Ngân hàng TMCP Xây dựng Việt Nam PGD Hai Bà Trưng",
+    "name": "Ngân hàng TMCP Xây dựng Việt Nam PGD Hai Bà Trưng",
+    "address": "116, Hai Bà Trưng, Cần Thơ",
+    "amenity": "bank",
+    "raw_tags": {
+      "addr:city": "Cần Thơ",
+      "addr:district": "Ninh Kiều",
+      "addr:housenumber": "116",
+      "addr:street": "Hai Bà Trưng",
+      "addr:subdistrict": "Tân An",
+      "amenity": "bank",
+      "name": "Ngân hàng TMCP Xây dựng Việt Nam PGD Hai Bà Trưng"
+    },
+    "source": "overpass",
+    "updated_at": "2025-11-01T18:55:17.046Z"
+  },
+  {
+    "osm_id": 6543774568,
+    "lat": 10.0310845,
+    "lng": 105.7871107,
+    "bank": "SeABank",
+    "name": "SeABank",
+    "address": "26-28, Nguyễn An Ninh, Cần Thơ",
+    "amenity": "bank",
+    "raw_tags": {
+      "addr:city": "Cần Thơ",
+      "addr:district": "Ninh Kiều",
+      "addr:housenumber": "26-28",
+      "addr:province": "Can Tho",
+      "addr:street": "Nguyễn An Ninh",
+      "addr:subdistrict": "Tân An",
+      "amenity": "bank",
+      "branch": "Cần Thơ",
+      "brand": "SeABank",
+      "brand:wikidata": "Q10800276",
+      "name": "SeABank"
+    },
+    "source": "overpass",
+    "updated_at": "2025-11-01T18:55:17.046Z"
+  },
+  {
+    "osm_id": 6696266885,
+    "lat": 10.0200018,
+    "lng": 105.7418952,
+    "bank": "vietcombank",
+    "name": null,
+    "address": "",
+    "amenity": "atm",
+    "raw_tags": {
+      "amenity": "atm",
+      "operator": "vietcombank"
+    },
+    "source": "overpass",
+    "updated_at": "2025-11-01T18:55:17.046Z"
+  },
+  {
+    "osm_id": 7149121520,
+    "lat": 10.035795,
+    "lng": 105.7873137,
+    "bank": "Agribank",
+    "name": "Agribank",
+    "address": "",
+    "amenity": "atm",
+    "raw_tags": {
+      "amenity": "atm",
+      "brand": "Agribank",
+      "brand:wikidata": "Q1924723",
+      "name": "Agribank",
+      "operator": "Agribank",
+      "operator:wikidata": "Q1924723"
+    },
+    "source": "overpass",
+    "updated_at": "2025-11-01T18:55:17.046Z"
+  },
+  {
+    "osm_id": 7192331690,
+    "lat": 10.0315038,
+    "lng": 105.7816337,
+    "bank": "Eximbank",
+    "name": null,
+    "address": "",
+    "amenity": "atm",
+    "raw_tags": {
+      "amenity": "atm",
+      "brand": "Eximbank",
+      "brand:wikidata": "Q10800271",
+      "operator": "Eximbank",
+      "operator:wikidata": "Q10800271"
+    },
+    "source": "overpass",
+    "updated_at": "2025-11-01T18:55:17.046Z"
+  },
+  {
+    "osm_id": 8005533556,
+    "lat": 10.0317593,
+    "lng": 105.7865143,
+    "bank": "Agribank",
+    "name": "Agribank",
+    "address": "",
+    "amenity": "atm",
+    "raw_tags": {
+      "amenity": "atm",
+      "brand": "Agribank",
+      "brand:wikidata": "Q1924723",
+      "name": "Agribank",
+      "operator": "Agribank",
+      "operator:wikidata": "Q1924723"
+    },
+    "source": "overpass",
+    "updated_at": "2025-11-01T18:55:17.046Z"
+  },
+  {
+    "osm_id": 8496896461,
+    "lat": 10.0174186,
+    "lng": 105.7661801,
+    "bank": "Agribank",
+    "name": null,
+    "address": "",
+    "amenity": "atm",
+    "raw_tags": {
+      "amenity": "atm",
+      "cash_in": "no",
+      "covered": "yes",
+      "currency:VND": "yes",
+      "drive_through": "no",
+      "opening_hours": "24/7",
+      "operator": "Agribank",
+      "wheelchair": "no"
+    },
+    "source": "overpass",
+    "updated_at": "2025-11-01T18:55:17.046Z"
+  },
+  {
+    "osm_id": 10223778899,
+    "lat": 10.04498,
+    "lng": 105.7849426,
+    "bank": "VPBank",
+    "name": "VPBank",
+    "address": "",
+    "amenity": "bank",
+    "raw_tags": {
+      "amenity": "bank",
+      "brand": "VPBank",
+      "brand:wikidata": "Q20025914",
+      "name": "VPBank"
+    },
+    "source": "overpass",
+    "updated_at": "2025-11-01T18:55:17.046Z"
+  },
+  {
+    "osm_id": 11266613305,
+    "lat": 10.0262265,
+    "lng": 105.748576,
+    "bank": "Ngân hàng Đông Á",
+    "name": "Ngân hàng Đông Á",
+    "address": "",
+    "amenity": "bank",
+    "raw_tags": {
+      "amenity": "bank",
+      "name": "Ngân hàng Đông Á"
+    },
+    "source": "overpass",
+    "updated_at": "2025-11-01T18:55:17.046Z"
+  },
+  {
+    "osm_id": 11289915303,
+    "lat": 10.022835,
+    "lng": 105.7717862,
+    "bank": "VietinBank",
+    "name": null,
+    "address": "",
+    "amenity": "atm",
+    "raw_tags": {
+      "amenity": "atm",
+      "brand": "VietinBank",
+      "brand:wikidata": "Q7928459",
+      "operator": "VietinBank",
+      "operator:wikidata": "Q7928459"
+    },
+    "source": "overpass",
+    "updated_at": "2025-11-01T18:55:17.046Z"
+  },
+  {
+    "osm_id": 11371119289,
+    "lat": 10.0288548,
+    "lng": 105.7713695,
+    "bank": "Vietabank",
+    "name": "Vietabank",
+    "address": "",
+    "amenity": "bank",
+    "raw_tags": {
+      "amenity": "bank",
+      "name": "Vietabank"
+    },
+    "source": "overpass",
+    "updated_at": "2025-11-01T18:55:17.046Z"
+  },
+  {
+    "osm_id": 13229145041,
+    "lat": 10.0452965,
+    "lng": 105.7855358,
+    "bank": "NCB",
+    "name": "NCB",
+    "address": "",
+    "amenity": "bank",
+    "raw_tags": {
+      "amenity": "bank",
+      "name": "NCB"
+    },
+    "source": "overpass",
+    "updated_at": "2025-11-01T18:55:17.046Z"
+  }
+]

@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bản đồ ngân hàng & ATM – Cần Thơ</title>
+
+  <!-- Leaflet -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+
+  <!-- Chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+
+  <style>
+    html, body, #map {
+      height: 100%;
+      margin: 0;
+      background: #070b13;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+
+    .card-like{
+      background: linear-gradient(140deg, rgba(12,20,34,.85), rgba(8,14,24,.85));
+      border: 1px solid rgba(99,102,241,.18);
+      border-radius: 14px;
+      box-shadow: 0 10px 25px rgba(2,6,23,.35);
+      backdrop-filter: blur(8px);
+    }
+
+    .leaflet-top.leaflet-left {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      align-items: flex-start;
+    }
+
+    /* panel phải */
+    .stats-panel {
+      position: absolute;
+      right: 10px;
+      top: 10px;
+      width: 360px;
+      max-height: 85vh;
+      overflow-y: auto;
+      scrollbar-width: thin;
+      scrollbar-color: rgba(99,102,241,.3) transparent;
+      padding: 10px;
+      z-index: 400;
+      color: #e5e7eb;
+      transition: width .2s ease, opacity .2s ease;
+    }
+    .stats-panel.collapsed { width:46px; padding:6px; overflow:visible; }
+    .stats-panel.collapsed .stats-body,
+    .stats-panel.collapsed .stats-title-text { display:none; }
+    .stats-header{ display:flex; justify-content:space-between; gap:8px; }
+    .stats-controls{ display:flex; gap:8px; flex-wrap:wrap; margin-top:8px; }
+    .stats-controls label{ display:flex; gap:4px; font-size:13px; opacity:.9; }
+    .stats-toggle {
+      width:28px; height:28px; border:none; border-radius:8px;
+      background:rgba(15,23,42,.35); border:1px solid rgba(148,163,184,.35);
+      display:grid; place-items:center; color:#e2e8f0; cursor:pointer;
+    }
+
+    /* ô tìm kiếm bên trái */
+    .data-search{
+      padding:10px;
+      width: 360px;
+      border-radius:14px;
+      transition: width .2s ease, height .2s ease;
+      position: relative;
+    }
+    .ds-wrap{ display:flex; align-items:center; gap:6px; }
+    .ds-input{
+      flex:1; height:42px; padding:0 44px 0 40px;
+      border:1px solid rgba(148,163,184,.25); border-radius:12px;
+      background: linear-gradient(180deg, #0b1220, #0a111e);
+      color:#e5e7eb;
+    }
+    .ds-icon{
+      position:absolute; left:20px; top:50%; transform:translateY(-50%);
+      color:#94a3b8; pointer-events:none;
+    }
+    .ds-clear{
+      position:absolute; right:118px; top:50%; transform:translateY(-50%);
+      width:28px; height:28px; display:grid; place-items:center;
+      border-radius:8px; border:1px solid rgba(148,163,184,.2);
+      background:#0b1220; color:#cbd5e1; cursor:pointer;
+      visibility:hidden; opacity:0; transition:.15s;
+    }
+    .ds-clear.show{ visibility:visible; opacity:1; }
+    .ds-btn{
+      width:36px; height:36px; border:none; border-radius:10px;
+      background:linear-gradient(180deg, #0f172a, #0c1424); color:#e5e7eb;
+      display:grid; place-items:center; cursor:pointer;
+      border:1px solid rgba(148,163,184,.25);
+    }
+    .ds-list{ max-height:260px; overflow:auto; margin-top:8px; border-top:1px dashed rgba(148,163,184,.25); padding-top:6px; }
+
+    /* nút thu gọn search – đẩy ra ngoài */
+    .ds-collapse-btn {
+      position:absolute;
+      top: 50%;
+      right: -48px;
+      transform: translateY(-50%);
+      width:34px; height:34px; border:none; border-radius:9999px;
+      background:rgba(15,23,42,.65); border:1px solid rgba(148,163,184,.35);
+      display:grid; place-items:center; color:#e2e8f0; cursor:pointer;
+      z-index:999;
+    }
+
+    .data-search.collapsed {
+      width:46px; height:46px; padding:6px;
+      display:flex; align-items:center; justify-content:center;
+    }
+    .data-search.collapsed .ds-wrap,
+    .data-search.collapsed .ds-list{ display:none; }
+    .data-search.collapsed .ds-collapse-btn{
+      position:static; right:auto; transform:none; background:rgba(15,23,42,.85);
+    }
+
+    .marker-icon-wrap{
+      display:flex; justify-content:center; align-items:center;
+      width:38px; height:38px; border-radius:50%;
+    }
+
+    /* ============ POPUP KIỂU GOOGLE ============ */
+    .gm-popup {
+      width: 310px;
+      font-family: system-ui, sans-serif;
+    }
+    .gm-header{
+      padding-bottom:6px;
+      border-bottom:1px solid #e2e8f0;
+    }
+    .gm-title{
+      font-weight:700;
+      font-size:14.5px;
+      margin-bottom:2px;
+    }
+    .gm-sub{ font-size:12px; color:#64748b; }
+    .gm-rating{
+      display:flex; align-items:center; gap:4px;
+      font-size:12.5px; margin-top:4px;
+    }
+    .gm-rating i{ color:#facc15; }
+
+    .gm-tabs{
+      display:flex; gap:16px; margin:8px 0 6px;
+      border-bottom:1px solid #e2e8f0;
+    }
+    .gm-tab{
+      font-size:12px; padding:4px 0 6px;
+      cursor:pointer; color:#475569;
+    }
+    .gm-tab.active{
+      color:#0f172a;
+      border-bottom:2px solid #0f172a;
+    }
+
+    .gm-actions{
+      display:flex; gap:10px; margin:8px 0 10px;
+      flex-wrap:wrap;
+    }
+    .gm-act{
+      width:52px; text-align:center; cursor:pointer;
+    }
+    .gm-act-btn{
+      width:36px; height:36px; border-radius:9999px;
+      background:#14b8a6; color:#fff; display:grid; place-items:center;
+      margin:0 auto 4px;
+    }
+    .gm-act span{ font-size:10.5px; color:#0f172a; }
+
+    .gm-line{
+      display:flex; gap:8px; margin:6px 0; font-size:12.5px; color:#0f172a;
+    }
+    .gm-line i{ width:16px; text-align:center; color:#0f172a; margin-top:2px; }
+
+    /* làm popup trắng giống Google */
+    .leaflet-popup-content-wrapper,
+    .leaflet-popup-tip {
+      background: #ffffff;
+      color: #0f172a;
+    }
+  </style>
+</head>
+<body>
+  <div id="map"></div>
+
+  <!-- PANEL THỐNG KÊ -->
+  <div id="stats-panel" class="stats-panel card-like">
+    <div class="stats-header">
+      <div class="stats-title-text">
+        <div style="font-weight:700;">Thống kê ATM theo ngân hàng</div>
+        <small id="src-note" style="opacity:.75">Nguồn: /api/atm (tự động)</small>
+      </div>
+      <div style="display:flex;gap:6px;">
+        <button id="btn-refresh" class="ds-btn" title="Làm mới biểu đồ"><i class="fa-solid fa-arrows-rotate"></i></button>
+        <button id="btn-stats-toggle" class="stats-toggle" title="Thu gọn / Mở rộng">
+          <i class="fa-solid fa-angles-right"></i>
+        </button>
+      </div>
+    </div>
+
+    <div class="stats-body">
+      <div class="stats-controls">
+        <label><input type="checkbox" id="chk-visible"/> Chỉ tính ATM trong khung nhìn</label>
+        <label><input type="checkbox" id="chk-choropleth" checked/> Tô màu theo quận/huyện</label>
+      </div>
+      <canvas id="bankChart" height="160" style="margin-top:8px;"></canvas>
+      <div id="legend" class="legend">Không có ranh giới khu vực.</div>
+    </div>
+  </div>
+
+  <script>
+    // ====== MAP ======
+    const CT_CENTER = [10.0279603, 105.7664918];
+    const map = L.map("map", { center: CT_CENTER, zoom: 13 });
+    const base = L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+      maxZoom: 19,
+      attribution: "&copy; OpenStreetMap"
+    }).addTo(map);
+
+    const colorATM  = '#ef4444';
+    const colorBank = '#000000';
+    const colorOther= '#eab308';
+
+    const iconWrap = color => L.divIcon({
+      html: `<div class="marker-icon-wrap"><i class="fa-solid fa-location-dot" style="font-size:20px;color:${color}"></i></div>`,
+      iconSize:[38,38],
+      className:''
+    });
+
+    let geoLayer = null;
+    let featuresIndex = [];
+    let bankChart = null;
+    let userLocation = null;  // lưu vị trí người dùng để dẫn đường
+
+    const vnNormalize = s => s?.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/đ/g,'d') || '';
+
+    // ====== GHÉP ĐỊA CHỈ TỪ NHIỀU FIELD ======
+    function buildAddress(p){
+      if (p.address) return p.address;
+      if (p["addr:full"]) return p["addr:full"];
+
+      const parts = [
+        p["addr:housenumber"],
+        p["addr:street"],
+        p["addr:subdistrict"] || p["addr:ward"],
+        p["addr:district"],
+        p["addr:city"] || p["addr:province"]
+      ].filter(Boolean);
+
+      return parts.length ? parts.join(", ") : null;
+    }
+
+    // chuyển /api/atm -> GeoJSON
+    function atmArrayToGeoJSON(arr){
+      return {
+        type: "FeatureCollection",
+        features: (arr || []).filter(a => a.lat && a.lng).map(a => ({
+          type: "Feature",
+          geometry: { type: "Point", coordinates: [a.lng, a.lat] },
+          properties: {
+            ...a,
+            amenity: a.amenity || "atm"
+          }
+        }))
+      };
+    }
+
+    // ====== POPUP KIỂU GOOGLE ======
+    function popupDetail(p, latlng){
+      const name = p.name || p.bank || "Điểm ATM";
+      const addr = buildAddress(p) || "Không có địa chỉ";
+      const open = p.opening_hours || "Mở cả ngày";
+      const website = p.website || p.url || "";
+      const phone = p.phone || p.contact_phone || "";
+      const pluscode = p.plus_code || p.pluscode || "";
+      const rating = p.rating ?? 5.0;
+      const reviews = p.reviews ?? 5;
+      const type = p.type || "ATM";
+
+      const lat = latlng.lat;
+      const lng = latlng.lng;
+
+      return `
+        <div class="gm-popup">
+          <div class="gm-header">
+            <div class="gm-title">${name}</div>
+            <div class="gm-sub">${type}</div>
+            <div class="gm-rating">
+              <span>${Number(rating).toFixed(1)}</span>
+              <i class="fa-solid fa-star"></i>
+              <span>(${reviews})</span>
+            </div>
+          </div>
+
+          <div class="gm-tabs">
+            <div class="gm-tab active">Tổng quan</div>
+            <div class="gm-tab">Bài đánh giá</div>
+          </div>
+
+          <div class="gm-actions">
+            <div class="gm-act">
+              <div class="gm-act-btn btn-gmap" data-lat="${lat}" data-lng="${lng}">
+                <i class="fa-solid fa-route"></i>
+              </div>
+              <span>Đường đi</span>
+            </div>
+            <div class="gm-act">
+              <div class="gm-act-btn"><i class="fa-regular fa-bookmark"></i></div>
+              <span>Lưu</span>
+            </div>
+            <div class="gm-act">
+              <div class="gm-act-btn"><i class="fa-solid fa-location-dot"></i></div>
+              <span>Gắn đồ</span>
+            </div>
+            <div class="gm-act">
+              <div class="gm-act-btn"><i class="fa-solid fa-paper-plane"></i></div>
+              <span>Gửi tới ĐT</span>
+            </div>
+            <div class="gm-act">
+              <div class="gm-act-btn btn-share" data-lat="${lat}" data-lng="${lng}">
+                <i class="fa-solid fa-share-nodes"></i>
+              </div>
+              <span>Chia sẻ</span>
+            </div>
+          </div>
+
+          <div class="gm-line">
+            <i class="fa-solid fa-location-dot"></i>
+            <div>${addr}</div>
+          </div>
+          <div class="gm-line">
+            <i class="fa-regular fa-clock"></i>
+            <div>${open}</div>
+          </div>
+          ${website ? `
+          <div class="gm-line">
+            <i class="fa-solid fa-globe"></i>
+            <div><a href="${website.startsWith('http') ? website : 'https://' + website}" target="_blank" rel="noreferrer">${website}</a></div>
+          </div>` : ''}
+
+          ${phone ? `
+          <div class="gm-line">
+            <i class="fa-solid fa-phone"></i>
+            <div><a href="tel:${phone}">${phone}</a></div>
+          </div>` : ''}
+
+          ${pluscode ? `
+          <div class="gm-line">
+            <i class="fa-solid fa-plus"></i>
+            <div>${pluscode}</div>
+          </div>` : ''}
+
+        </div>
+      `;
+    }
+
+    function renderMarkersFromGeoJSON(gj){
+      if (geoLayer) map.removeLayer(geoLayer);
+      featuresIndex = [];
+      const markers = [];
+
+      geoLayer = L.geoJSON(gj, {
+        pointToLayer: (f, latlng) => {
+          const p = f.properties || {};
+          const icon =
+            p.amenity === "atm" ? iconWrap(colorATM) :
+            p.amenity === "bank" ? iconWrap(colorBank) :
+            iconWrap(colorOther);
+          const m = L.marker(latlng, {icon});
+          m.bindPopup(popupDetail(p, latlng));
+          markers.push(m);
+
+          const addrText = buildAddress(p) || "";
+          featuresIndex.push({
+            p,
+            latlng,
+            marker: m,
+            text: vnNormalize([p.name, p.bank, addrText].join(" "))
+          });
+
+          return m;
+        }
+      }).addTo(map);
+
+      if (markers.length) {
+        map.fitBounds(L.featureGroup(markers).getBounds(), {padding:[20,20]});
+      }
+
+      wireSearch();
+      renderChart();
+    }
+
+    async function fetchAndRender(){
+      try {
+        const res = await fetch("/api/atm");
+        const arr = await res.json();
+        const gj = atmArrayToGeoJSON(arr);
+        renderMarkersFromGeoJSON(gj);
+      } catch (err) {
+        console.error("Không tải được /api/atm", err);
+      }
+    }
+
+    // ====== SEARCH CONTROL ======
+    const SearchControl = L.Control.extend({
+      options: { position: 'topleft' },
+      onAdd: function(){
+        const wrap = L.DomUtil.create('div', 'data-search card-like');
+        L.DomEvent.disableClickPropagation(wrap);
+        wrap.innerHTML = `
+          <div class="ds-wrap">
+            <i class="fa-solid fa-magnifying-glass ds-icon"></i>
+            <input id="ds-input" class="ds-input" placeholder="Tìm trong dữ liệu (tên/brand/địa chỉ)">
+            <button id="ds-clear" class="ds-clear">&times;</button>
+            <button id="btn-reset" class="ds-btn" title="Reset"><i class="fa-solid fa-rotate-right"></i></button>
+            <button id="btn-locate" class="ds-btn" title="Vị trí của tôi"><i class="fa-solid fa-location-crosshairs"></i></button>
+          </div>
+          <button id="ds-collapse" class="ds-collapse-btn" title="Thu gọn / Mở rộng">
+            <i class="fa-solid fa-chevron-left"></i>
+          </button>
+          <div id="ds-list" class="ds-list"></div>
+        `;
+        return wrap;
+      }
+    });
+    map.addControl(new SearchControl());
+
+    function wireSearch(){
+      const input = document.getElementById('ds-input');
+      const list  = document.getElementById('ds-list');
+      const clear = document.getElementById('ds-clear');
+      if (!input) return;
+
+      input.oninput = () => {
+        const val = vnNormalize(input.value.trim());
+        clear.classList.toggle('show', !!val);
+        list.innerHTML = '';
+        if (!val) return;
+
+        const rs = featuresIndex.filter(f => f.text.includes(val)).slice(0, 30);
+        rs.forEach(({p,latlng,marker}) => {
+          const row = document.createElement('div');
+          const addr = buildAddress(p) || '';
+          row.className = 'ds-item';
+          row.innerHTML = `<i class="fa-solid fa-location-dot"></i>
+            <div><b>${p.name || p.bank || 'ATM'}</b><br><small>${addr}</small></div>`;
+          row.onclick = () => { map.setView(latlng, 17); marker.openPopup(); };
+          list.appendChild(row);
+        });
+        if (!rs.length){
+          list.innerHTML = '<div class="ds-item"><i class="fa-regular fa-circle-xmark"></i><div>Không tìm thấy</div></div>';
+        }
+      };
+
+      clear.onclick = () => {
+        input.value = '';
+        clear.classList.remove('show');
+        list.innerHTML = '';
+      };
+    }
+
+    // ====== BIỂU ĐỒ ======
+    function aggregateByBank(){
+      const chk = document.getElementById('chk-visible')?.checked;
+      const bounds = map.getBounds();
+      const counts = {};
+      for (const f of featuresIndex){
+        const p = f.p || {};
+        if (p.amenity !== 'atm') continue;
+        if (chk && !bounds.contains(f.marker.getLatLng())) continue;
+        const key = (p.bank || p.name || "Khác").trim();
+        counts[key] = (counts[key] || 0) + 1;
+      }
+      const sorted = Object.entries(counts).sort((a,b)=>b[1]-a[1]).slice(0,15);
+      return { labels: sorted.map(x=>x[0]), data: sorted.map(x=>x[1]) };
+    }
+
+    function renderChart(){
+      const ctx = document.getElementById('bankChart');
+      if (!ctx) return;
+      const {labels, data} = aggregateByBank();
+      if (bankChart) bankChart.destroy();
+      bankChart = new Chart(ctx, {
+        type: 'bar',
+        data: { labels, datasets: [{ label: 'Số ATM', data }] },
+        options: {
+          responsive: true,
+          plugins: { legend: { display: false } },
+          scales: {
+            x: { ticks: { color:'#e5e7eb' }, grid: { color:'rgba(148,163,184,.15)' } },
+            y: { ticks: { color:'#e5e7eb', precision:0 }, grid: { color:'rgba(148,163,184,.15)' } }
+          }
+        }
+      });
+    }
+
+    // ====== SỰ KIỆN TOÀN TRANG ======
+    document.addEventListener('click', (e) => {
+      // thu gọn / mở rộng tìm kiếm
+      if (e.target.closest('#ds-collapse')) {
+        const box = e.target.closest('.data-search');
+        box.classList.toggle('collapsed');
+        const i = e.target.querySelector('i');
+        i.className = box.classList.contains('collapsed')
+          ? 'fa-solid fa-magnifying-glass'
+          : 'fa-solid fa-chevron-left';
+      }
+
+      // reset
+      if (e.target.closest('#btn-reset')) {
+        map.setView(CT_CENTER, 13);
+      }
+
+      // định vị
+      if (e.target.closest('#btn-locate')) {
+        if (!navigator.geolocation){ alert('Trình duyệt không hỗ trợ định vị'); return; }
+        navigator.geolocation.getCurrentPosition(({coords}) => {
+          const here=[coords.latitude, coords.longitude];
+          userLocation = here; // lưu để dẫn đường
+          L.marker(here,{icon:iconWrap('#22c55e')}).addTo(map)
+            .bindPopup(`<b>Vị trí của bạn</b><br/>Độ chính xác ~ ${Math.round(coords.accuracy)}m`,{className:'popup'})
+            .openPopup();
+          map.setView(here,16);
+        }, err=>alert('Không lấy được vị trí: '+err.message));
+      }
+
+      // nút "Đường đi" trong popup (Google)
+      if (e.target.closest('.btn-gmap')) {
+        const btn = e.target.closest('.btn-gmap');
+        const lat = btn.dataset.lat;
+        const lng = btn.dataset.lng;
+        let url = '';
+        if (userLocation) {
+          url = `https://www.google.com/maps/dir/?api=1&origin=${userLocation[0]},${userLocation[1]}&destination=${lat},${lng}`;
+        } else {
+          url = `https://www.google.com/maps/dir/?api=1&destination=${lat},${lng}`;
+        }
+        window.open(url, '_blank');
+      }
+
+      // nút share trong popup
+      if (e.target.closest('.btn-share')) {
+        const btn = e.target.closest('.btn-share');
+        const lat = btn.dataset.lat;
+        const lng = btn.dataset.lng;
+        const url = `https://www.google.com/maps/search/?api=1&query=${lat},${lng}`;
+        navigator.clipboard?.writeText(url);
+        alert('Đã copy link: ' + url);
+      }
+    });
+
+    // thu gọn panel phải
+    document.getElementById('btn-stats-toggle').onclick = () => {
+      const panel = document.getElementById('stats-panel');
+      panel.classList.toggle('collapsed');
+      const icon = document.querySelector('#btn-stats-toggle i');
+      icon.className = panel.classList.contains('collapsed')
+        ? 'fa-solid fa-angles-left'
+        : 'fa-solid fa-angles-right';
+    };
+    document.getElementById('btn-refresh').onclick = () => fetchAndRender();
+    document.getElementById('chk-visible').onchange = () => renderChart();
+    document.getElementById('chk-choropleth').onchange = (e) => {
+      document.getElementById('legend').innerHTML = e.target.checked
+        ? '<i>Chưa nạp ranh giới – không tô được.</i>'
+        : '';
+    };
+
+    // ====== KHỞI ĐỘNG ======
+    map.whenReady(() => {
+      fetchAndRender();
+      // lấy vị trí sớm
+      if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(pos => {
+          userLocation = [pos.coords.latitude, pos.coords.longitude];
+        });
+      }
+    });
+
+    // auto reload
+    setInterval(fetchAndRender, 60000);
+  </script>
+</body>
+</html>

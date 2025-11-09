@@ -1,0 +1,263 @@
+# Ngân Hàng ở Cần Thơ
+Vietcombank Cần Thơ 34-36 Võ Văn Kiệt, An Hoà, Ninh Kiều, Cần Thơ, Việt Nam 10.045338309437309, 105.76422607485405 Thứ Sáu 08:00–16:00, Thứ Bảy Đóng cửa, Chủ Nhật Đóng cửa, Thứ Hai 08:00–16:00, Thứ Ba 08:00–16:00, Thứ Tư 08:00–16:00, Thứ Năm 08:00–16:00
+ACB - PGD An Thới 322B Đ. Cách Mạng Tháng 8, Bùi Hữu Nghĩa, Bình Thủy, Cần Thơ 900000, Việt Nam 10.06288632538817, 105.76387281499706 Thứ Sáu 07:30–16:30, Thứ Bảy 07:30–11:30, Chủ Nhật Đóng cửa, Thứ Hai 07:30–16:30, Thứ Ba 07:30–16:30, Thứ Tư 07:30–16:30, Thứ Năm 07:30–16:30
+Ngân Hàng Quốc Tế - VIB Cần Thơ Một phần tầng trệt của Trung Tâm Mua Sắm Nguyễn Kim Cần Thơ 2 đường 30/4 phường An Phú, 12 Đ. Hoà Bình, Tân An, Ninh Kiều, Cần Thơ 900000, Việt Nam 10.032455320823885, 105.78168646102726 Thứ Sáu 08:00–12:00 13:00–17:00, Thứ Bảy 08:00–12:00, Chủ Nhật Đóng cửa, Thứ Hai 08:00–12:00 13:00–17:00, Thứ Ba 08:00–12:00 13:00–17:00, Thứ Tư08:00–12:00 13:00–17:00, Thứ Năm 08:00–12:00 13:00–17:00
+PGD Ninh Kiều - CN TP Cần Thơ - Ngân hàng TMCP Đầu tư & Phát triển Việt Nam (BIDV) 107 Đ. Cách Mạng Tháng 8, Tân An, Ninh Kiều, Cần Thơ 900000, Việt Nam 10.05169086053192, 105.77412003087642 Thứ Sáu 08:00–11:30 13:00–16:30, Thứ Bảy Đóng cửa, Chủ Nhật Đóng cửa, Thứ Hai 08:00–11:30 13:00–16:30, Thứ Ba 08:00–11:30 13:00–16:30, Thứ Tư 08:00–11:30 13:00–16:30, Thứ Năm 08:00–11:30 13:00–16:30
+Techcombank An Hòa 243H Đ. Nguyễn Văn Cừ, An Hoà, Ninh Kiều, Cần Thơ 900000, Việt Nam 10.048138262635081, 105.76872636453953 Thứ Sáu 07:30–11:30 13:00–17:00, Thứ Bảy 07:30–11:30, Chủ Nhật Đóng cửa, Thứ Hai 07:30–11:30 13:00–17:00, Thứ Ba 07:30–11:30 13:00–17:00, Thứ Tư 07:30–11:30 13:00–17:00, Thứ Năm 07:30–11:30 13:00–17:00
+Ngân hàng TPBank - CN Cần Thơ 135 Đ. Trần Hưng Đạo, Thới Bình, Ninh Kiều, Cần Thơ 270000, Việt Nam 10.036482955474167, 105.77547470056324 Thứ Sáu 08:00–17:00, Thứ Bảy 08:00–12:00, Chủ Nhật Đóng cửa, Thứ Hai 08:00–17:00, Thứ Ba 08:00–17:00, Thứ Tư 08:00–17:00, Thứ Năm 08:00–17:00
+Ngân hàng Á Châu 322b Đ. Cách Mạng Tháng 8, Bùi Hữu Nghĩa, Bình Thủy, Cần Thơ, Việt Nam 10.063013090837726, 105.76395496628797
+SCB Cần Thơ - Ngân hàng TMCP Sài Gòn 217 Đ. 30 Tháng 4, Phường, Ninh Kiều, Cần Thơ 94000, Việt Nam 10.025067103072246, 105.77355327690661 Thứ Sáu 08:00–12:00 13:00–16:30, Thứ Bảy Đóng cửa, Chủ Nhật Đóng cửa, Thứ Hai 08:00–12:00 13:00–16:30, Thứ Ba 08:00–12:00 13:00–16:30, Thứ Tư 08:00–12:00 13:00–16:30, Thứ Năm 08:00–12:00 13:00–16:30
+VPBANK CẦN THƠ 54 Đường Trần Văn Khéo, Cái Khế, Ninh Kiều, Cần Thơ, Việt Nam 10.045433789680844, 105.7848073996537 Thứ Sáu 08:00–17:00, Thứ Bảy 08:00–12:00, Chủ Nhật Đóng cửa, Thứ Hai 08:00–17:00, Thứ Ba 08:00–17:00, Thứ Tư 08:00–17:00, Thứ Năm 08:00–17:00
+VPBANK LÝ TỰ TRỌNG 106C-108 Đ. Lý Tự Trọng, Thới Bình, Ninh Kiều, Cần Thơ, Việt Nam 10.037320259412018, 105.77802677539815 Thứ Sáu 08:00–17:00, Thứ Bảy 08:00–12:00, Chủ Nhật Đóng cửa, Thứ Hai 08:00–17:00, Thứ Ba 08:00–17:00, Thứ Tư 08:00–17:00, Thứ Năm 08:00–17:00
+Ngân Hàng Tmcp Hàng Hải Việt Nam (Maritime Bank) - Pgd An Thới 304 Đ. Cách Mạng Tháng 8, Bùi Hữu Nghĩa, Bình Thủy, Cần Thơ 900000, Việt Nam 10.06406360954536, 105.76486364537969 
+Ngân Hàng TMCP Việt Nam Thịnh Vượng 353 Đ. Nguyễn Văn Cừ, An Hoà, Ninh Kiều, Cần Thơ, Việt Nam 10.045803108570645, 105.7669051718139 Thứ Sáu 08:00–17:00, Thứ Bảy 08:00–12:00, Chủ Nhật Đóng cửa, Thứ Hai 08:00–17:00, Thứ Ba 08:00–17:00, Thứ Tư 08:00–17:00, Thứ Năm 08:00–17:00
+Ngân Hàng Tmcp Ngoại Thương Việt Nam (Vietcombank) - Pgd Ninh Kiều 103 Đường A1, Tân An, Ninh Kiều, Cần Thơ, Việt Nam 10.044783536348481, 105.78310897422764 
+Ngân hàng Thương mại TNHH MTV Ngoại thương Công nghệ số - VCBNeo - CN Cần Thơ - PGD Ninh Kiều 118/15 Trần Văn Khéo, P, Ninh Kiều, Cần Thơ 70000, Việt Nam 10.046473832941022, 105.78594138689134 Thứ Sáu 07:30–11:30 13:00–17:00, Thứ Bảy Đóng cửa, Chủ Nhật Đóng cửa, Thứ Hai 07:30–11:30 13:00–17:00, Thứ Ba 07:30–11:30 13:00–17:00, Thứ Tư 07:30–11:30 13:00–17:00, Thứ Năm 07:30–11:30 13:00–17:00
+Ngân Hàng Tmcp Hàng Hải Việt Nam (Maritime Bank) 42-44-46 Đường Nguyễn An Ninh, Tân An, Ninh Kiều, Cần Thơ, Việt Nam 10.031514401387165, 105.78637054032524 Thứ Sáu 07:30–11:30 13:30–17:30, Thứ Bảy 07:30–11:30, Chủ Nhật Đóng cửa, Thứ Hai 07:30–11:30 13:30–17:30, Thứ Ba 07:30–11:30 13:30–17:30, Thứ Tư 07:30–11:30 13:30–17:30, Thứ Năm 07:30–11:30 13:30–17:30
+Ngân Hàng Phương Đông (OCB) 14 - 16B Đ. Hoà Bình, Tân An, Ninh Kiều, Cần Thơ 900000, Việt Nam 10.03440790227275, 105.78472515729459 Thứ Bảy 07:30–11:30, Chủ Nhật Đóng cửa, Thứ Hai 07:30–11:30 13:00–17:00, Thứ Ba 07:30–11:30 13:00–17:00, Thứ Tư 07:30–11:30 13:00–17:00, Thứ Năm 07:30–11:30 13:00–17:00, Thứ Sáu 07:30–11:30 13:00–17:00
+Sacombank 95-97-99 Võ Văn Tần, Tân An, Ninh Kiều, Cần Thơ, Việt Nam 10.032711085307458, 105.78408460668271 Thứ Bảy Đóng cửa, Chủ Nhật Đóng cửa, Thứ Hai 07:30–11:3013:00–17:00, Thứ Ba 07:30–11:30 13:00–17:00, Thứ Tư 07:30–11:30 13:00–17:00, Thứ Năm 07:30–11:30 13:00–17:00, Thứ Sáu 07:30–11:30 13:00–17:00
+Techcombank Cần Thơ 45A- 47 Đ. 30 Tháng 4, Tân An, Ninh Kiều, Cần Thơ, Việt Nam 10.029810278464572, 105.78030088457005 Thứ Bảy 07:30–11:30, Chủ Nhật Đóng cửa, Thứ Hai 07:30–11:30,13:00–17:00, Thứ Ba,07:30–11:30,13:00–17:00, Thứ Tư 07:30–11:30 13:00–17:00, Thứ Năm 07:30–11:30 13:00–17:00, Thứ Sáu 07:30–11:30 13:00–17:00
+KienlongBank Bình Thủy 77 Đ. Cách Mạng Tháng 8, phường, Bình Thủy, Cần Thơ 902889, Việt Nam 10.064044128800704, 105.76131182689834 Thứ Năm 07:30–17:00, Thứ Tư 07:30–17:00, Thứ Ba 07:30–17:00, Thứ Hai 07:30–17:00, Chủ Nhật Đóng cửa, Thứ Bảy 07:30–11:30 
+HDBank Cần Thơ 2QV8+882, Đ. Mậu Thân, Thới Bình, Ninh Kiều, Cần Thơ 90000, Việt Nam 10.0434776885481, 105.76578085758511
+Ngân hàng Quốc tế -VIB Sông Hậu 11 AA - 13 AA, Nguyễn Văn Cừ Nối Dài, An Bình, Ninh Kiều, Cần Thơ 902072, Việt Nam 10.027585658719698, 105.74886914039082  Thứ Sáu 08:00–12:00 13:00–17:00, Thứ Năm 08:00–12:00 13:00–17:00, Thứ Tư 08:00–12:00 13:00–17:00, Thứ Ba 08:00–12:00 13:00–17:00, Thứ Hai 08:00–12:00 13:00–17:00, Thứ Bảy 08:00–12:00, Chủ Nhật Đóng cửa
+Ngân Hành TMCP Vietcombank 2QW7+29G, An Hoà, Ninh Kiều, Cần Thơ, Việt Nam 10.045185072443168, 105.76340858457004 Thứ Sáu 08:00–16:30, Thứ Năm 08:00–16:30, Thứ Tư 08:00–16:30, Thứ Ba 08:00–16:30, Thứ Hai 08:00–16:30, Chủ Nhật Đóng cửa, Thứ Bảy Đóng cửa
+MB Cần Thơ 77 Võ Văn Tần, Tân An, Ninh Kiều, Cần Thơ, Việt Nam 10.032733530780218, 105.78469861525681  Thứ Sáu 07:30–11:30 13:00–17:00, Thứ Năm 07:30–11:30 13:00–17:00, Thứ Tư 07:30–11:30 13:00–17:00, Thứ Ba 07:30–11:30 13:00–17:00, Thứ Hai 07:30–11:30 13:00–17:00, Chủ Nhật Đóng cửa, Thứ Bảy 07:30–11:30
+Ngân Hàng Shb 44 Đ. Trần Hưng Đạo, Thới Bình, Ninh Kiều, Cần Thơ, Việt Nam 10.044857052033104, 105.7757677557342 Thứ Sáu,07:30–11:30,13:00–17:00 Thứ Năm,07:30–11:30,13:00–17:00 Thứ Tư,07:30–11:30,13:00–17:00 Thứ Ba,07:30–11:30,13:00–17:00 Thứ Hai,07:30–11:30,13:00–17:00 Chủ Nhật,Đóng cửa Thứ Bảy,07:30–11:30
+MSB An Thới 304 Đ. Cách Mạng Tháng 8, phường Bình Thuỷ, Bình Thủy, Cần Thơ 900000, Việt Nam 10.061456066060849, 105.76421716922664 Thứ Sáu,07:30–11:30,13:30–17:30 Thứ Năm,07:30–11:30,13:30–17:30 Thứ Tư,07:30–11:30,13:30–17:30 Thứ Ba,07:30–11:30,13:30–17:30 Thứ Hai,07:30–11:30,13:30–17:30 Chủ Nhật,Đóng cửa Thứ Bảy,07:30–11:30
+MB Tây Đô 43 Đ. Cách Mạng Tháng 8, An Thới, Bình Thủy, Cần Thơ, Việt Nam 10.061329300000004, 105.76419571155496 Thứ Sáu,07:30–11:30,13:00–17:00 Thứ Năm,07:30–11:30,13:00–17:00 Thứ Tư,07:30–11:30,13:00–17:00 Thứ Ba,07:30–11:30,13:00–17:00 Thứ Hai,07:30–11:30,13:00–17:00 Chủ Nhật,Đóng cửa Thứ Bảy,07:30–11:30
+Ngân Hàng VietBank 26-28 Đ. Hoà Bình, Tân An, Ninh Kiều, Cần Thơ, Việt Nam 10.034155500429915, 105.78444126922663 Thứ Sáu,07:30–17:00 Thứ Năm,07:30–17:00 Thứ Tư,07:30–17:00 Thứ Ba,07:30–17:00 Thứ Hai,07:30–17:00 Chủ Nhật,Đóng cửa Thứ Bảy,07:30–17:00
+Ngân hàng Shinhan 209 đường 30/04, Xuân Khánh, Ninh Kiều, Cần Thơ, Việt Nam 10.025092405454421, 105.77537241340589 Thứ Sáu,08:30–16:30 Thứ Năm,08:30–16:30 Thứ Tư,08:30–16:30 Thứ Ba,08:30–16:30 Thứ Hai,08:30–16:30 Chủ Nhật,Đóng cửa Thứ Bảy,Đóng cửa
+MB Smartbank An Hòa 150 Đ. Trần Việt Châu, An Hoà, Ninh Kiều, Cần Thơ, Việt Nam 10.049723034888443, 105.77389348457004 
+Vietcombank 110 Đ. Cách Mạng Tháng 8, Cái Khế, Ninh Kiều, Cần Thơ, Việt Nam 10.050325194864378, 105.77564228481315 Thứ Sáu,08:00–12:00,13:00–16:30 Thứ Năm,08:00–12:00,13:00–16:30 Thứ Tư,08:00–12:00,13:00–16:30 Thứ Ba,08:00–12:00,13:00–16:30 Thứ Hai,08:00–12:00,13:00–16:30 Chủ Nhật,Đóng cửa Thứ Bảy,Đóng cửa\
+TPBank Bắc Cần Thơ 1A Đ. 30 Tháng 4, phường, Ninh Kiều, Cần Thơ, Việt Nam 10.023914780771054, 105.77341448457004 Thứ Bảy,08:00–12:00 Thứ Sáu,08:00–17:00 Thứ Năm,08:00–17:00 Thứ Tư,08:00–17:00 Thứ Ba,08:00–17:00 Thứ Hai,08:00–17:00 Chủ Nhật,Đóng cửa
+CN TP Cần Thơ - Ngân hàng TMCP Đầu tư & Phát triển Việt Nam (BIDV) TP, 12 Đ. Hoà Bình, Tân An, Ninh Kiều, Cần Thơ 900000, Việt Nam 10.034665841279814, 105.78496439991342 Thứ Sáu,08:00–11:30,13:00–16:30 Thứ Năm,08:00–11:30,13:00–16:30 Thứ Tư,08:00–11:30,13:00–16:30 Thứ Ba,08:00–11:30,13:00–16:30 Thứ Hai,08:00–11:30,13:00–16:30 Chủ Nhật,Đóng cửa Thứ Bảy,Đóng cửa
+Vietcombank Cần Thơ - PGD 420-420A Đ. 30 Tháng 4, Hưng Lợi, Ninh Kiều, Cần Thơ, Việt Nam 10.020868177460802, 105.76930651340587 Thứ Sáu,08:00–16:00 Thứ Năm,08:00–16:00 Thứ Tư,08:00–16:00 Thứ Ba,08:00–16:00 Thứ Hai,08:00–16:00 Chủ Nhật,Đóng cửa Thứ Bảy,Đóng cửa
+Vietcombank CN Cần Thơ 3 5-7, Hòa Bình, Ninh Kiều, Cần Thơ, Việt Nam 10.033820671126264, 105.78478228457006 Thứ Sáu,07:30–11:30,13:00–16:30 Thứ Năm,07:30–11:30,13:00–16:30 Thứ Tư,07:30–11:30,13:00–16:30 Thứ Ba,07:30–11:30,13:00–16:30 Thứ Hai,07:30–11:30,13:00–16:30 Chủ Nhật,Đóng cửa Thứ Bảy,Đóng cửa
+ACB - CN Cần Thơ 41C Đ. 30 Tháng 4, Tân An, Ninh Kiều, Cần Thơ, Việt Nam 10.030353937680085, 105.78092961525682
+Ngân Hàng An Bình 468 Đ. 30 Tháng 4, Hưng Lợi, Ninh Kiều, Cần Thơ, Việt Nam 10.019031282680599, 105.76725971340588
+Ngân Hàng Tmcp Đại Tín 139 Đ. 30 Tháng 4, Xuân Khánh, Ninh Kiều, Cần Thơ, Việt Nam 10.02779556372517, 105.77748305758513
+Vietinbank Cần Thơ 59-59A Phan Đình Phùng, Tân An, Ninh Kiều, Cần Thơ, Việt Nam 10.032285477495785, 105.78681475573418
+Ngân hàng Quốc tế - VIB Ninh Kiều Số 84Bis/3 Đ. Mậu Thân, Thới Bình, Ninh Kiều, Cần Thơ, Việt Nam 10.042823231169384, 105.7661620999134 Thứ Sáu,08:00–12:00,13:00–17:00 Thứ Năm,08:00–12:00,13:00–17:00 Thứ Tư,08:00–12:00,13:00–17:00 Thứ Ba,08:00–12:00,13:00–17:00 Thứ Hai,08:00–12:00,13:00–17:00 Chủ Nhật,Đóng cửa Thứ Bảy,08:00–12:00
+NAM A BANK NINH KIEU 230 Đ. Nguyễn Văn Cừ, An Hoà, Ninh Kiều, Cần Thơ 94108, Việt Nam 10.051488039993774, 105.7725948403908
+Ngân Hàng Nam A 03A Quang Trung, KDC Hưng Phú 1, Cái Răng, Cần Thơ, Việt Nam 10.018317891473549, 105.78207572689833 Thứ Sáu,07:30–12:00,13:00–17:00 Thứ Năm,07:30–12:00,13:00–17:00 Thứ Tư,07:30–12:00,13:00–17:00 Thứ Ba,07:30–12:00,13:00–17:00 Thứ Hai,07:30–12:00,13:00–17:00 Chủ Nhật,Đóng cửa Thứ Bảy,07:30–12:00
+MB Ninh Kiều 122 Đ. 3 Tháng 2, Phường, Tân An, Cần Thơ, Việt Nam 10.018357696441127, 105.76157974747022 Thứ Sáu,07:30–11:30,13:00–17:00 Thứ Tư,07:30–11:30,13:00–17:00 Thứ Ba,07:30–11:30,13:00–17:00 Thứ Hai,07:30–11:30,13:00–17:00 Chủ Nhật,Đóng cửa Thứ Bảy,Đóng cửa
+Ngân Hàng Sài Gòn Hà Nội (Shb) - Pgd Phan Đình Phùng 42 Phan Đình Phùng, Tân An, Ninh Kiều, Cần Thơ, Việt Nam 10.031755985085994, 105.78661827284193 
+KienlongBank Cần Thơ 38 - 40 Đ. Hoà Bình, phường, Ninh Kiều, Cần Thơ 901593, Việt Nam 10.03384781002132, 105.78363565647635
+Ngân hàng TMCP Xây dựng Việt Nam PGD Ninh Kiều 118/9/43A-118/9/43K Trần Văn Khéo, Tân An, Ninh Kiều, Cần Thơ, Việt Nam 10.044137872853574, 105.78332271517023 
+PGBANK Ninh Kiều -PGBANK Nguyễn Văn Cừ 243k Đ. Nguyễn Văn Cừ, An Hoà, Ninh Kiều, Cần Thơ, Việt Nam 10.047715000130744, 105.76881025749854 Thứ Sáu,07:30–17:00 Thứ Năm,07:30–17:00 Thứ Tư,07:30–17:00 Thứ Ba,07:30–17:00 Thứ Hai,07:30–17:00 Chủ Nhật,07:30–12:00 Thứ Bảy,07:30–12:00
+Ngân Hàng TMCP Phương Đông (OCB) - PGD Trần Hưng Đạo 67-69 Đ. Trần Hưng Đạo, Thới Bình, Ninh Kiều, Cần Thơ 900000, Việt Nam 10.038998412252473, 105.77656996914007 
+Ngân hàng Thương mại TNHH MTV Ngoại thương Công nghệ số - VCBNeo - CN Cần Thơ - PGD Hai Bà Trưng 116 Đ. Hai Bà Trưng, Tân An, Ninh Kiều, Cần Thơ 90000, Việt Nam 10.032418318290352, 105.7876925654382
+Ngân hàng Bản Việt - BVBank Ninh Kiều 85 Đ. Nguyễn Văn Cừ, An Hoà, Ninh Kiều, Cần Thơ, Việt Nam 10.05003067054356, 105.7720059998268
+Ngân hàng Nhà nước Chi nhánh khu vực 14 2 Đ. Ngô Gia Tự, Tân An, Ninh Kiều, Cần Thơ, Việt Nam 10.035627881801723, 105.78880965379665
+Ngân Hàng Thương Mại Cổ Phần Đại Chúng Việt Nam 14C Đ. 30 Tháng 4, Xuân Khánh, Ninh Kiều, Cần Thơ, Việt Nam 10.026037860024648, 105.77498096543819
+Pvcombank Ninh Kiều 49 Đ. Nguyễn Văn Cừ, An Hoà, Ninh Kiều, Cần Thơ, Việt Nam 10.05128769539458, 105.7726905077665
+Ngân Hàng TMCP Phương Đông  90C Đ. 3 Tháng 2, Hưng Lợi, Ninh Kiều, Cần Thơ, Việt Nam 10.023255331924311, 105.76657388818532
+Ngân Hàng Đầu Tư & Phát Triển Việt Nam (Bidv) - Pgd Ninh Kiều 29 Đường Nguyễn An Ninh, Tân An, Ninh Kiều, Cần Thơ, Việt Nam 10.031513044588376, 105.78644044215515
+Vietinbank Cn Tây Cần Thơ 326 Đ. 30 Tháng 4, Xuân Khánh, Ninh Kiều, Cần Thơ, Việt Nam 10.023389484589595, 105.77187419982683
+Ngân hàng Thương mại TNHH MTV Ngoại thương Công nghệ số - VCBNeo - CN Cần Thơ - PGD Tây Đô 139 Đ. 30 Tháng 4, Xuân Khánh, Ninh Kiều, Cần Thơ, Việt Nam 10.028249384670199, 105.77820421308589
+BIDV Tây Đô 5 Phan Đình Phùng, Tân An, Ninh Kiều, Cần Thơ, Việt Nam 10.035329582054791, 105.78715635379668
+Ngân Hàng Chính Sách Xã Hội Quận Bình Thủy 133 Đường Nguyễn Truyền Thanh, Bình Thuỷ, Bình Thủy, Cần Thơ, Việt Nam 10.068887461757532, 105.74756461517023
+Ngân Hàng TMCP Sài Sòn - Hà Nội Phòng Giao Dịch Thốt Nốt 2, Đường Nguyễn Thái Học, Tân An, Ninh Kiều, Cần Thơ, Việt Nam 10.032830879851607, 105.78561339982683
+Vikki Bank - Chi nhánh Cần Thơ 20 Đường Nguyễn An Ninh, Tân An, Ninh Kiều, Cần Thơ, Việt Nam 10.031589007401287, 105.78735131675244
+Techcombank An Hòa 243H Đ. Nguyễn Văn Cừ, An Hoà, Ninh Kiều, Cần Thơ 900000, Việt Nam 10.047786957239122, 105.76886647284194
+HDBank Cần Thơ 2QV8+882, Đ. Mậu Thân, Thới Bình, Ninh Kiều, Cần Thơ 90000, Việt Nam 10.043624602872997, 105.76579802578959
+MB - Ngân Hàng Quân Đội 42 Đường Nguyễn An Ninh, Tân An, Ninh Kiều, Cần Thơ, Việt Nam 10.032726054696267, 105.7843560770797
+Ngân Hàng TMCP Sài Sòn - Hà Nội Phòng Giao Dịch Thốt Nốt 2, Đường Nguyễn Thái Học, Tân An, Ninh Kiều, Cần Thơ, Việt Nam 10.032768313793019, 105.78570791039648
+VietAbank PGD An Nghiệp 120 Đ.3/2, Xuân Khánh, Ninh Kiều, Cần Thơ, Việt Nam 10.029107497926846, 105.77156109612497 
+Vietcombank Cần Thơ - PGD Hưng Lợi 420-420A Đ. 30 Tháng 4, Hưng Lợi, Ninh Kiều, Cần Thơ, Việt Nam 10.021047785156085, 105.7694245305136
+Ngân Hàng Thương Mại Cổ Phần Đại Chúng Việt Nam 14C Đ. 30 Tháng 4, Xuân Khánh, Ninh Kiều, Cần Thơ, Việt Nam 10.026119020188798, 105.7751537288561
+PGD Nguyễn An Ninh - CN Tây Nam - Ngân hàng TMCP Đầu tư & Phát triển Việt Nam (BIDV) 62 Phan Đình Phùng, Tân An, Ninh Kiều, Cần Thơ 900000, Việt Nam 10.030976874798235, 105.78662770352868
+Ngân hàng Quốc Tế - VIB Hưng Lợi 172B Đ.3/2, Phường, Tân An, Cần Thơ, Việt Nam 10.024444482801576, 105.76716399982683
+Kho Bạc Nhà Nước Cần Thơ 369f Đ. Nguyễn Văn Cừ, An Khánh, Ninh Kiều, Cần Thơ, Việt Nam 10.035811257869108, 105.75673183051362
+Ngân Hàng VDP Cần Thơ 47 Đ. Phan Chu Trinh, Tân An, Ninh Kiều, Cần Thơ, Việt Nam 10.032118788301396, 105.78678516914006
+Ngân Hàng TMCP Việt Nam Thịnh Vượng 353 Đ. Nguyễn Văn Cừ, An Hoà, Ninh Kiều, Cần Thơ, Việt Nam 10.04558420207965, 105.76705361146834
+Ngân Hàng Tmcp Ngoại Thương Việt Nam (Vietcombank) - Pgd Ninh Kiều 103 Đường A1, Tân An, Ninh Kiều, Cần Thơ, Việt Nam 10.044276445648238, 105.78317702681174
+Ngân Hàng NCB 257 Đ. 30 Tháng 4, Xuân Khánh, Ninh Kiều, Cần Thơ 90000, Việt Nam 10.023565442871794, 105.77269126914007
+Ngân Hành TMCP Vietcombank chi nhánh An Hoà 2QW7+29G, An Hoà, Ninh Kiều, Cần Thơ, Việt Nam 10.045290716107854, 105.7632154654382\
+Ngân hàng Thương mại TNHH MTV Ngoại thương Công nghệ số - VCBNeo - CN Cần Thơ - PGD Ninh Kiều 118/15 Trần Văn Khéo, P, Ninh Kiều, Cần Thơ 70000, Việt Nam 10.046295588329697, 105.78555030776651
+Sea Bank 61D Võ Văn Tần, Street, Ninh Kiều, Cần Thơ, Việt Nam 10.032463843657961, 105.78527862681176
+Woori Bank Vietnam Can Tho KHU SHOPHOUSE VINCOM, 209 Đ. 30 Tháng 4, Xuân Khánh, Ninh Kiều, Cần Thơ 94000, Việt Nam 10.025439530358083, 105.77534646914006
+ACB - PGD Ninh Kiều17 – 19 Đ. Nam Kỳ Khởi Nghĩa, Tân An, Ninh Kiều, Cần Thơ 900000, Việt Nam 10.031965684908146, 105.78604626914006
+Viet Capital Bank 234 Đ. Trần Hưng Đạo, Thới Bình, Ninh Kiều, Cần Thơ, Việt Nam 10.033950271694463, 105.77506791517025
+LPBank PGD Bưu điện Cần Thơ 02 Đ. Hoà Bình, Tân An, Ninh Kiều, Cần Thơ, Việt Nam 10.036038910805198, 105.78636129982682
+CN Đồng Bằng Sông Cửu Long - Ngân hàng TMCP Đầu tư & Phát triển Việt Nam (BIDV) 53-53A Võ Văn Tần, Tân An, Ninh Kiều, Cần Thơ 900000, Việt Nam 10.032362385890453, 105.78550299295905
+Vietbank - PGD Ninh Kiều 84 đường 3 Tháng 2, Phường Xuân Khánh, Quận Ninh Kiều, Cần Thơ, 270000, Việt Nam 10.03085762048317, 105.77283701887208
+Ngân Hàng Phát Triển Nhà Đồng Bằng Sông Cửu Long (Mhb) - Pgd Nam Cần Thơ 40 Quang Trung, Phú Thứ, Cái Răng, Cần Thơ, Việt Nam 10.027460637549558, 105.78051983845327
+ACB - PGD An Thới 322B Đ. Cách Mạng Tháng 8, Bùi Hữu Nghĩa, Bình Thủy, Cần Thơ 900000, Việt Nam 10.06229475263217, 105.76385135749851
+ACB - PGD Xuân Khánh 8A Đ. 30 Tháng 4, Xuân Khánh, Ninh Kiều, Cần Thơ 900000, Việt Nam 10.02276298336754, 105.77169053845329
+LPBank Cần Thơ 62 Đ. Lý Tự Trọng, Thới Bình, Ninh Kiều, Cần Thơ, Việt Nam 10.035651734401988, 105.77891193845329
+Ngân hàng Quốc tế - VIB Ninh Kiều Số 84Bis/3 Đ. Mậu Thân, Thới Bình, Ninh Kiều, Cần Thơ, Việt Nam 10.043203550977568, 105.76622647284191 Thứ Sáu,08:00–12:00,13:00–17:00 Thứ Năm,08:00–12:00,13:00–17:00 Thứ Tư,08:00–12:00,13:00–17:00 Thứ Ba,08:00–12:00,13:00–17:00 Thứ Hai,08:00–12:00,13:00–17:00 Chủ Nhật,Đóng cửa Thứ Bảy,08:00–12:00
+Ngân Hàng Tmcp Phát Triển Nhà Đồng Bằng Sông Cửu Long (Mhb) - Phòng Giao Dịch 28 Đ. Mậu Thân, Thới Bình, Ninh Kiều, Cần Thơ, Việt Nam 10.034958647223297, 105.7732432924231
+Sacombank-PGD Ninh Kiều 168C Đ. 3 Tháng 2, Hưng Lợi, Ninh Kiều, Cần Thơ, Việt Nam 10.024996401352805, 105.76767076914007
+Ngân Hàng Shb 44 Đ. Trần Hưng Đạo, Thới Bình, Ninh Kiều, Cần Thơ, Việt Nam 10.045247933816473, 105.77592868818533
+OceanBank Cần Thơ Số 430 Đ. 30 Tháng 4, Hưng Lợi, Ninh Kiều, Cần Thơ, Việt Nam 10.020762924752201, 105.76917694585703
+Ab Bank 125 Đ. Trần Hưng Đạo, Thới Bình, Ninh Kiều, Cần Thơ, Việt Nam 10.035170188081157, 105.77538508448345
+Bv Bank 234 Đ. Trần Hưng Đạo, Thới Bình, Ninh Kiều, Cần Thơ, Việt Nam 10.033927442225576, 105.77500674215514
+Vietin Bank 2QMF+JC7, Đ. Mậu Thân, Xuân Khánh, Ninh Kiều, Cần Thơ 920000, Việt Nam 10.034376371249609, 105.77334108078159
+Sai Gon Thuong Tin Stock Exchange Bank Joint Stock Company 212A Đ. 3 Tháng 2, Street, Ninh Kiều, Cần Thơ, Việt Nam 10.023099373621617, 105.76545489982684
+Ngân hàng TMCP Phương Đông (OCB) - PGD Nguyễn Văn Cừ (CN Cần Thơ) Tp, Số 69 – AA và 71 – AA, Nguyễn Văn Cừ, P.An Bình, KDC Cái Sơn, Ninh Kiều, Cần Thơ 90000, Việt Nam 10.026666349055212, 105.74767056914007
+PVcomBank Tây Đô 14c Đ. 30 Tháng 4, Xuân Khánh, Ninh Kiều, Cần Thơ, Việt Nam 10.026145779917819, 105.77519564215514
+SeABank PGD Xuân Khánh 301 Đ. 30 Tháng 4, Phường, Ninh Kiều, Cần Thơ 94000, Việt Nam 10.022815825100857, 105.77169708448345
+Quỹ Tiết Kiệm Ngân Hàng TMCP Phát Triển Mê Kông - Tây Đô 172 Đường 3/2, Hưng Lợi, Ninh Kiều, Cần Thơ, Việt Nam 10.019514417188624, 105.76226468448345
+Dong A Bank 58D Hùng Vương, Tân An, Ninh Kiều, Cần Thơ 90000, Việt Nam 10.044020976524486, 105.77843837284193
+Vikki Bank - Phòng giao dịch Ninh Kiều 58 Đường Hùng Vương, Tân An, Ninh Kiều, Cần Thơ 90000, Việt Nam 10.044190006979717, 105.77837399982684
+Vietcombank - PGD Hưng Phú 44 Đ. Lý Thái Tổ, Hưng Phú, Cái Răng, Cần Thơ, Việt Nam 10.021431084756435, 105.78823428818531
+BAOVIET Bank Xuân Khánh 39 Đ. Trần Văn Hoài, Xuân Khánh, Ninh Kiều, Cần Thơ, Việt Nam 10.025549490347892, 105.77266496914005
+Ngân hàng Thương mại TNHH MTV Ngoại thương Công nghệ số - VCBNeo - Chi nhánh Cần Thơ 228L-228N, Đ. Trần Hưng Đạo, P.Thới Bình, Ninh Kiều, Cần Thơ 70000, Việt Nam 10.034343253430068, 105.77522763051361
+PVcomBank An Phú 44 Nguyễn Thái Học, phường, Ninh Kiều, Cần Thơ 94000, Việt Nam 10.03291155455104, 105.78618201517023
+BAOVIET Bank 90-92 Trần Văn Khéo, Cái Khế, Ninh Kiều, Cần Thơ, Việt Nam 10.045792445486631, 105.78548442310988
+Ngân Hàng TMCP XNK Việt Nam - Phòng Giao Dịch Hưng Lợi 225 Đ. 3 Tháng 2, Hưng Lợi, Ninh Kiều, Cần Thơ 900000, Việt Nam 10.02038318584901, 105.76204068818531
+Ngân Hàng TMCP Phương Đông (OCB) - PGD An Hòa 153-155 Đ. Cách Mạng Tháng 8, Tân An, Ninh Kiều, Cần Thơ 900000, Việt Nam 10.051869496329664, 105.77364348448346
+Ngân Hàng Bưu Điện Liên Việt Hưng Lợi 2Q99+H29, Hẻm 553, Hưng Lợi, Ninh Kiều, Cần Thơ, Việt Nam 10.019047913124615, 105.76762145749852
+BAOVIET Bank 381 Đ. Nguyễn Văn Cừ, An Hoà, Ninh Kiều, Cần Thơ, Việt Nam 10.04486431936477, 105.76617912681176
+Vietcombank Cần Thơ - PGD Nam Cần Thơ 2Q5P+283, Hưng Phú, Cái Răng, Cần Thơ, Việt Nam 10.007655218317678, 105.78570496914006
+Msb 89 Đ. Trần Hưng Đạo, Thới Bình, Ninh Kiều, Cần Thơ, Việt Nam 10.0375906216387, 105.7765641612004
+Eximbank 2QGG+GG7, Đ. 30 Tháng 4, Xuân Khánh, Ninh Kiều, Cần Thơ, Việt Nam 10.02680764882488, 105.77619586914007
+Ngân Hàng Bidv Hưng Lợi 2Q75+G9C, Hẻm 132 Đ. 3 Tháng 2, Hưng Lợi, Ninh Kiều, Cần Thơ, Việt Nam 10.01416002311795, 105.75855346120039
+Ngân Hàng Quốc tế - VIB Hưng Phú Số 01 – 02 Khu A2, Trung tâm Thương mại Phức hợp Cần Thơ Center, Khu vực 11, Cái Răng, Cần Thơ, Việt Nam 10.015292091155661, 105.78320987284192
+BacaBank 357 Đ. 30 Tháng 4, Hưng Lợi, Ninh Kiều, Cần Thơ, Việt Nam 10.02057183749098, 105.76914978078159
+Ngân Hàng Tmcp Bắc Á (Nasbank) - Cn Đồng Bằng Sông Cửu Long 357 Đ. 30 Tháng 4, Hưng Lợi, Ninh Kiều, Cần Thơ, Việt Nam 10.020297142925301, 105.76934289982684
+Ngân Hàng Chính Sách Xã Hội XMX8+JGC, Phan Văn Trị, Thị trấn Phong Điền, Phong Điền, Cần Thơ, Việt Nam 9.999222624232624, 105.66618851117975
+Agribank Phong Điền 247 Phan Văn Trị, Thị trấn Phong Điền, Phong Điền, Cần Thơ, Việt Nam 9.998634225582794, 105.66490242377331
+Vietcombank XMX8+9H9, Thị trấn Phong Điền, Phong Điền, Cần Thơ, Việt Nam 9.998472948589292, 105.66648435983006 
+Ngân Hàng VietinBank ĐT923/Ấp Thị Tứ/150 Phan Văn Trị, Thị trấn Phong Điền, Phong Điền, Cần Thơ, Việt Nam 9.9985223117857, 105.66566446668864
+LPBank Phong Điền Khu dân cư thương mại, Phong Điền, Cần Thơ, Việt Nam 9.99649488857803, 105.66706795189336
+Sacombank-PGD Cờ Đỏ 79 Hà Huy Giáp, TT. Cờ Đỏ, Cờ Đỏ, Cần Thơ, Việt Nam 10.099195924536744, 105.42942548349399
+Agribank 032 ấp thạnh hòa, Thạnh Phú, Cờ Đỏ, Cần Thơ, Việt Nam 10.142457418362657, 105.42976880624113 
+Vikki Bank - Phòng giao dịch Cờ Đỏ Ấp Thới Thuận, Cờ Đỏ, Cần Thơ, Việt Nam 10.095245488188729, 105.43085882457163
+PVcomBank Cờ Đỏ Đường Hà Huy Giáp, Ấp Thới Hòa, Cờ Đỏ, Cần Thơ, Việt Nam 10.095245488188729, 105.42759725847402
+Ngân hàng Bản Việt - Cờ Đỏ Ấp Thới Thuận Thị trấn Cờ Đỏ Huyện Cờ Đỏ Can Tho City, Việt Nam 10.09334668208623, 105.43102962293985
+Ngân hàng Vietinbank PGD Cờ Đỏ 3CVJ+674, Hà Huy Giáp, TT. Cờ Đỏ, Cờ Đỏ, Cần Thơ, Việt Nam 10.093085266229558, 105.43065788774334
+Ngân Hàng Tmcp Đại Chúng 3H97+5M6, ĐT922, TT. Thới Lai, Thới Lai, Cần Thơ, Việt Nam 10.068004393503193, 105.56411962951904
+PVcomBank Thới Lai 371C ấp Thới Thuận B, TT. Thới Lai, Thới Lai, Cần Thơ 94706, Việt Nam 10.06786706638746, 105.56377630677193
+MB Smartbank Thới Lai KDC, Thới Lai, Cần Thơ, Việt Nam 10.065151209694362, 105.5597077094272
+VietinBank Thới Lai 3H85+5QH, ĐT922, TT. Thới Lai, Thới Lai, Cần Thơ, Việt Nam 10.065515520409543, 105.55952270671227
+Ngân Hàng Chính Sách Xã Hội Huyện Thới Lai (Vbsp) - Đgd Thị Trấn Thới Lai 3H65+F6M, ĐT922, TT. Thới Lai, Thới Lai, Cần Thơ, Việt Nam 10.061576072584286, 105.55807902596507
+LPBank PGD Bưu điện Thạnh An Ấp Quy Lân 5, Vĩnh Thạnh, Cần Thơ, Việt Nam 10.217431570251287, 105.3728005035425
+Ngân Hàng Chính Sách Xã Hội Huyện Vĩnh Thạnh (Vbsp) - Đgd Xã Thạnh Quới 696H+J5Q, QL80, Thạnh Quới, Vĩnh Thạnh, Cần Thơ, Việt Nam 10.213595919144737, 105.37871883032265
+Ngân Hàng Nông Nghiệp & Phát Triển Nông Thôn Việt Nam (Agribank) - Pgd Thạnh Mỹ 69HX+67H, QL80, Thị trấn Vĩnh Thạnh, Vĩnh Thạnh, Cần Thơ, Việt Nam 10.23192138994963, 105.39733990726512
+Ngân Hàng Chính Sách Xã Hội Huyện Vĩnh Thạnh (Vbsp) - Đgd Xã Thạnh Mỹ 6CX7+434, QL80, Thạnh Mỹ, Vĩnh Thạnh, Cần Thơ, Việt Nam 10.25124012123164, 105.41321834503078
+Ngân Hàng Chính Sách Xã Hội Huyện Thốt Nốt (Vbsp) - Đgd Xã Thới Thuận 8F6H+HFJ, QL80, Thới Thuận, Vĩnh Thạnh, Cần Thơ, Việt Nam 10.313262141445772, 105.47876116019175
+Ngân Hàng Tmcp Sài Gòn - Hà Nội (Shb) - Pgd Thạnh An 2881 QL80, Thị trấn Thanh An, Vĩnh Thạnh, Cần Thơ, Việt Nam 10.158320653607552, 105.32427390258394
+Ngân Hàng Nông Nghiệp Và Phát Triển Nông Thôn Việt Nam 2983 QL80, Thị trấn Thanh An, Vĩnh Thạnh, Cần Thơ, Việt Nam 10.15523025434253, 105.32160343806117
+Ngân Hàng Đông Á Quận Ô Môn 4J5C+86V, QL91, Châu Văn Liêm, Ô Môn, Cần Thơ, Việt Nam 10.108616651067322, 105.62045507124519
+Vietinbank Tây Đô PGD Ô Môn 1177/6 Khu vực 4, Châu Văn Liêm, Ô Môn, Cần Thơ, Việt Nam 10.109461633151609, 105.62180690456195
+Eximbank Can Tho - O Mon Transaction Office 100 QL91, Châu Văn Liêm, Ô Môn, Cần Thơ, Việt Nam 10.109556693514994, 105.62226824454537
+Ngân Hàng BIDV - Khu Vực 11 4J5F+PV9, Khu Vực 11, Ô Môn, Cần Thơ, Việt Nam 10.109461633169548, 105.62476806329781
+ACB - PGD Tây Đô 90 Đường 26 Tháng 3, Châu Văn Liêm, Ô Môn, Cần Thơ, Việt Nam 10.11122552611016, 105.62057308848148
+Ngân Hàng Tmcp Ngoại Thương Việt Nam - Vietcombank 957 Đường 26 Tháng 3, Châu Văn Liêm, Ô Môn, Cần Thơ, Việt Nam 10.112598609738692, 105.62120608980266
+Ngân Hàng Việt Á - Chi Nhánh Ô Môn 220 Đường 26 Tháng 3, Châu Văn Liêm, Ô Môn, Cần Thơ, Việt Nam 10.113792616901735, 105.621798042584
+Ngân Hàng Bưu Điện Liên Việt 6 Đường 26 Tháng 3, Khu Vực, Ô Môn, Cần Thơ 904023, Việt Nam 10.114325515379521, 105.62184766270182
+Eximbank Cần Thơ 8 Phan Đình Phùng, Tân An, Ninh Kiều, Cần Thơ, Việt Nam 10.035805217311477, 105.78710471689203
+
+
+# ATM ở Cần Thơ
+ATM Vietinbank 344 Đ. Cách Mạng Tháng 8, Bùi Hữu Nghĩa, Bình Thủy, Cần Thơ, Việt Nam 10.062619, 105.762641
+ATM CRM MB Bank 49 Đ. Cách Mạng Tháng 8, An Thới, Bình Thủy, Cần Thơ 900000, Việt Nam 10.060975, 105.764182
+MB ATM (Nộp/rút tiền) 43 Đ. Cách Mạng Tháng 8, An Thới, Bình Thủy, Cần Thơ, Việt Nam 10.061011079500483, 105.76423516871374
+Vikki Bank - ATM Trường Cao Đẳng Y Tế Cần Thơ 340 Đ. Nguyễn Văn Cừ, Phường Cái khế, Ninh Kiều, Cần Thơ, Việt Nam 10.044043124681044, 105.76534198220354
+ATM Sacombank (CDM) 11-13 Đ. Nguyễn Văn Cừ, An Hoà, Ninh Kiều, Cần Thơ, Việt Nam 10.051396825727549, 105.77310520612892
+MB ATM (Rút tiền) 91b Đ. Cách Mạng Tháng 8, An Thới, Bình Thủy, Cần Thơ, Việt Nam 10.066595465961216, 105.75840807054682
+Kienlongbank - Atm 23 Đ. Cách Mạng Tháng 8, P, Bình Thủy, Cần Thơ 900000, Việt Nam 10.060387788075841, 105.76492426196485
+TPBank LiveBank 97 Trần Văn Khéo, Cái Khế, Ninh Kiều, Cần Thơ, Việt Nam 10.045089705464413, 105.78465474109905
+ATM Techcombank 96 Đ. Mậu Thân, An Hoà, Ninh Kiều, Cần Thơ, Việt Nam 10.043175324711157, 105.7658340588901
+MB ATM (Rút tiền) Nhà khách T82, 09 Đ. Cách Mạng Tháng 8, An Thới, Bình Thủy, Cần Thơ, Việt Nam 10.056621765243017, 105.76796788833786
+ATM Sacombank 38D Đ. Nguyễn Văn Cừ, Cái Khế, Ninh Kiều, Cần Thơ, Việt Nam 10.057640506189697, 105.77941667668111
+ATM MSB số 09 Cần Thơ 112 Đ. Trần Phú, Cái Khế, Ninh Kiều, Cần Thơ 90000, Việt Nam 10.047164965289154, 105.7825390435467
+ATM Techcombank 42 Đ. 30 Tháng 4, Tân An, Ninh Kiều, Cần Thơ, Việt Nam 10.030746264839633, 105.78093694109906
+ATM Techcombank 243H Đ. Nguyễn Văn Cừ, P, Ninh Kiều, Cần Thơ 94108, Việt Nam 10.047570286167653, 105.76887892944234
+ATM/CRM bảo việt bank 206 Võ Văn Kiệt, An Hoà, Bình Thủy, Cần Thơ, Việt Nam 10.048515045058313, 105.75836934109905
+ATM Vietcombank Kho bạc Nhà nước TP, 369F Đ. Nguyễn Văn Cừ, An Khánh, Ninh Kiều, Cần Thơ 902490, Việt Nam 10.035395864687958, 105.75663949999458
+Vikki Bank - ATM NHNN Thành Phố Cần Thơ 02 Đ. Ngô Gia Tự, Phường, Ninh Kiều, Cần Thơ, Việt Nam 10.035263924985523, 105.78890377668111
+TPBank LiveBank Cần Thơ 135 Đ. Trần Hưng Đạo, Thới Bình, Ninh Kiều, Cần Thơ, Việt Nam 10.035795380876525, 105.77580685275579
+STM - KienlongBank Bình Thủy 77 Đ. Cách Mạng Tháng 8, Bùi Hữu Nghĩa, Bình Thủy, Cần Thơ 902889, Việt Nam 10.063909440939044, 105.76136748281544
+Vikki Bank - ATM Trường Cao Đẳng Sư Phạm Cần Thơ 413 Đ. 30 Tháng 4, Phường, Ninh Kiều, Cần Thơ 92000, Việt Nam 10.015417544671791, 105.76430437115872
+ATM LPBank Cần Thơ 62 Hẻm 86 Đ. Lý Tự Trọng, P, Ninh Kiều, Cần Thơ, Việt Nam 10.035174188216791, 105.77905132330802 
+ATM Ngân hàng Quốc tế - VIB Ninh Kiều 84 Đ. Mậu Thân, An Hoà, Ninh Kiều, Cần Thơ, Việt Nam 10.042970223330496, 105.7664473177856
+MB ATM (Rút tiền) 404 Đương Lê Hồng Phong, Bình Thuỷ, Bình Thủy, Cần Thơ, Việt Nam 10.071666844159015, 105.75359979999457
+ATM PVCombank 44 Nguyễn Thái Học, phường, Ninh Kiều, Cần Thơ 94000, Việt Nam 10.032687053135708, 105.78613708833785
+ATM TP Bank 126 Đ. Trần Hưng Đạo, Thới Bình, Ninh Kiều, Cần Thơ, Việt Nam 10.03581158671953, 105.77580058220353
+ATM Vietcombank 2 Đ. Hai Bà Trưng, Tân An, Ninh Kiều, Cần Thơ 94000, Việt Nam 10.035979248462658, 105.7894459711587
+VCB ATM 3-5-7 Hòa Bình, Ninh Kiều, Cần Thơ, Việt Nam 10.033656023558498, 105.78485955275579
+MSB An Thới 304 Đ. Cách Mạng Tháng 8, phường Bình Thuỷ, Bình Thủy, Cần Thơ 900000, Việt Nam 10.06134514576034, 105.76430568220354
+Baoviet Bank - Atm 90 Trần Văn Khéo, Cái Khế, Ninh Kiều, Cần Thơ, Việt Nam 10.045431021907609, 105.78575647054681
+ATM LPBank Cần Thơ Số 2 Đ. Hoà Bình, Thành phố, Ninh Kiều, Cần Thơ, Việt Nam 10.03581870438199, 105.78662798220353
+ATM PVCombank 2QGF+8XP, Xuân Khánh, Ninh Kiều, Cần Thơ, Việt Nam 10.02578307656023, 105.77507795829338
+Sense City ATM Vietcombank 36 Phan Đình Phùng, Tân An, Ninh Kiều, Cần Thơ, Việt Nam 10.034631457380485, 105.78595954048716
+Ncb Bank - Atm 257 Đ. 30 Tháng 4, Xuân Khánh, Ninh Kiều, Cần Thơ 90000, Việt Nam 10.023185487311432, 105.77276887054683
+ATM Sacombank (CDM) 95-97-99 Võ Văn Tần, Tân An, Ninh Kiều, Cần Thơ, Việt Nam 10.03256876627407, 105.78410872330802
+ATM Vietcombank 612 Đ. 30 Tháng 4, Hưng Lợi, Ninh Kiều, Cần Thơ, Việt Nam 10.015667923998262, 105.76412791778563 
+ATM PVcomBank Cần Thơ Co.opmart Cần Thơ Số 1A Hòa Bình, Ninh Kiều, Cần Thơ, Việt Nam 10.034400585310513, 105.78572705275577
+ATM Maritime Bank - Khu Vực Cần Thơ 188A Đ. 3 Tháng 2, Hưng Lợi, Ninh Kiều, Cần Thơ, Việt Nam 10.020653399999992, 105.76361711656178
+ATM Maritime Bank 2 Đ. Hoà Bình, Tân An, Ninh Kiều, Cần Thơ, Việt Nam 10.035755017662035, 105.7863748699349
+ATM OCB CN Cần Thơ 16B Đ. Hoà Bình, Tân An, Tầng 1, Cần Thơ, Việt Nam 10.034330786789011, 105.78479507115874
+STM - XDigi KienlongBank Cần Thơ 38 - 40 Đ. Hoà Bình, Tân An, Ninh Kiều, Cần Thơ 901593, Việt Nam 10.033465923563156, 105.78386776441249
+ATM Viettinbank 2QH3+MRC, An Khánh, Ninh Kiều, Cần Thơ, Việt Nam 10.029214454975442, 105.75451795214387
+TPBank LiveBank Bắc Cần Thơ 1A Đ. 30 Tháng 4, phường, Ninh Kiều, Cần Thơ, Việt Nam 10.011584605122504, 105.76083502944236
+ATM - Vietcombank 315 Đ. Nguyễn Văn Linh, An Khánh, Ninh Kiều, Cần Thơ, Việt Nam 10.028774203758164, 105.75443756686015
+ATM Techcombank (CDM) 45A-47 Hẻm 42 Đ. 30/4, P, Ninh Kiều, Cần Thơ, Việt Nam 10.029651525180054, 105.78042728833788
+MB ATM (Nộp/rút tiền) 77 - 77B Võ Văn Tần, P, Ninh Kiều, Cần Thơ, Việt Nam 10.032482588370472, 105.78466473557665 
+ATM Techcombank 190 Đ. 30 Tháng 4, P, Ninh Kiều, Cần Thơ, Việt Nam 10.017422647910982, 105.76555219386027
+ATM Vietcombank WinMart, 143, Ba Muoi Thang Tu Street, Ward Xuan Khanh, Tân An, Ninh Kiều, Cần Thơ, Việt Nam 10.016536147954282, 105.76496008220353
+ATM LPBank Trà Nóc 392 Cách Mạng Tháng Tám, P, Bình Thủy, Cần Thơ, Việt Nam 10.079994665248085, 105.75565975275579
+Seabank - Atm 301 Đ. 30 Tháng 4, Phường, Ninh Kiều, Cần Thơ 94000, Việt Nam 10.0223219063929, 105.77173463557665
+ATM SCB - Ninh Kiều Đường Phan Đình Phùng, Tân An, Ninh Kiều, Cần Thơ 900000, Việt Nam 10.032066904885848, 105.78730924662148
+Vietcombank - Atm 2QMP+4M3, Nguyễn Thái Học, Tân An, Ninh Kiều, Cần Thơ, Việt Nam 10.032704593739554, 105.786665759502
+Bidv - Atm 12 Đ. Hoà Bình, Tân An, Ninh Kiều, Cần Thơ 900000, Việt Nam 10.034508747075451, 105.78499137115874
+ATM Vietinbank 2QF6+F7X, QL91B, Hưng Lợi, Ninh Kiều, Cần Thơ, Việt Nam 10.023759565067412, 105.7607466999946
+ATM Vietinbank 168 Đ. 3 Tháng 2, Xuân Khánh, Ninh Kiều, Cần Thơ, Việt Nam 10.02783478555142, 105.76992308833786
+ATM Vietcombank 2P8Q+WCF, An Bình, Ninh Kiều, Cần Thơ, Việt Nam 10.017342249563928, 105.73855744723339
+Vikki Bank - ATM UBMTTQ TP Cần Thơ Số 290 Đường 30/4, Phường, Ninh Kiều, Cần Thơ, Việt Nam 10.024984801369186, 105.77406903435282
+Donga Bank - ATM 2 Đ. Hai Bà Trưng, Tân An, Ninh Kiều, Cần Thơ 900000, Việt Nam 10.035494285270355, 105.78930353557665
+ATM Sacombank 95-97-99 Võ Văn Tần, Tân An, Ninh Kiều, Cần Thơ 900000, Việt Nam 10.03254961760974, 105.78410134723339
+ATM Vietinbank 2P8Q+V9F, An Bình, Ninh Kiều, Cần Thơ, Việt Nam 10.017192365281403, 105.73844009386026
+ATM Techcombank 42 Hẻm 42 Đ. 30/4, P, Ninh Kiều, Cần Thơ 900000, Việt Nam 10.030564045754165, 105.7809869588901
+ATM Eximbank 8 Phan Đình Phùng, Tân An, Ninh Kiều, Cần Thơ, Việt Nam 10.034663167656937, 105.78693258894977
+Ngân hàng Quốc tế - VIB Cái Khế 19 - 21 Trần Văn Khéo, Street, Ninh Kiều, Cần Thơ, Việt Nam 10.044857346568753, 105.78456878220352
+Mhb - Atm 28 Đ. Mậu Thân, Thới Bình, Ninh Kiều, Cần Thơ, Việt Nam 10.03450634560143, 105.77354101778562 
+Techcombank An Hòa 243H Đ. Nguyễn Văn Cừ, An Hoà, Ninh Kiều, Cần Thơ 900000, Việt Nam 10.047456823220578, 105.76880075889011
+ATM - SCB Saigon Bank 217 Đ. 30 Tháng 4, Xuân Khánh, Ninh Kiều, Cần Thơ, Việt Nam 10.024169765054054, 105.77383484723337
+ATM Sacombank Khu II, Đ.3/2, Xuân Khánh, Ninh Kiều, Cần Thơ, Việt Nam 10.030313382426845, 105.77218581165131
+AZ888 11B Trần Bạch Đằng, An Khánh, Ninh Kiều, Cần Thơ 900000, Việt Nam 10.040307707074573, 105.75101142330803
+Hdbank - Atm 15 Đ. Trần Bình Trọng, Thới Bình, Ninh Kiều, Cần Thơ, Việt Nam 10.034590766187476, 105.77815944723338 
+ATM VPBANK NGÂN HÀNG TMCP VIỆT NAM THỊNH VƯỢNG ATM VINCOM, 209 Đ. 30 Tháng 4, Tân An, Ninh Kiều, Cần Thơ, Việt Nam 10.024893327940337, 105.77483791224802
+ATM Đông Á 175 Đ. 30 Tháng 4, Hưng Lợi, Ninh Kiều, Cần Thơ, Việt Nam 10.015769347991752, 105.76419939999458
+ATM Sacombank 19 Đ. Nguyễn Văn Linh, Hưng Lợi, Ninh Kiều, Cần Thơ, Việt Nam 10.020201425507347, 105.76696798220354
+ATM Ngân hàng Quốc tế - VIB Hưng Phú Số 01-02 Khu A2, TT TM Phức hợp Cần Thơ Center, Khu 11, Cái Răng, Cần Thơ, Việt Nam 10.014971167026854, 105.78316237054682
+Saigonbank - Atm 7 Đ. Hoà Bình, Tân An, Ninh Kiều, Cần Thơ, Việt Nam 10.0343637485582, 105.7852863644125
+ATM Sacombank (CDM) 168C Đ. 3 Tháng 2, Hưng Lợi, Ninh Kiều, Cần Thơ, Việt Nam 10.024494526934857, 105.76779192330802
+ATM SCB Cần Thơ 213-215-217 Đ. 30 Tháng 4, Phường, Ninh Kiều, Cần Thơ 900000, Việt Nam 10.01765592559546, 105.76630752330801
+ATM Sacombank 365-373 Nguyễn Văn Cừ Nối Dài, An Bình, Ninh Kiều, Cần Thơ, Việt Nam 10.02136490482385, 105.74294154723339
+MB ATM (Nộp/rút tiền) 122 Hẻm 132 Đ. 3 Tháng 2, Hưng Lợi, Ninh Kiều, Cần Thơ, Việt Nam 10.019683665200244, 105.75768101778561
+ATM VIETINBANK 2QMP+GWX, Đ. Ngô Quyền, Tân An, Ninh Kiều, Cần Thơ, Việt Nam 10.033962085586033, 105.78740665644244
+Eximbank - Atm 221 Đ. 3 Tháng 2, Hưng Lợi, Ninh Kiều, Cần Thơ 900000, Việt Nam 10.021995682562403, 105.76555284662147
+Indovina Bank - Atm 219 Đ. 3 Tháng 2, Hưng Lợi, Ninh Kiều, Cần Thơ 900000, Việt Nam 10.021782806625165, 105.76537020427797
+Donga Bank - Atm 2 Đ. Trần Văn Hoài, Xuân Khánh, Ninh Kiều, Cần Thơ, Việt Nam 10.025045523769101, 105.77383248220355
+Bidv - Atm 29 Đường Nguyễn An Ninh, Tân An, Ninh Kiều, Cần Thơ, Việt Nam 10.031085891468374, 105.78722874109906
+Vietcombank - Atm 414 Quốc Lộ 1A, Lê Bình, Cái Răng, Cần Thơ, Việt Nam 10.000966907261892, 105.75033367668114
+Eximbank - Atm 6 Nguyễn Trãi, Tân An, Ninh Kiều, Cần Thơ, Việt Nam  10.042803743890357, 105.78249367054683
+ATM BIDV 190, Đường 30/4, Phường Hưng Lợi, Quận Ninh Kiều, 536 Đ. 30 Tháng 4, Hưng Lợi, Ninh Kiều, Cần Thơ, Việt Nam 10.01729247517556, 105.76538740674079
+ATM Đông Á 612 Đ. 30 Tháng 4, Hưng Lợi, Ninh Kiều, Cần Thơ, Việt Nam 10.01573036532903, 105.76414438220354
+ACB - ATM 303 Đ. 30 Tháng 4, Xuân Khánh, Ninh Kiều, Cần Thơ, Việt Nam 10.022267622238218, 105.77167233496475
+Bidv - Máy Pos - Atm 4 Đ. Hai Bà Trưng, Tân An, Ninh Kiều, Cần Thơ, Việt Nam 10.034518942653028, 105.78501655889009
+Seabank - Atm 61 Võ Văn Tần, Tân An, Ninh Kiều, Cần Thơ 900000, Việt Nam 10.03244136478435, 105.78528639999458
+ATM Vietinbank 278 QL1A, Lê Bình, Cái Răng, Cần Thơ, Việt Nam 9.992508566084418, 105.74891474662147
+Donga Bank - Atm 315 Đ. Nguyễn Văn Linh, An Khánh, Ninh Kiều, Cần Thơ, Việt Nam 10.029356807632865, 105.75367264723337
+Eximbank - Atm 308 Đ. 30 Tháng 4, Xuân Khánh, Ninh Kiều, Cần Thơ, Việt Nam 10.021414765143833, 105.77013078281546
+Pg Bank - Atm 55 Đ. Nam Kỳ Khởi Nghĩa, Tân An, Ninh Kiều, Cần Thơ, Việt Nam 10.03192152960295, 105.784468623308
+Vietcombank - Atm 44 Đ. Lý Thái Tổ, Hưng Phú, Cái Răng, Cần Thơ, Việt Nam 10.02100506999236, 105.78805888833786
+ATM Eximbank 180B Đ. 3 Tháng 2, Hưng Lợi, Ninh Kiều, Cần Thơ, Việt Nam 10.022280565115633, 105.7657831644125
+ATM Vietcombank Bệnh viện Phụ sản Quốc tế Phương Châu, 300 Nguyễn Văn Cừ Nối Dài, An Khánh, Ninh Kiều, Cần Thơ 902490, Việt Nam  10.0299261427373, 105.75102792883042
+Oceanbank - Atm 7 Đ. Hoà Bình, Tân An, Ninh Kiều, Cần Thơ, Việt Nam 10.034365729443456, 105.78528435275578
+ATM VPBANK ATM CONG TY MAY VIET THANH KCNCAISON,HANGBANG,KV4, An Bình, Ninh Kiều, Cần Thơ, Việt Nam 10.019935876106201, 105.74194122883044
+ATM Sacombank (CDM) QL1A/418 Yên Hạ, Khu vực, Cái Răng, Cần Thơ, Việt Nam 10.00127012797454, 105.75033392944233
+ATM Vietcombank 17a Nguyễn Văn Cừ Nối Dài, An Bình, Ninh Kiều, Cần Thơ, Việt Nam 10.008043648369009, 105.72771427668114
+Donga Bank - Atm 413 Đ. 30 Tháng 4, Hưng Lợi, Ninh Kiều, Cần Thơ 92000, Việt Nam 10.015423724004222, 105.76429821839754
+ATM - KienlongBank Cái Răng 161/3B QL1A, Lê Bình, Cái Răng, Cần Thơ 903693, Việt Nam 10.002101524329401, 105.75048251165131
+Scb - Atm 165 QL1A, Lê Bình, Cái Răng, Cần Thơ, Việt Nam 10.001063884717611, 105.75030363496475
+Abbank - Atm 216 QL1A, Lê Bình, Cái Răng, Cần Thơ, Việt Nam 10.000845802997537, 105.75031456349053
+Donga Bank - Atm 2Q22+75W, QL1A, Lê Bình, Cái Răng, Cần Thơ, Việt Nam 10.00076485963048, 105.75044553325792
+ATM Sacombank (CDM) 10 Võ Nguyên Giáp, Phú Thứ, Cái Răng, Cần Thơ, Việt Nam 10.000428631654268, 105.80339109446676
+ATM Vietcombank 40 Quang Trung, Phú Thứ, Cái Răng, Cần Thơ, Việt Nam 10.005452155575643, 105.79876207667574
+ATM Vietinbank 3CVJ+57W, Hà Huy Giáp, TT. Cờ Đỏ, Cờ Đỏ, Cần Thơ, Việt Nam 10.09299891120994, 105.43070532808444
+ATM Vietinbank 2P4C+GXQ, Nguyễn Văn Cừ Nối Dài, An Bình, Ninh Kiều, Cần Thơ, Việt Nam 10.006363731268179, 105.72247731778023
