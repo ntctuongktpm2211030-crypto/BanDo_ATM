@@ -3,63 +3,52 @@ import express from "express";
 import fs from "fs/promises";
 import path from "path";
 import { fileURLToPath } from "url";
-import cron from "node-cron";
-import { runFetch } from "./scripts/fetch_overpass.js";
+import compression from "compression";
+import helmet from "helmet";
 
 const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
+const __dirname  = path.dirname(__filename);
 
-const app = express();
+const app  = express();
 const PORT = process.env.PORT || 5000;
 
-// file gốc (fetch_overpass tạo)
-const RAW_FILE = path.join(__dirname, "data", "atm_cantho.json");
-// file đã enrich bằng parse-hybrid.cjs
-const HYBRID_FILE = path.join(__dirname, "data", "atm-cantho-hybrid.json");
+// ---- FILE DỮ LIỆU CHÍNH (HYBRID) ----
+const DATA_FILE = path.join(__dirname, "data", "atm-cantho-hybrid.json");
 
-app.use(express.static(path.join(__dirname, "public")));
+// ---- MIDDLEWARE ----
+app.use(helmet({ contentSecurityPolicy: false })); // gọn cho dev
+app.use(compression());
 
-app.get("/api/atm", async (req, res) => {
+// ---- STATIC ----
+app.use(express.static(path.join(__dirname, "public")));              // serve /public
+app.use("/data", express.static(path.join(__dirname, "data"), {      // expose /data
+  maxAge: "1h",
+  etag: true
+}));
+
+// ---- API ----
+app.get("/api/atm", async (_req, res) => {
   try {
-    // ưu tiên hybrid
-    let fileToRead = RAW_FILE;
-
-    try {
-      // nếu tồn tại hybrid thì dùng
-      await fs.access(HYBRID_FILE);
-      fileToRead = HYBRID_FILE;
-    } catch (e) {
-      // không có hybrid thì thôi, dùng RAW_FILE
-    }
-
-    const raw = await fs.readFile(fileToRead, "utf8");
-    const json = JSON.parse(raw);
-    res.json(json);
-  } catch (err) {
-    console.error("read atm error:", err);
-    res.status(500).json({ error: "Không đọc được dữ liệu ATM" });
+    const raw = await fs.readFile(DATA_FILE, "utf8");
+    res.json(JSON.parse(raw)); // mảng [{lat,lng,bank,name,...}]
+  } catch (e) {
+    console.error("read hybrid error:", e);
+    res.status(500).json({ error: "Không đọc được dữ liệu ATM hybrid" });
   }
 });
 
-// fetch 1 lần khi khởi động (cái này tạo atm_cantho.json)
-(async () => {
-  try {
-    await runFetch();
-  } catch (err) {
-    console.error("Initial fetch failed:", err);
-  }
-})();
+// ---- HEALTH ----
+app.get("/health", (_req, res) => res.json({ ok: true }));
 
-// cron 6 tiếng/lần
-cron.schedule("0 */6 * * *", async () => {
-  console.log("[cron] running fetch_overpass...");
-  try {
-    await runFetch();
-  } catch (err) {
-    console.error("[cron] fetch failed:", err);
-  }
+// ---- 404 & ERROR ----
+app.use((req, res) => res.status(404).json({ error: "Not found" }));
+app.use((err, _req, res, _next) => {
+  console.error(err);
+  res.status(500).json({ error: "Server error" });
 });
 
+// ---- START ----
 app.listen(PORT, () => {
-  console.log(`GIS ATM server is running at http://localhost:${PORT}`);
+  console.log(`GIS ATM server at http://localhost:${PORT}`);
+  console.log(`Serving data from: ${DATA_FILE}`);
 });
