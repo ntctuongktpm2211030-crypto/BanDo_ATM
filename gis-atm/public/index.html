@@ -30,13 +30,21 @@
     /* search box */
     .data-search{padding:10px;width:360px;border-radius:14px;transition:width .2s ease,height .2s ease;position:relative}
     .ds-wrap{display:flex;align-items:center;gap:6px}
-    .ds-input{flex:1;height:42px;padding:0 44px 0 40px;border:1px solid rgba(148,163,184,.25);border-radius:12px;background:linear-gradient(180deg,#0b1220,#0a111e);color:#e5e7eb}
+    .ds-input{flex:1;height:42px;padding:0 44px 0 40px;border:1px solid rgba(148,163,184,.25);border-radius:12px;background:linear-gradient(180deg,#0b1220,#0a111e);color:#e5e7eb;font-size:14px}
+    .ds-input::placeholder{color:#64748b}
     .ds-icon{position:absolute;left:20px;top:50%;transform:translateY(-50%);color:#94a3b8;pointer-events:none}
     .ds-clear{position:absolute;right:118px;top:50%;transform:translateY(-50%);width:28px;height:28px;display:grid;place-items:center;border-radius:8px;border:1px solid rgba(148,163,184,.2);background:#0b1220;color:#cbd5e1;cursor:pointer;visibility:hidden;opacity:0;transition:.15s}
     .ds-clear.show{visibility:visible;opacity:1}
-    .ds-btn{width:36px;height:36px;border:none;border-radius:10px;background:linear-gradient(180deg,#0f172a,#0c1424);color:#e5e7eb;display:grid;place-items:center;cursor:pointer;border:1px solid rgba(148,163,184,.25)}
+    .ds-btn{width:36px;height:36px;border:none;border-radius:10px;background:linear-gradient(180deg,#0f172a,#0c1424);color:#e5e7eb;display:grid;place-items:center;cursor:pointer;border:1px solid rgba(148,163,184,.25);transition:.15s}
+    .ds-btn:hover{background:rgba(99,102,241,.2);border-color:rgba(99,102,241,.4)}
     .ds-list{max-height:260px;overflow:auto;margin-top:8px;border-top:1px dashed rgba(148,163,184,.25);padding-top:6px}
-    .ds-collapse-btn{position:absolute;top:50%;right:-48px;transform:translateY(-50%);width:34px;height:34px;border:none;border-radius:9999px;background:rgba(15,23,42,.65);border:1px solid rgba(148,163,184,.35);display:grid;place-items:center;color:#e2e8f0;cursor:pointer;z-index:999}
+    .ds-item{padding:8px 10px;border-radius:8px;cursor:pointer;transition:.15s;margin-bottom:4px;font-size:13px;color:#e5e7eb;border:1px solid transparent;display:flex;gap:8px;align-items:flex-start}
+    .ds-item:hover{background:rgba(99,102,241,.15);border-color:rgba(99,102,241,.3)}
+    .ds-item i{color:#94a3b8;flex-shrink:0;margin-top:2px}
+    .ds-item b{color:#f1f5f9;font-weight:600;display:block}
+    .ds-item small{color:#cbd5e1;opacity:.8;display:block;margin-top:2px;font-size:12px}
+    .ds-collapse-btn{position:absolute;top:50%;right:-48px;transform:translateY(-50%);width:34px;height:34px;border:none;border-radius:9999px;background:rgba(15,23,42,.65);border:1px solid rgba(148,163,184,.35);display:grid;place-items:center;color:#e2e8f0;cursor:pointer;z-index:999;transition:.15s}
+    .ds-collapse-btn:hover{background:rgba(15,23,42,.85);border-color:rgba(99,102,241,.4)}
     .data-search.collapsed{width:46px;height:46px;padding:6px;display:flex;align-items:center;justify-content:center}
     .data-search.collapsed .ds-wrap,.data-search.collapsed .ds-list{display:none}
 
@@ -45,7 +53,6 @@
     .gm-popup{width:310px;font-family:system-ui,sans-serif}
     .gm-header{padding-bottom:6px;border-bottom:1px solid #e2e8f0}
     .gm-title{font-weight:700;font-size:14.5px;margin-bottom:2px}
-    .gm-sub{font-size:12px;color:#64748b}
     .gm-line{display:flex;gap:8px;margin:6px 0;font-size:12.5px;color:#0f172a}
     .leaflet-popup-content-wrapper,.leaflet-popup-tip{background:#fff;color:#0f172a}
 
@@ -62,8 +69,7 @@
       <div class="stats-title-text">
         <div style="font-weight:700;">Thống kê ATM theo ngân hàng</div>
         <small style="opacity:.75">Nguồn: /api/atm</small>
-            <div id="scopeLabel" style="margin-top:4px;opacity:.9"></div>
-
+        <div id="scopeLabel" style="margin-top:4px;opacity:.9"></div>
       </div>
       <div style="display:flex;gap:6px;">
         <button id="btn-refresh" class="ds-btn" title="Làm mới"><i class="fa-solid fa-arrows-rotate"></i></button>
@@ -91,73 +97,24 @@
   </div>
 
   <script>
-    // --- Chọn khu vực đang focus (ưu tiên cao hơn khung nhìn)
-let selectedRegionLayer = null;   // L.Layer của polygon đang chọn
-let selectedRegionCount = 0;      // số ATM trong khu vực chọn
-
-function setScopeLabel(text) {
-  const el = document.getElementById('scopeLabel');
-  if (el) el.innerHTML = text || '';
-}
-
-// Reset chọn khu vực
-function clearSelectedRegion() {
-  selectedRegionLayer = null;
-  selectedRegionCount = 0;
-  setScopeLabel('');
-}
-
-    // ====== MAP & PANES ======
+    // ====== state ======
+    let selectedRegionLayer = null;
+    let selectedRegionCount = 0;
     const CT_CENTER = [10.0279603, 105.7664918];
     const map = L.map("map", { center: CT_CENTER, zoom: 12 });
-
     L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
       maxZoom: 19, attribution: "&copy; OpenStreetMap"
     }).addTo(map);
-
-    // Pane riêng cho choropleth (nằm dưới marker)
     map.createPane("choro");
     map.getPane("choro").style.zIndex = 360;
     map.getPane("choro").style.pointerEvents = "auto";
 
-    const colorATM  = '#ef4444';
-    const colorBank = '#111827';
     const colorOther= '#eab308';
 
-    // === ICONS cho ATM/BANK bằng SVG local ===
-    // Đặt file tại /img/bank.svg và /img/atm-machine.svg
-    const ICONS = {
-      atm: L.icon({
-        iconUrl: '/img/atm-machine.svg',
-        iconSize: [32, 32],
-        iconAnchor: [16, 30],
-        popupAnchor: [0, -26],
-        className: 'atm-icon'
-      }),
-      bank: L.icon({
-        iconUrl: '/img/bank.svg',
-        iconSize: [32, 32],
-        iconAnchor: [16, 30],
-        popupAnchor: [0, -26],
-        className: 'bank-icon'
-      }),
-      other: L.divIcon({
-        html:`<div class="marker-icon-wrap"><i class="fa-solid fa-location-dot" style="font-size:20px;color:${colorOther}"></i></div>`,
-        iconSize:[38,38], className:''
-      })
-    };
+    function setScopeLabel(text){ const el=document.getElementById('scopeLabel'); if(el) el.innerHTML=text||''; }
+    function clearSelectedRegion(){ selectedRegionLayer=null; selectedRegionCount=0; setScopeLabel(''); }
 
-    // iconWrap vẫn dùng để đánh dấu vị trí người dùng
-    const iconWrap = color => L.divIcon({
-      html:`<div class="marker-icon-wrap"><i class="fa-solid fa-location-dot" style="font-size:20px;color:${color}"></i></div>`,
-      iconSize:[38,38], className:''
-    });
-
-    let geoLayer = null, featuresIndex = [], bankChart = null, userLocation = null;
-    let boundaryLayer = null, boundaries = null;
-    let pointsLoaded = false, boundariesLoaded = false;
-
-    // ====== PALETTES (7 bậc) ======
+    // ====== palettes ======
     const PALETTES = {
       Spectral: ["#9e0142","#d53e4f","#f46d43","#fdae61","#fee08b","#e6f598","#66c2a5"],
       YlOrRd:   ["#ffffcc","#ffeda0","#fed976","#feb24c","#fd8d3c","#f03b20","#bd0026"],
@@ -167,7 +124,142 @@ function clearSelectedRegion() {
     };
     function getPalette(){ return PALETTES[document.getElementById('paletteSelect').value] || PALETTES.Spectral; }
 
-    const vnNormalize = s => s?.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/đ/g,'d') || '';
+    // ====== logo mapping ======
+    function cleanName(raw){
+      return String(raw||'')
+        .normalize('NFD')
+        .replace(/[\u0300-\u036f]/g,'')
+        .replace(/[đĐðÐ]/g,'d')
+        .toLowerCase()
+        .trim();
+    }
+
+    const LOGO_FILE = {
+      abb: 'abbank.svg',
+      acb: 'acb.svg',
+      agribank: 'agribank.svg',
+      bacabank: 'bacabank.svg',
+      baovietbank: 'baovietbank.svg',
+      bidv: 'bidv.svg',
+      bvbank: 'bvbank.svg',
+      eximbank: 'eximbank.svg',
+      khobac: 'khobac.svg',
+      kienlongbank: 'kienlongbank.svg',
+      lpbank: 'lpbank.svg',
+      mbbank: 'mbbank.svg',
+      mdbank: 'mdbank.svg',
+      msb: 'msb.svg',
+      namabank: 'namabank.svg',
+      ncb: 'ncb.svg',
+      nhcsxh: 'nhcsxh.svg',
+      ocb: 'ocb.svg',
+      sacombank: 'sacombank.svg',
+      saigonbank: 'saigonbank.svg',
+      seabank: 'seabank.svg',
+      shb: 'shb.svg',
+      shinhanbank: 'shinhanbank.svg',
+      statebank: 'statebank.svg',
+      tpbank: 'tpbank_embedded.svg',
+      vib: 'vib.svg',
+      vietabank: 'vietabank.svg',
+      vietbank: 'vietbank.svg',
+      vietcombank: 'vietcombank.svg',
+      vietinbank: 'vietinbank.svg',
+      vpbank: 'vpbank.svg',
+      wooribank: 'wooribank.svg',
+      pgbank:'pgbank.svg',
+      donga:'donga.svg',
+      hdbank:'hdbank.svg',
+      techcombank:'techcombank.svg'
+      // nếu có scb.svg/oceanbank.svg/pvcombank.svg thì thêm khóa tương ứng
+    };
+
+    const ALIAS = [
+      [/^ab(b)?(bank)?$/i,'abb'],
+      [/^acb( bank)?$/i,'acb'],
+
+      [/^(atm )?bidv\b.*$/i,'bidv'],
+      [/^agribank$|^nh agribank.*$|^ngan hang agribank$|ngan hang nong nghiep.*phat trien nong thon/i,'agribank'],
+
+      [/^bac ?a( bank)?$|^bacabank$|^ngan hang bac a$/i,'bacabank'],
+
+      // Đông Á (nhiều biến thể)
+      [/^dong ?a( bank)?$/i,'donga'],
+      [/^dongabank$/i,'donga'],
+      [/^ngan hang (tmcp )?dong a.*$/i,'donga'],
+      [/^atm dong a bank.*$/i,'donga'],
+
+      [/^ex(i)?mbank$|^ngan hang ex(i)?bank$/i,'eximbank'],
+      [/^hd ?bank$|^hdbank$/i,'hdbank'],
+
+      [/^kien ?long ?bank$|^stm.*kienlongbank.*$/i,'kienlongbank'],
+      [/^lp ?bank$|^lien ?viet( post)? ?bank$|^ngan hang buu dien lien viet.*$/i,'lpbank'],
+
+      [/^mb( bank)?$|^mbbank$|^mb atm$/i,'mbbank'],
+      [/^(maritime( bank)?|mekong housing bank|msb|atm msb)$/i,'msb'],
+      [/^ncb$/i,'ncb'],
+
+      [/^(vbsp|ngan hang chinh sach xa hoi( xmx)?|ngan hang chinh sach xa hoi.*)$/i,'nhcsxh'],
+      [/^(vdb|ngan hang vdp)$/i,'khobac'],
+
+      // OCB / Phương Đông
+      [/^ocb$/i, 'ocb'],
+      [/^ngan hang (tmcp )?phuong dong( ocb)?$/i, 'ocb'],
+
+      // OceanBank (tạm trỏ về statebank nếu chưa có logo riêng)
+      [/^(ocean ?bank|oceanbank|ngan hang dai duong)$/i,'statebank'],
+
+      [/^pg ?bank$|^pgbank.*$/i,'pgbank'],
+      [/^(pv ?(com)? ?bank|pvcombank|ngan hang pv ?bank)$/i,'statebank'],
+
+      [/^shb$/i,'shb'],
+      [/^(sacombank|atm sacombank|nh sacombank|nh sacombank.*)$/i,'sacombank'],
+
+      [/^(saigon ?bank|ngan hang tmcp sai ?gon)(?!.*(thuong tin|scb))/i,'saigonbank'],
+      // SCB - Saigon Commercial Bank (tạm về statebank nếu chưa có scb.svg)
+      [/^(atm )?scb(\b| .*)$|^saigon commercial bank$|^ngan hang sai gon thuong tin$/i, 'statebank'],
+
+      [/^(sea ?bank|seabank)$/i,'seabank'],
+      [/^(shinhan( bank)?)$/i,'shinhanbank'],
+      [/^tp ?bank$/i,'tpbank'],
+
+      [/^(tech ?com ?bank|techcombank|atm techcombank|techombank)$/i,'techcombank'],
+
+      [/^(vib|ngan hang quoc te.*vib|atm- ?vib)$/i,'vib'],
+      [/^(vpb(ank)?|ngan hang vpbank|vpbank|vpb)$/i,'vpbank'],
+
+      [/^(viet ?a( bank)?|vietabank|vi(et|ệt) ?a$|việt á)$/i,'vietabank'],
+      [/^(viet ?bank|vietbank)$/i,'vietbank'],
+
+      [/^(viet ?com ?bank|vietcombank|vcb|atm vietcombank|vietcombank.*)$/i,'vietcombank'],
+      [/^(viet ?in( ?bank)?|vietinbank|vietin bank|atm vietin(bank)?|vietinbank thoi lai)$/i,'vietinbank'],
+
+      [/^(woori( bank)?)$/i,'wooribank'],
+      [/^(viet ?capital ?bank|bvbank)$/i,'bvbank'],
+
+      [/^az$/i,'statebank'],
+      [/^vikki bank$/i,'statebank']
+    ];
+
+    function getBankLogoUrl(raw){
+      // Lấy phần trước dấu phẩy & bỏ prefix "atm "
+      const first = String(raw||'').split(',')[0].trim();
+      let s = cleanName(first);
+      if (s.startsWith('atm ')) s = s.slice(4);
+
+      let key = null;
+      for (const [re,k] of ALIAS){ if(re.test(s)){ key=k; break; } }
+      if(!key){ console.warn('[LOGO] No alias match for:', raw, '->', s); return null; }
+      const file = LOGO_FILE[key];
+      if(!file){ console.warn('[LOGO] No svg for key:', key); return null; }
+      return `/img/${file}`;
+    }
+
+    // ====== icons & helpers ======
+    const vnNormalize = s => s?.toLowerCase()
+      .normalize('NFD')
+      .replace(/[\u0300-\u036f]/g,'')
+      .replace(/[đĐðÐ]/g,'d') || '';
 
     function buildAddress(p){
       if (p.address) return p.address;
@@ -176,9 +268,30 @@ function clearSelectedRegion() {
       return parts.length ? parts.join(", ") : null;
     }
 
+    // ====== nhận diện ATM (đã nới điều kiện) ======
+    function getIsATM(p = {}) {
+      const amen = String(p.amenity || '').toLowerCase();
+      const atmFlag = String(p.atm || '').toLowerCase();
+
+      if (amen === 'atm') return true;
+      if (atmFlag === 'yes' || atmFlag === 'true' || atmFlag === '1') return true;
+
+      if (p.opening_hours === null || p.opening_hours === undefined) return true;
+
+      const text = [p.name, p.bank, p.operator, p.brand, p['operator:en']]
+        .filter(Boolean).join(' ').toLowerCase();
+      if (/\batm\b/.test(text)) return true;
+
+      // Nếu cần siết chặt, bỏ dòng dưới:
+      if (amen === 'bank') return true;
+
+      return false;
+    }
+
     function atmArrayToGeoJSON(arr){
       return { type:"FeatureCollection", features:(arr||[]).filter(a=>a.lat&&a.lng).map(a=>({
-        type:"Feature", geometry:{type:"Point",coordinates:[a.lng,a.lat]}, properties:{...a, amenity: a.amenity||"atm"}
+        type:"Feature", geometry:{type:"Point",coordinates:[a.lng,a.lat]},
+        properties:{...a, amenity: a.amenity||"atm"}
       }))};
     }
 
@@ -201,67 +314,32 @@ function clearSelectedRegion() {
         </div>`;
     }
 
-    // ====== Helper XÁC ĐỊNH ATM & CHUẨN HOÁ TÊN NGÂN HÀNG ======
-    function getIsATM(p = {}) {
-      // Quy tắc theo yêu cầu: opening_hours null/undefined là ATM
-      if (p.opening_hours === null || p.opening_hours === undefined) return true;
-
-      // Fallback cho dữ liệu OSM/khác nguồn
-      if (p.amenity === 'atm') return true;
-      if (String(p.atm).toLowerCase() === 'yes') return true;
-
-      return false;
-    }
-
-    function getBankName(p = {}) {
-      let name = (p.bank || p.brand || p.operator || p['operator:en'] || p.name || 'Khác').trim();
-
-      const norm = name
-        .replace(/\s+/g, ' ')
-        .replace(/\bngan\s*hang\b|\bngân\s*hàng\b|\bngân\s*hàng\b/gi, '') // bỏ "ngân hàng"
-        .replace(/\(.*?\)/g, '')     // bỏ phần trong ngoặc
-        .replace(/\s+-\s+.*/g, '')   // bỏ phần sau " - "
-        .trim();
-
-      const aliases = {
-        'vietcombank': 'Vietcombank',
-        'vcb': 'Vietcombank',
-        'vietinbank': 'VietinBank',
-        'bidv': 'BIDV',
-        'agribank': 'Agribank',
-        'techcombank': 'Techcombank',
-        'mbbank': 'MB Bank',
-        'mb': 'MB Bank',
-        'acb': 'ACB',
-        'sacombank': 'Sacombank',
-        'tpbank': 'TPBank',
-        'vpbank': 'VPBank',
-        'shinhan': 'Shinhan Bank',
-        'hsbc': 'HSBC',
-        'standard chartered': 'Standard Chartered',
-      };
-
-      const key = norm.toLowerCase();
-      for (const k in aliases) {
-        if (key === k) return aliases[k];
-      }
-
-      // Viết hoa chữ cái đầu mỗi từ
-      return norm.split(' ').map(s => s.charAt(0).toUpperCase() + s.slice(1)).join(' ') || 'Khác';
-    }
+    let geoLayer=null, featuresIndex=[], bankChart=null, userLocation=null;
+    let boundaryLayer=null, boundaries=null;
+    let pointsLoaded=false, boundariesLoaded=false, firstLoad=true;
 
     function renderMarkersFromGeoJSON(gj){
       if (geoLayer) map.removeLayer(geoLayer);
       featuresIndex = [];
       const markers = [];
+      const fallbackSrc = '/img/statebank.svg';
 
       geoLayer = L.geoJSON(gj, {
         pointToLayer: (f, latlng) => {
           const p = f.properties || {};
           const isATM = getIsATM(p);
-          const bankName = getBankName(p);
+          const bankName = (p.bank || p.name || 'ATM').toString();
+          const imgSrc = getBankLogoUrl(p.bank || p.name || p.brand || p.operator) || fallbackSrc;
 
-          const icon = isATM ? ICONS.atm : ICONS.bank;
+          const icon = L.divIcon({
+            html: `
+              <div class="marker-icon-wrap" title="${bankName}">
+                <img src="${imgSrc}" width="32" height="32"
+                     onerror="this.onerror=null; this.src='${fallbackSrc}'"
+                     alt="${bankName}">
+              </div>`,
+            iconSize:[38,38], className:''
+          });
 
           const m = L.marker(latlng, { icon });
           m.bindPopup(popupDetail(p, latlng));
@@ -269,11 +347,7 @@ function clearSelectedRegion() {
 
           const addrText = buildAddress(p) || '';
           featuresIndex.push({
-            p,
-            latlng,
-            marker: m,
-            isATM,
-            bankName,
+            p, latlng, marker: m, isATM, bankName,
             text: vnNormalize([p.name, p.bank, bankName, addrText].join(' '))
           });
 
@@ -281,7 +355,10 @@ function clearSelectedRegion() {
         }
       }).addTo(map);
 
-      if (markers.length) map.fitBounds(L.featureGroup(markers).getBounds(), { padding:[20,20] });
+      if (markers.length && firstLoad){
+        map.fitBounds(L.featureGroup(markers).getBounds(), { padding:[20,20] });
+        firstLoad = false;
+      }
 
       wireSearch();
       renderChart();
@@ -290,14 +367,14 @@ function clearSelectedRegion() {
     }
 
     async function fetchAndRender(){
-      try {
+      try{
         const res = await fetch("/api/atm");
         const arr = await res.json();
         renderMarkersFromGeoJSON(atmArrayToGeoJSON(arr));
-      } catch(e){ console.error("Không tải được /api/atm", e); }
+      }catch(e){ console.error("Không tải được /api/atm", e); }
     }
 
-    // ====== SEARCH UI ======
+    // ====== search ======
     const SearchControl = L.Control.extend({
       options:{position:'topleft'},
       onAdd:function(){
@@ -319,11 +396,17 @@ function clearSelectedRegion() {
     map.addControl(new SearchControl());
 
     function wireSearch(){
-      const input=document.getElementById('ds-input'), list=document.getElementById('ds-list'), clear=document.getElementById('ds-clear');
+      const input=document.getElementById('ds-input'),
+            list=document.getElementById('ds-list'),
+            clear=document.getElementById('ds-clear');
       if(!input) return;
+
       input.oninput=()=>{
         const val=vnNormalize(input.value.trim());
-        clear.classList.toggle('show',!!val); list.innerHTML=''; if(!val) return;
+        clear.classList.toggle('show',!!val);
+        list.innerHTML='';
+        if(!val) return;
+
         const rs=featuresIndex.filter(f=>f.text.includes(val)).slice(0,30);
         rs.forEach(({p,latlng,marker,bankName,isATM})=>{
           const row=document.createElement('div');
@@ -344,51 +427,39 @@ function clearSelectedRegion() {
       clear.onclick=()=>{input.value='';clear.classList.remove('show');list.innerHTML='';};
     }
 
-    // ====== CHART ======
+    // ====== chart ======
     function aggregateByBank() {
-  const onlyVisible = document.getElementById('chk-visible')?.checked;
-  const bounds = map.getBounds();
+      const onlyVisible = document.getElementById('chk-visible')?.checked;
+      const bounds = map.getBounds();
+      const usingRegion = (document.getElementById('chk-choropleth')?.checked) && !!selectedRegionLayer;
+      const regionFeature = usingRegion ? selectedRegionLayer.feature : null;
+      const counts = {};
 
-  // Nếu có khu vực được chọn thì dùng khu vực, bỏ qua khung nhìn
-  const usingRegion = (document.getElementById('chk-choropleth')?.checked) && !!selectedRegionLayer;
-  const regionFeature = usingRegion ? selectedRegionLayer.feature : null;
+      for (const f of featuresIndex) {
+        if (!f.isATM) continue;
+        if (usingRegion) {
+          const pt = turf.point([f.latlng.lng, f.latlng.lat]);
+          if (!turf.booleanPointInPolygon(pt, regionFeature)) continue;
+        } else if (onlyVisible) {
+          if (!bounds.contains(f.marker.getLatLng())) continue;
+        }
+        const key = f.bankName || 'Khác';
+        counts[key] = (counts[key] || 0) + 1;
+      }
 
-  const counts = {};
+      const sorted = Object.entries(counts).sort((a,b)=>b[1]-a[1]).slice(0, 20);
+      const total = sorted.reduce((s, [,v])=>s+v, 0);
 
-  for (const f of featuresIndex) {
-    if (!f.isATM) continue; // chỉ tính ATM
-
-    // Ưu tiên lọc theo khu vực nếu đang chọn khu vực
-    if (usingRegion) {
-      const pt = turf.point([f.latlng.lng, f.latlng.lat]);
-      if (!turf.booleanPointInPolygon(pt, regionFeature)) continue;
-    } else if (onlyVisible) {
-      // Nếu không chọn khu vực mà bật "khung nhìn"
-      if (!bounds.contains(f.marker.getLatLng())) continue;
+      if (usingRegion) {
+        const name = selectedRegionLayer?.feature?.properties?.name || 'Khu vực';
+        selectedRegionCount = total; setScopeLabel(`<small><b>Phạm vi:</b> ${name} — <b>${total}</b> ATM</small>`);
+      } else if (onlyVisible) {
+        setScopeLabel(`<small><b>Phạm vi:</b> Khung nhìn — <b>${total}</b> ATM</small>`);
+      } else {
+        setScopeLabel(`<small><b>Phạm vi:</b> Toàn bộ — <b>${total}</b> ATM</small>`);
+      }
+      return { labels: sorted.map(x=>x[0]), data: sorted.map(x=>x[1]) };
     }
-
-    const key = f.bankName || 'Khác';
-    counts[key] = (counts[key] || 0) + 1;
-  }
-
-  const sorted = Object.entries(counts).sort((a,b)=>b[1]-a[1]).slice(0, 20);
-
-  // Cập nhật nhãn phạm vi
-  if (usingRegion) {
-    const name = selectedRegionLayer?.feature?.properties?.name || 'Khu vực';
-    const total = sorted.reduce((s, [,v])=>s+v, 0);
-    selectedRegionCount = total;
-    setScopeLabel(`<small><b>Phạm vi:</b> ${name} — <b>${total}</b> ATM</small>`);
-  } else if (onlyVisible) {
-    const total = sorted.reduce((s, [,v])=>s+v, 0);
-    setScopeLabel(`<small><b>Phạm vi:</b> Khung nhìn — <b>${total}</b> ATM</small>`);
-  } else {
-    const total = sorted.reduce((s, [,v])=>s+v, 0);
-    setScopeLabel(`<small><b>Phạm vi:</b> Toàn bộ — <b>${total}</b> ATM</small>`);
-  }
-
-  return { labels: sorted.map(x=>x[0]), data: sorted.map(x=>x[1]) };
-}
 
     function renderChart(){
       const ctx = document.getElementById('bankChart');
@@ -398,61 +469,51 @@ function clearSelectedRegion() {
 
       bankChart = new Chart(ctx, {
         type: 'bar',
-        data: {
-          labels,
-          datasets: [{
-            label: 'Số ATM',
-            data,
-            backgroundColor: 'rgba(99, 102, 241, 0.45)',
-            borderColor: 'rgba(99, 102, 241, 0.9)',
-            borderWidth: 1,
-          }]
-        },
+        data: { labels, datasets: [{ label: 'Số ATM', data, backgroundColor: 'rgba(99, 102, 241, 0.45)', borderColor: 'rgba(99, 102, 241, 0.9)', borderWidth: 1 }] },
         options: {
-          responsive: true,
-          plugins: { legend: { display: false } },
+          responsive: true, plugins: { legend: { display: false } },
           scales: {
-            x: {
-              ticks: { color: '#e5e7eb' },
-              grid: { color: 'rgba(148,163,184,.15)' }
-            },
-            y: {
-              beginAtZero: true,
-              ticks: { color: '#e5e7eb', precision: 0, stepSize: 1 },
-              grid: { color: 'rgba(148,163,184,.15)' }
-            }
+            x: { ticks: { color: '#e5e7eb' }, grid: { color: 'rgba(148,163,184,.15)' } },
+            y: { beginAtZero: true, ticks: { color: '#e5e7eb', precision: 0, stepSize: 1 }, grid: { color: 'rgba(148,163,184,.15)' } }
           }
         }
       });
     }
 
-    // ====== RANH GIỚI & CHOROPLETH ======
+    // ====== boundaries & choropleth ======
+    function defaultRegionStyle(){ return { color: "#0ea5e9", weight: 1, fill: true, fillOpacity: 0 }; }
+
+    function isPolyLike(feat){
+      if (!feat || !feat.geometry) return false;
+      const t = feat.geometry.type;
+      if (t !== 'Polygon' && t !== 'MultiPolygon') return false;
+      const coords = feat.geometry.coordinates;
+      if (!Array.isArray(coords) || coords.length === 0) return false;
+      if (t === 'Polygon' && !Array.isArray(coords[0])) return false;
+      if (t === 'MultiPolygon' && !(Array.isArray(coords[0]) && Array.isArray(coords[0][0]))) return false;
+      return true;
+    }
+
     async function loadBoundaries(){
       try{
         const res=await fetch("/data/ranhgioi.geojson");
         boundaries=await res.json();
-        if(boundaryLayer) map.removeLayer(boundaryLayer);
-        boundaryLayer=L.geoJSON(boundaries,{pane:"choro",style:{color:"#0ea5e9",weight:1,fillOpacity:0}}).addTo(map);
-        // Lắng nghe click để chọn khu vực -> biểu đồ sẽ thống kê trong khu vực đó
-boundaryLayer = L.geoJSON(boundaries, {
-  pane: "choro",
-  style: defaultRegionStyle,
-  onEachFeature: (feature, layer) => {
-    layer.on("click", () => {
-      selectedRegionLayer = layer; // chọn khu vực
 
-      if (document.getElementById("chk-choropleth")?.checked) {
-        highlightSelectedRegion(); // chỉ tô đúng khu vực đang chọn
-      }
+        boundaryLayer = L.geoJSON(boundaries, {
+          pane: "choro",
+          style: defaultRegionStyle,
+          filter: (feat)=> isPolyLike(feat),
+          onEachFeature: (feature, layer) => {
+            layer.on("click", () => {
+              selectedRegionLayer = layer;
+              if (document.getElementById("chk-choropleth")?.checked) highlightSelectedRegion();
+              try { map.fitBounds(layer.getBounds(), { padding: [20, 20] }); } catch {}
+              renderChart();
+            });
+          }
+        }).addTo(map);
 
-      try { map.fitBounds(layer.getBounds(), { padding: [20, 20] }); } catch {}
-      renderChart();
-    });
-  }
-}).addTo(map);
-
-boundaryLayer.bringToFront();
-
+        boundaryLayer.bringToFront();
         boundariesLoaded = true;
         ensureChoropleth();
       }catch(e){
@@ -462,30 +523,41 @@ boundaryLayer.bringToFront();
     }
 
     function quantileBreaks(values, k=7){
+      if(!values.length) return Array(k-1).fill(0);
       const arr = values.slice().sort((a,b)=>a-b);
       const qs=[]; for(let i=1;i<k;i++){ const p=i/k; qs.push(arr[Math.floor(p*(arr.length-1))] ?? 0); }
-      return qs; // length k-1
+      return qs;
     }
     function classifyQuantile(x, breaks){ let c=0; while(c<breaks.length && x>breaks[c]) c++; return c; }
 
     function colorizeChoropleth(){
       if(!boundaryLayer || !featuresIndex.length) return;
 
-      const pts = turf.featureCollection(featuresIndex.filter(f=>f.isATM).map(f=>turf.point([f.latlng.lng,f.latlng.lat])));
-      const counts=[], cache=new Map();
+      const pts = turf.featureCollection(
+        featuresIndex.filter(f=>f.isATM).map(f=>turf.point([f.latlng.lng,f.latlng.lat]))
+      );
 
+      const counts=[], cache=new Map();
       boundaryLayer.eachLayer(l=>{
-        const n = turf.pointsWithinPolygon(pts, l.feature).features.length;
-        cache.set(l._leaflet_id, n);
-        counts.push(n);
+        const feat = l.feature;
+        if (!isPolyLike(feat)) { cache.set(l._leaflet_id, 0); return; }
+        let n = 0;
+        try { n = turf.pointsWithinPolygon(pts, feat).features.length; }
+        catch(err){ console.warn('[CHORO] skip invalid polygon:', err); n = 0; }
+        cache.set(l._leaflet_id, n); counts.push(n);
       });
 
-      const palette = getPalette(); // 7 màu
+      if(!counts.length){
+        document.getElementById('legend').innerHTML = 'Chưa có dữ liệu ATM/khu vực';
+        return;
+      }
+
+      const palette = getPalette();
       const breaks  = quantileBreaks(counts, palette.length);
 
       boundaryLayer.eachLayer(l=>{
         const n = cache.get(l._leaflet_id) || 0;
-        const cls = classifyQuantile(n, breaks); // 0..6
+        const cls = classifyQuantile(n, breaks);
         l.setStyle({fill:true, fillOpacity:0.7, fillColor:palette[cls], color:"#0ea5e9", weight:1});
         const name = l.feature?.properties?.name || "Khu vực";
         l.bindTooltip(`${name}: ${n} ATM`, {sticky:true});
@@ -501,63 +573,44 @@ boundaryLayer.bringToFront();
       }
       document.getElementById('legend').innerHTML = html + `<small>Màu theo phân vị (quantile) số ATM/khu vực.</small>`;
     }
-function ensureChoropleth(){
-  const on = document.getElementById('chk-choropleth')?.checked;
-  if (!on || !pointsLoaded || !boundariesLoaded) return;
 
-  // Nếu đang có khu vực được chọn -> chỉ giữ highlight khu vực đó,
-  // KHÔNG vẽ lại phân vị cho toàn bản đồ (tránh đè style highlight).
-  if (selectedRegionLayer) {
-    highlightSelectedRegion();
-    return;
-  }
+    function ensureChoropleth(){
+      const on = document.getElementById('chk-choropleth')?.checked;
+      if (!on || !pointsLoaded || !boundariesLoaded) return;
+      if (selectedRegionLayer) { highlightSelectedRegion(); return; }
+      colorizeChoropleth();
+    }
 
-  // Không có khu vực đang chọn -> cứ tô phân vị toàn bản đồ như cũ
-  colorizeChoropleth();
-}
+    function unhighlightAll(){ if (!boundaryLayer) return; boundaryLayer.resetStyle(); }
+    function highlightSelectedRegion() {
+      if (!boundaryLayer) return;
+      unhighlightAll();
+      if (selectedRegionLayer) {
+        selectedRegionLayer.setStyle({ fill: true, fillOpacity: 0.85, fillColor: "#f59e0b", weight: 2, color: "#38bdf8" });
+        selectedRegionLayer.bringToFront();
+      }
+    }
 
-const defaultRegionStyle = { color: "#0ea5e9", weight: 1, fill: true, fillOpacity: 0 };
+    // ====== geo ======
+    function iconWrap(color){ return L.divIcon({ html:`<div class="marker-icon-wrap"><i class="fa-solid fa-location-dot" style="font-size:20px;color:${color}"></i></div>`, iconSize:[38,38], className:'' }); }
+    function showGeoHelp(msg){ alert((msg||'Không lấy được vị trí.')+'\n\nCách khắc phục:\n- Cho phép Location trong Site settings\n- Dùng HTTPS hoặc localhost\n- Shift+Click bản đồ để đặt vị trí thủ công'); }
+    map.on('click',(e)=>{ if(!e.originalEvent.shiftKey) return; userLocation=[e.latlng.lat,e.latlng.lng]; L.marker(userLocation,{icon:iconWrap('#22c55e')}).addTo(map).bindPopup('<b>Vị trí của bạn (đặt thủ công)</b>').openPopup(); map.setView(userLocation,16); });
+    function getPosition(opts={}){ return new Promise((res,rej)=>{ const t=setTimeout(()=>rej(new Error('timeout')),opts.timeout||10000); navigator.geolocation.getCurrentPosition(p=>{clearTimeout(t);res(p)},e=>{clearTimeout(t);rej(e)},{enableHighAccuracy:true,maximumAge:5000,timeout:10000,...opts}); }); }
+    async function locateOnce(){ try{ const pos=await getPosition(); const here=[pos.coords.latitude,pos.coords.longitude]; userLocation=here; L.marker(here,{icon:iconWrap('#22c55e')}).addTo(map).bindPopup(`<b>Vị trí của bạn</b><br/>±${Math.round(pos.coords.accuracy)}m`).openPopup(); map.setView(here,16); return true; }catch(err){ if(err && err.message==='timeout') showGeoHelp('Quá thời gian chờ khi lấy vị trí.'); else showGeoHelp('Không lấy được vị trí: '+(err?.message||'unknown')); return false; } }
+    async function checkAndLocate(){ if(!('geolocation' in navigator)){ alert('Trình duyệt không hỗ trợ định vị.'); return; } const isSecure=window.isSecureContext||location.hostname==='localhost'; if(!isSecure) console.warn('Khuyến nghị chạy HTTPS/localhost để định vị ổn định.'); if(navigator.permissions&&navigator.permissions.query){ try{ const status=await navigator.permissions.query({name:'geolocation'}); if(status.state==='granted'||status.state==='prompt') await locateOnce(); else showGeoHelp('Bạn đã chặn quyền vị trí cho trang này.'); status.onchange=()=>{ if(status.state==='granted') locateOnce(); }; return; }catch(_){} } await locateOnce(); }
 
-function unhighlightAll() {
-  if (!boundaryLayer) return;
-  boundaryLayer.resetStyle(); // trả mọi khu vực về style mặc định
-}
-
-function highlightSelectedRegion() {
-  if (!boundaryLayer) return;
-  unhighlightAll();
-  if (selectedRegionLayer) {
-    selectedRegionLayer.setStyle({
-      fill: true,
-      fillOpacity: 0.85,
-      fillColor: "#f59e0b",
-      weight: 2,
-      color: "#38bdf8"
-    });
-    selectedRegionLayer.bringToFront();
-  }
-}
-
-
-    // ====== EVENTS ======
-    document.addEventListener('click', (e)=>{
+    // ====== events ======
+    document.addEventListener('click',(e)=>{
       if(e.target.closest('#ds-collapse')){
-        const box=e.target.closest('.data-search'); box.classList.toggle('collapsed');
-        const i=e.target.querySelector('i'); i.className = box.classList.contains('collapsed')?'fa-solid fa-magnifying-glass':'fa-solid fa-chevron-left';
+        const btn=e.target.closest('#ds-collapse'); const box=btn.closest('.data-search');
+        box.classList.toggle('collapsed'); const icon=btn.querySelector('i');
+        icon.className=box.classList.contains('collapsed')?'fa-solid fa-magnifying-glass':'fa-solid fa-chevron-left';
       }
       if(e.target.closest('#btn-reset')) map.setView(CT_CENTER,12);
-      if(e.target.closest('#btn-locate')){
-        if(!navigator.geolocation){ alert('Trình duyệt không hỗ trợ định vị'); return; }
-        navigator.geolocation.getCurrentPosition(({coords})=>{
-          const here=[coords.latitude,coords.longitude]; userLocation=here;
-          L.marker(here,{icon:iconWrap('#22c55e')}).addTo(map).bindPopup(`<b>Vị trí của bạn</b><br/>±${Math.round(coords.accuracy)}m`).openPopup();
-          map.setView(here,16);
-        }, err=>alert('Không lấy được vị trí: '+err.message));
-      }
+      if(e.target.closest('#btn-locate')) checkAndLocate();
       if(e.target.closest('.btn-gmap')){
         const btn=e.target.closest('.btn-gmap'); const lat=btn.dataset.lat,lng=btn.dataset.lng;
-        const url=userLocation?`https://www.google.com/maps/dir/?api=1&origin=${userLocation[0]},${userLocation[1]}&destination=${lat},${lng}`:`https://www.google.com/maps/dir/?api=1&destination=${lat},${lng}`;
-        window.open(url,'_blank');
+        const url=userLocation?`https://www.google.com/maps/dir/?api=1&origin=${userLocation[0]},${userLocation[1]}&destination=${lat},${lng}`:`https://www.google.com/maps/dir/?api=1&destination=${lat},${lng}`; window.open(url,'_blank');
       }
       if(e.target.closest('.btn-share')){
         const btn=e.target.closest('.btn-share'); const lat=btn.dataset.lat,lng=btn.dataset.lng;
@@ -571,49 +624,24 @@ function highlightSelectedRegion() {
     };
     document.getElementById('btn-refresh').onclick=()=>fetchAndRender();
     document.getElementById('chk-visible').onchange = ()=>renderChart();
-document.getElementById('chk-choropleth').onchange = (e) => {
-  if (e.target.checked) {
-    // Nếu đã chọn sẵn 1 khu vực thì tô nó; nếu chưa chọn thì tất cả trong suốt
-    highlightSelectedRegion();
-  } else {
-    // Tắt: bỏ tô toàn bộ, bỏ chọn khu vực
-    unhighlightAll();
-    clearSelectedRegion();
-  }
-  renderChart();
-};
-
-
-
-    document.getElementById('paletteSelect').onchange=()=>ensureChoropleth();
-
-    // Cập nhật biểu đồ khi pan/zoom để bám theo khung nhìn (và luôn đồng bộ)
-// Nhấp phải để xóa chọn khu vực
-map.on('contextmenu', () => {
-  if (selectedRegionLayer) {
-    clearSelectedRegion();
-    unhighlightAll();   // bỏ tô hết
-    renderChart();
-  }
-});
-
-
-// Khi pan/zoom, nếu đang chọn khu vực thì vẫn thống kê theo khu vực
-map.on('moveend zoomend', () => {
-  renderChart();
-});
-
-
-    // ====== INIT ======
-    map.whenReady(()=>{
-      loadBoundaries();
-      fetchAndRender();
-      if (navigator.geolocation) {
-        navigator.geolocation.getCurrentPosition(pos => { userLocation=[pos.coords.latitude,pos.coords.longitude]; });
+    document.getElementById('chk-choropleth').onchange = (e) => {
+      if (e.target.checked) { highlightSelectedRegion(); } else { unhighlightAll(); clearSelectedRegion(); }
+      renderChart(); ensureChoropleth();
+    };
+    document.getElementById('paletteSelect').onchange=()=>{
+      if (document.getElementById('chk-choropleth')?.checked){
+        colorizeChoropleth();
+        if (selectedRegionLayer) highlightSelectedRegion();
       }
-    });
+    };
 
-    // Auto reload ATM mỗi phút (nếu muốn)
+    map.on('contextmenu', () => {
+      if (selectedRegionLayer) { clearSelectedRegion(); unhighlightAll(); renderChart(); colorizeChoropleth(); }
+    });
+    map.on('moveend zoomend', () => { renderChart(); });
+
+    // ====== init ======
+    map.whenReady(()=>{ loadBoundaries(); fetchAndRender(); });
     setInterval(fetchAndRender, 60000);
   </script>
 </body>
