@@ -287,9 +287,9 @@
 
       return false;
     }
-
+// Kiểm tra tọa độ trước khi đưa và GeoJSON
     function atmArrayToGeoJSON(arr){
-      return { type:"FeatureCollection", features:(arr||[]).filter(a=>a.lat&&a.lng).map(a=>({
+      return { type:"FeatureCollection", features:(arr||[]).filter(a=>a.lat&&a.lng).map(a=>({ //kiểm tra tọa độ
         type:"Feature", geometry:{type:"Point",coordinates:[a.lng,a.lat]},
         properties:{...a, amenity: a.amenity||"atm"}
       }))};
@@ -345,10 +345,11 @@
           m.bindPopup(popupDetail(p, latlng));
           markers.push(m);
 
+          //Tìm kiếm ATM có dịch vụ X dựa trên dữ liệu được lưu tại featuresIndex
           const addrText = buildAddress(p) || '';
           featuresIndex.push({
             p, latlng, marker: m, isATM, bankName,
-            text: vnNormalize([p.name, p.bank, bankName, addrText].join(' '))
+            text: vnNormalize([p.name, p.bank, bankName, addrText].join(' ')) //thêm dịch vụ ATM
           });
 
           return m;
@@ -401,6 +402,7 @@
             clear=document.getElementById('ds-clear');
       if(!input) return;
 
+      //Chức năng search
       input.oninput=()=>{
         const val=vnNormalize(input.value.trim());
         clear.classList.toggle('show',!!val);
@@ -428,6 +430,7 @@
     }
 
     // ====== chart ======
+    //thống kê ATM theo ngân hàng
     function aggregateByBank() {
       const onlyVisible = document.getElementById('chk-visible')?.checked;
       const bounds = map.getBounds();
@@ -466,7 +469,7 @@
       if (!ctx) return;
       const { labels, data } = aggregateByBank();
       if (bankChart) bankChart.destroy();
-
+//vẽ bằng Chart
       bankChart = new Chart(ctx, {
         type: 'bar',
         data: { labels, datasets: [{ label: 'Số ATM', data, backgroundColor: 'rgba(99, 102, 241, 0.45)', borderColor: 'rgba(99, 102, 241, 0.9)', borderWidth: 1 }] },

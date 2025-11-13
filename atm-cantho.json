@@ -258,25 +258,6 @@
     "opening_hours": null,
     "amenity": "bank"
   },
-
-  {
-    "name": "LPBank PGD Bưu điện Cần Thơ",
-    "address": "02 Đ. Hoà Bình, Tân An, Ninh Kiều, Cần Thơ, Việt Nam",
-    "lat": 10.036038910805198,
-    "lng": 105.78636129982682,
-    "opening_hours": null,
-    "amenity": "bank",
-    "bank": "LPBANK"
-  },
-  {
-    "name": "LPBank Cần Thơ",
-    "address": "62 Đ. Lý Tự Trọng, Thới Bình, Ninh Kiều, Cần Thơ, Việt Nam",
-    "lat": 10.035651734401988,
-    "lng": 105.77891193845329,
-    "opening_hours": null,
-    "amenity": "bank",
-    "bank": "LPBANK"
-  },
   {
     "name": "Ngân hàng Quốc tế - VIB Ninh Kiều Số",
     "address": "84Bis/3 Đ. Mậu Thân, Thới Bình, Ninh Kiều, Cần Thơ, Việt Nam",
@@ -416,41 +397,7 @@
     "opening_hours": null,
     "amenity": "bank"
   },
-  {
-    "name": "Ngân Hàng Tmcp Bắc Á (Nasbank) - Cn Đồng Bằng Sông Cửu Long",
-    "address": "357 Đ. 30 Tháng 4, Hưng Lợi, Ninh Kiều, Cần Thơ, Việt Nam",
-    "lat": 10.020297142925301,
-    "lng": 105.76934289982684,
-    "opening_hours": null,
-    "amenity": "bank"
-  },
 
-  {
-    "name": "Agribank Phong Điền",
-    "address": "247 Phan Văn Trị, Thị trấn Phong Điền, Phong Điền, Cần Thơ, Việt Nam",
-    "lat": 9.998634225582794,
-    "lng": 105.66490242377331,
-    "opening_hours": null,
-    "amenity": "bank"
-  },
- 
-  {
-    "name": "LPBank Phong Điền Khu dân cư thương mại, Phong Điền, Cần Thơ",
-    "address": "Việt Nam",
-    "lat": 9.99649488857803,
-    "lng": 105.66706795189336,
-    "opening_hours": null,
-    "amenity": "bank",
-    "bank": "LPBANK"
-  },
-  {
-    "name": "Agribank",
-    "address": "032 ấp thạnh hòa, Thạnh Phú, Cờ Đỏ, Cần Thơ, Việt Nam",
-    "lat": 10.142457418362657,
-    "lng": 105.42976880624113,
-    "opening_hours": null,
-    "amenity": "bank"
-  },
   {
     "name": "Vikki Bank - Phòng giao dịch Cờ Đỏ Ấp Thới Thuận, Cờ Đỏ, Cần Thơ",
     "address": "Việt Nam",
@@ -511,33 +458,7 @@
     "opening_hours": null,
     "amenity": "bank"
   },
-  {
-    "name": "LPBank PGD Bưu điện Thạnh An Ấp Quy Lân",
-    "address": "5, Vĩnh Thạnh, Cần Thơ, Việt Nam",
-    "lat": 10.217431570251287,
-    "lng": 105.3728005035425,
-    "opening_hours": null,
-    "amenity": "bank",
-    "bank": "LPBANK"
-  },
 
-  {
-    "name": "Ngân Hàng Nông Nghiệp & Phát Triển Nông Thôn Việt Nam (Agribank) - Pgd Thạnh Mỹ",
-    "address": "69HX+67H, QL80, Thị trấn Vĩnh Thạnh, Vĩnh Thạnh, Cần Thơ, Việt Nam",
-    "lat": 10.23192138994963,
-    "lng": 105.39733990726512,
-    "opening_hours": null,
-    "amenity": "bank"
-  },
-  {
-    "name": "Eximbank Can Tho - O Mon Transaction Office",
-    "address": "100 QL91, Châu Văn Liêm, Ô Môn, Cần Thơ, Việt Nam",
-    "lat": 10.109556693514994,
-    "lng": 105.62226824454537,
-    "opening_hours": null,
-    "amenity": "bank",
-    "bank": "MB"
-  },
 
   {
     "name": "ATM CRM MB Bank",
@@ -548,15 +469,7 @@
     "amenity": "atm",
     "bank": "MB"
   },
-  {
-    "name": "MB ATM (Nộp/rút tiền)",
-    "address": "43 Đ. Cách Mạng Tháng 8, An Thới, Bình Thủy, Cần Thơ, Việt Nam",
-    "lat": 10.061011079500483,
-    "lng": 105.76423516871374,
-    "opening_hours": null,
-    "amenity": "atm",
-    "bank": "MB"
-  },
+
   {
     "name": "Vikki Bank - ATM Trường Cao Đẳng Y Tế Cần Thơ",
     "address": "340 Đ. Nguyễn Văn Cừ, Phường Cái khế, Ninh Kiều, Cần Thơ, Việt Nam",
@@ -583,15 +496,7 @@
     "amenity": "atm",
     "bank": "MB"
   },
-  {
-    "name": "ATM MSB số",
-    "address": "09 Cần Thơ 112 Đ. Trần Phú, Cái Khế, Ninh Kiều, Cần Thơ 90000, Việt Nam",
-    "lat": 10.047164965289154,
-    "lng": 105.7825390435467,
-    "opening_hours": null,
-    "amenity": "atm",
-    "bank": "MSB"
-  },
+
 
   {
     "name": "ATM/CRM bảo việt bank",
