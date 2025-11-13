@@ -48,7 +48,25 @@
     .data-search.collapsed{width:46px;height:46px;padding:6px;display:flex;align-items:center;justify-content:center}
     .data-search.collapsed .ds-wrap,.data-search.collapsed .ds-list{display:none}
 
-    .marker-icon-wrap{display:flex;justify-content:center;align-items:center;width:38px;height:38px;border-radius:50%}
+.marker-icon-wrap{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  width:42px;
+  height:42px;
+  border-radius:999px;
+  background:radial-gradient(circle at 30% 25%, #ffffff, #e5e7eb 45%, #cbd5e1 75%);
+  border:2px solid rgba(15,23,42,.75);
+  box-shadow:0 8px 16px rgba(15,23,42,.6);
+  overflow:hidden;
+}
+
+.marker-icon-wrap img{
+  width:78%;
+  height:78%;
+  object-fit:contain;
+  border-radius:999px; /* để logo cũng bo tròn theo khung */
+}
 
     .gm-popup{width:310px;font-family:system-ui,sans-serif}
     .gm-header{padding-bottom:6px;border-bottom:1px solid #e2e8f0}
@@ -171,78 +189,53 @@
       donga:'donga.svg',
       hdbank:'hdbank.svg',
       techcombank:'techcombank.svg'
-      // nếu có scb.svg/oceanbank.svg/pvcombank.svg thì thêm khóa tương ứng
     };
 
     const ALIAS = [
       [/^ab(b)?(bank)?$/i,'abb'],
       [/^acb( bank)?$/i,'acb'],
-
       [/^(atm )?bidv\b.*$/i,'bidv'],
       [/^agribank$|^nh agribank.*$|^ngan hang agribank$|ngan hang nong nghiep.*phat trien nong thon/i,'agribank'],
-
       [/^bac ?a( bank)?$|^bacabank$|^ngan hang bac a$/i,'bacabank'],
-
-      // Đông Á (nhiều biến thể)
       [/^dong ?a( bank)?$/i,'donga'],
       [/^dongabank$/i,'donga'],
       [/^ngan hang (tmcp )?dong a.*$/i,'donga'],
       [/^atm dong a bank.*$/i,'donga'],
-
       [/^ex(i)?mbank$|^ngan hang ex(i)?bank$/i,'eximbank'],
       [/^hd ?bank$|^hdbank$/i,'hdbank'],
-
       [/^kien ?long ?bank$|^stm.*kienlongbank.*$/i,'kienlongbank'],
       [/^lp ?bank$|^lien ?viet( post)? ?bank$|^ngan hang buu dien lien viet.*$/i,'lpbank'],
-
       [/^mb( bank)?$|^mbbank$|^mb atm$/i,'mbbank'],
       [/^(maritime( bank)?|mekong housing bank|msb|atm msb)$/i,'msb'],
       [/^ncb$/i,'ncb'],
-
       [/^(vbsp|ngan hang chinh sach xa hoi( xmx)?|ngan hang chinh sach xa hoi.*)$/i,'nhcsxh'],
       [/^(vdb|ngan hang vdp)$/i,'khobac'],
-
-      // OCB / Phương Đông
       [/^ocb$/i, 'ocb'],
       [/^ngan hang (tmcp )?phuong dong( ocb)?$/i, 'ocb'],
-
-      // OceanBank (tạm trỏ về statebank nếu chưa có logo riêng)
       [/^(ocean ?bank|oceanbank|ngan hang dai duong)$/i,'statebank'],
-
       [/^pg ?bank$|^pgbank.*$/i,'pgbank'],
       [/^(pv ?(com)? ?bank|pvcombank|ngan hang pv ?bank)$/i,'statebank'],
-
       [/^shb$/i,'shb'],
       [/^(sacombank|atm sacombank|nh sacombank|nh sacombank.*)$/i,'sacombank'],
-
       [/^(saigon ?bank|ngan hang tmcp sai ?gon)(?!.*(thuong tin|scb))/i,'saigonbank'],
-      // SCB - Saigon Commercial Bank (tạm về statebank nếu chưa có scb.svg)
       [/^(atm )?scb(\b| .*)$|^saigon commercial bank$|^ngan hang sai gon thuong tin$/i, 'statebank'],
-
       [/^(sea ?bank|seabank)$/i,'seabank'],
       [/^(shinhan( bank)?)$/i,'shinhanbank'],
       [/^tp ?bank$/i,'tpbank'],
-
       [/^(tech ?com ?bank|techcombank|atm techcombank|techombank)$/i,'techcombank'],
-
       [/^(vib|ngan hang quoc te.*vib|atm- ?vib)$/i,'vib'],
       [/^(vpb(ank)?|ngan hang vpbank|vpbank|vpb)$/i,'vpbank'],
-
       [/^(viet ?a( bank)?|vietabank|vi(et|ệt) ?a$|việt á)$/i,'vietabank'],
       [/^(viet ?bank|vietbank)$/i,'vietbank'],
-
       [/^(viet ?com ?bank|vietcombank|vcb|atm vietcombank|vietcombank.*)$/i,'vietcombank'],
       [/^(viet ?in( ?bank)?|vietinbank|vietin bank|atm vietin(bank)?|vietinbank thoi lai)$/i,'vietinbank'],
-
       [/^(woori( bank)?)$/i,'wooribank'],
       [/^(viet ?capital ?bank|bvbank)$/i,'bvbank'],
-
       [/^az$/i,'statebank'],
       [/^vikki bank$/i,'statebank']
     ];
 
     function getBankLogoUrl(raw){
-      // Lấy phần trước dấu phẩy & bỏ prefix "atm "
       const first = String(raw||'').split(',')[0].trim();
       let s = cleanName(first);
       if (s.startsWith('atm ')) s = s.slice(4);
@@ -268,7 +261,7 @@
       return parts.length ? parts.join(", ") : null;
     }
 
-    // ====== nhận diện ATM (đã nới điều kiện) ======
+    // ====== nhận diện ATM ======
     function getIsATM(p = {}) {
       const amen = String(p.amenity || '').toLowerCase();
       const atmFlag = String(p.atm || '').toLowerCase();
@@ -276,23 +269,35 @@
       if (amen === 'atm') return true;
       if (atmFlag === 'yes' || atmFlag === 'true' || atmFlag === '1') return true;
 
-      if (p.opening_hours === null || p.opening_hours === undefined) return true;
+      if (
+        amen === 'bank' &&
+        (p.opening_hours === null || p.opening_hours === undefined || p.opening_hours === '')
+      ) {
+        return true;
+      }
 
       const text = [p.name, p.bank, p.operator, p.brand, p['operator:en']]
-        .filter(Boolean).join(' ').toLowerCase();
-      if (/\batm\b/.test(text)) return true;
+        .filter(Boolean)
+        .join(' ')
+        .toLowerCase();
 
-      // Nếu cần siết chặt, bỏ dòng dưới:
-      if (amen === 'bank') return true;
+      if (/\batm\b/.test(text)) return true;
 
       return false;
     }
-// Kiểm tra tọa độ trước khi đưa và GeoJSON
+
+    // Kiểm tra tọa độ trước khi đưa vào GeoJSON
     function atmArrayToGeoJSON(arr){
-      return { type:"FeatureCollection", features:(arr||[]).filter(a=>a.lat&&a.lng).map(a=>({ //kiểm tra tọa độ
-        type:"Feature", geometry:{type:"Point",coordinates:[a.lng,a.lat]},
-        properties:{...a, amenity: a.amenity||"atm"}
-      }))};
+      return {
+        type:"FeatureCollection",
+        features:(arr||[])
+          .filter(a=>a.lat&&a.lng)
+          .map(a=>({
+            type:"Feature",
+            geometry:{type:"Point",coordinates:[a.lng,a.lat]},
+            properties:{...a, amenity: a.amenity||"atm"}
+          }))
+      };
     }
 
     function popupDetail(p, latlng){
@@ -307,9 +312,28 @@
           <div class="gm-line"><i class="fa-solid fa-location-dot"></i><div>${addr}</div></div>
           ${phone ? `<div class="gm-line"><i class="fa-solid fa-phone"></i><div><a href="tel:${phone}">${phone}</a></div></div>`:''}
           ${website ? `<div class="gm-line"><i class="fa-solid fa-globe"></i><div><a href="${website.startsWith('http')?website:'https://'+website}" target="_blank">${website}</a></div></div>`:''}
-          <div class="gm-actions" style="display:flex;gap:10px;margin-top:8px;">
-            <div class="gm-act"><div class="gm-act-btn btn-gmap" data-lat="${lat}" data-lng="${lng}" style="background:#14b8a6;width:36px;height:36px;border-radius:9999px;display:grid;place-items:center;color:#fff"><i class="fa-solid fa-route"></i></div></div>
-            <div class="gm-act"><div class="gm-act-btn btn-share" data-lat="${lat}" data-lng="${lng}" style="background:#f59e0b;width:36px;height:36px;border-radius:9999px;display:grid;place-items:center;color:#fff"><i class="fa-solid fa-share-nodes"></i></div></div>
+          <div class="gm-actions" style="display:flex;gap:10px;margin-top:8px;flex-wrap:wrap;">
+            <div class="gm-act">
+              <div class="gm-act-btn btn-gmap" data-lat="${lat}" data-lng="${lng}"
+                   style="background:#14b8a6;width:36px;height:36px;border-radius:9999px;display:grid;place-items:center;color:#fff"
+                   title="Mở Google Maps chỉ đường">
+                <i class="fa-solid fa-route"></i>
+              </div>
+            </div>
+            <div class="gm-act">
+              <div class="gm-act-btn btn-share" data-lat="${lat}" data-lng="${lng}"
+                   style="background:#f59e0b;width:36px;height:36px;border-radius:9999px;display:grid;place-items:center;color:#fff"
+                   title="Copy link Google Maps">
+                <i class="fa-solid fa-share-nodes"></i>
+              </div>
+            </div>
+            <!-- Nút mới: Đi đến đây (tính đường trên bản đồ) -->
+            <div class="gm-act">
+              <button class="gm-act-btn btn-route" data-lat="${lat}" data-lng="${lng}"
+                   style="background:#3b82f6;border:none;border-radius:9999px;padding:0 12px;height:36px;display:flex;align-items:center;gap:6px;color:#fff;font-size:12px;cursor:pointer;white-space:nowrap;">
+                <i class="fa-solid fa-location-arrow"></i><span>Đi đến đây</span>
+              </button>
+            </div>
           </div>
         </div>`;
     }
@@ -317,6 +341,10 @@
     let geoLayer=null, featuresIndex=[], bankChart=null, userLocation=null;
     let boundaryLayer=null, boundaries=null;
     let pointsLoaded=false, boundariesLoaded=false, firstLoad=true;
+
+    // ROUTE: layer & điểm đích hiện tại
+    let routeLayer = null;
+    let selectedDestination = null; // {lat, lng}
 
     function renderMarkersFromGeoJSON(gj){
       if (geoLayer) map.removeLayer(geoLayer);
@@ -345,11 +373,10 @@
           m.bindPopup(popupDetail(p, latlng));
           markers.push(m);
 
-          //Tìm kiếm ATM có dịch vụ X dựa trên dữ liệu được lưu tại featuresIndex
           const addrText = buildAddress(p) || '';
           featuresIndex.push({
             p, latlng, marker: m, isATM, bankName,
-            text: vnNormalize([p.name, p.bank, bankName, addrText].join(' ')) //thêm dịch vụ ATM
+            text: vnNormalize([p.name, p.bank, bankName, addrText].join(' '))
           });
 
           return m;
@@ -402,7 +429,6 @@
             clear=document.getElementById('ds-clear');
       if(!input) return;
 
-      //Chức năng search
       input.oninput=()=>{
         const val=vnNormalize(input.value.trim());
         clear.classList.toggle('show',!!val);
@@ -421,7 +447,11 @@
           row.innerHTML=`
             <i class="fa-solid fa-${isATM?'building-columns':'university'}"></i>
             <div><b>${p.name||bankName||p.bank||'ATM'}</b><br><small>${buildAddress(p)||''}</small></div>`;
-          row.onclick=()=>{map.setView(latlng,17);marker.openPopup();};
+          row.onclick=()=>{
+            selectedDestination = { lat: latlng.lat, lng: latlng.lng };
+            map.setView(latlng,17);
+            marker.openPopup();
+          };
           list.appendChild(row);
         });
         if(!rs.length) list.innerHTML='<div class="ds-item"><i class="fa-regular fa-circle-xmark"></i> Không tìm thấy</div>';
@@ -430,7 +460,6 @@
     }
 
     // ====== chart ======
-    //thống kê ATM theo ngân hàng
     function aggregateByBank() {
       const onlyVisible = document.getElementById('chk-visible')?.checked;
       const bounds = map.getBounds();
@@ -455,7 +484,8 @@
 
       if (usingRegion) {
         const name = selectedRegionLayer?.feature?.properties?.name || 'Khu vực';
-        selectedRegionCount = total; setScopeLabel(`<small><b>Phạm vi:</b> ${name} — <b>${total}</b> ATM</small>`);
+        selectedRegionCount = total;
+        setScopeLabel(`<small><b>Phạm vi:</b> ${name} — <b>${total}</b> ATM</small>`);
       } else if (onlyVisible) {
         setScopeLabel(`<small><b>Phạm vi:</b> Khung nhìn — <b>${total}</b> ATM</small>`);
       } else {
@@ -469,15 +499,32 @@
       if (!ctx) return;
       const { labels, data } = aggregateByBank();
       if (bankChart) bankChart.destroy();
-//vẽ bằng Chart
+
       bankChart = new Chart(ctx, {
         type: 'bar',
-        data: { labels, datasets: [{ label: 'Số ATM', data, backgroundColor: 'rgba(99, 102, 241, 0.45)', borderColor: 'rgba(99, 102, 241, 0.9)', borderWidth: 1 }] },
+        data: {
+          labels,
+          datasets: [{
+            label: 'Số ATM',
+            data,
+            backgroundColor: 'rgba(99, 102, 241, 0.45)',
+            borderColor: 'rgba(99, 102, 241, 0.9)',
+            borderWidth: 1
+          }]
+        },
         options: {
-          responsive: true, plugins: { legend: { display: false } },
+          responsive: true,
+          plugins: { legend: { display: false } },
           scales: {
-            x: { ticks: { color: '#e5e7eb' }, grid: { color: 'rgba(148,163,184,.15)' } },
-            y: { beginAtZero: true, ticks: { color: '#e5e7eb', precision: 0, stepSize: 1 }, grid: { color: 'rgba(148,163,184,.15)' } }
+            x: {
+              ticks: { color: '#e5e7eb' },
+              grid: { color: 'rgba(148,163,184,.15)' }
+            },
+            y: {
+              beginAtZero: true,
+              ticks: { color: '#e5e7eb', precision: 0, stepSize: 1 },
+              grid: { color: 'rgba(148,163,184,.15)' }
+            }
           }
         }
       });
@@ -528,26 +575,44 @@
     function quantileBreaks(values, k=7){
       if(!values.length) return Array(k-1).fill(0);
       const arr = values.slice().sort((a,b)=>a-b);
-      const qs=[]; for(let i=1;i<k;i++){ const p=i/k; qs.push(arr[Math.floor(p*(arr.length-1))] ?? 0); }
+      const qs=[];
+      for(let i=1;i<k;i++){
+        const p=i/k;
+        qs.push(arr[Math.floor(p*(arr.length-1))] ?? 0);
+      }
       return qs;
     }
-    function classifyQuantile(x, breaks){ let c=0; while(c<breaks.length && x>breaks[c]) c++; return c; }
+    function classifyQuantile(x, breaks){
+      let c=0;
+      while(c<breaks.length && x>breaks[c]) c++;
+      return c;
+    }
 
     function colorizeChoropleth(){
       if(!boundaryLayer || !featuresIndex.length) return;
 
       const pts = turf.featureCollection(
-        featuresIndex.filter(f=>f.isATM).map(f=>turf.point([f.latlng.lng,f.latlng.lat]))
+        featuresIndex
+          .filter(f=>f.isATM)
+          .map(f=>turf.point([f.latlng.lng,f.latlng.lat]))
       );
 
       const counts=[], cache=new Map();
       boundaryLayer.eachLayer(l=>{
         const feat = l.feature;
-        if (!isPolyLike(feat)) { cache.set(l._leaflet_id, 0); return; }
+        if (!isPolyLike(feat)) {
+          cache.set(l._leaflet_id, 0);
+          return;
+        }
         let n = 0;
-        try { n = turf.pointsWithinPolygon(pts, feat).features.length; }
-        catch(err){ console.warn('[CHORO] skip invalid polygon:', err); n = 0; }
-        cache.set(l._leaflet_id, n); counts.push(n);
+        try {
+          n = turf.pointsWithinPolygon(pts, feat).features.length;
+        } catch(err){
+          console.warn('[CHORO] skip invalid polygon:', err);
+          n = 0;
+        }
+        cache.set(l._leaflet_id, n);
+        counts.push(n);
       });
 
       if(!counts.length){
@@ -561,12 +626,17 @@
       boundaryLayer.eachLayer(l=>{
         const n = cache.get(l._leaflet_id) || 0;
         const cls = classifyQuantile(n, breaks);
-        l.setStyle({fill:true, fillOpacity:0.7, fillColor:palette[cls], color:"#0ea5e9", weight:1});
+        l.setStyle({
+          fill:true,
+          fillOpacity:0.7,
+          fillColor:palette[cls],
+          color:"#0ea5e9",
+          weight:1
+        });
         const name = l.feature?.properties?.name || "Khu vực";
         l.bindTooltip(`${name}: ${n} ATM`, {sticky:true});
       });
 
-      // legend
       let html='';
       for(let i=0;i<palette.length;i++){
         const label = i===0 ? `≤ ${breaks[0]||0}`
@@ -574,7 +644,8 @@
                     : `${(breaks[i-1]||0)+1} – ${breaks[i]}`);
         html += `<div class="row"><span class="swatch" style="background:${palette[i]}"></span> ${label}</div>`;
       }
-      document.getElementById('legend').innerHTML = html + `<small>Màu theo phân vị (quantile) số ATM/khu vực.</small>`;
+      document.getElementById('legend').innerHTML =
+        html + `<small>Màu theo phân vị (quantile) số ATM/khu vực.</small>`;
     }
 
     function ensureChoropleth(){
@@ -584,52 +655,219 @@
       colorizeChoropleth();
     }
 
-    function unhighlightAll(){ if (!boundaryLayer) return; boundaryLayer.resetStyle(); }
+    function unhighlightAll(){
+      if (!boundaryLayer) return;
+      boundaryLayer.resetStyle();
+    }
     function highlightSelectedRegion() {
       if (!boundaryLayer) return;
       unhighlightAll();
       if (selectedRegionLayer) {
-        selectedRegionLayer.setStyle({ fill: true, fillOpacity: 0.85, fillColor: "#f59e0b", weight: 2, color: "#38bdf8" });
+        selectedRegionLayer.setStyle({
+          fill: true,
+          fillOpacity: 0.85,
+          fillColor: "#f59e0b",
+          weight: 2,
+          color: "#38bdf8"
+        });
         selectedRegionLayer.bringToFront();
       }
     }
 
     // ====== geo ======
-    function iconWrap(color){ return L.divIcon({ html:`<div class="marker-icon-wrap"><i class="fa-solid fa-location-dot" style="font-size:20px;color:${color}"></i></div>`, iconSize:[38,38], className:'' }); }
-    function showGeoHelp(msg){ alert((msg||'Không lấy được vị trí.')+'\n\nCách khắc phục:\n- Cho phép Location trong Site settings\n- Dùng HTTPS hoặc localhost\n- Shift+Click bản đồ để đặt vị trí thủ công'); }
-    map.on('click',(e)=>{ if(!e.originalEvent.shiftKey) return; userLocation=[e.latlng.lat,e.latlng.lng]; L.marker(userLocation,{icon:iconWrap('#22c55e')}).addTo(map).bindPopup('<b>Vị trí của bạn (đặt thủ công)</b>').openPopup(); map.setView(userLocation,16); });
-    function getPosition(opts={}){ return new Promise((res,rej)=>{ const t=setTimeout(()=>rej(new Error('timeout')),opts.timeout||10000); navigator.geolocation.getCurrentPosition(p=>{clearTimeout(t);res(p)},e=>{clearTimeout(t);rej(e)},{enableHighAccuracy:true,maximumAge:5000,timeout:10000,...opts}); }); }
-    async function locateOnce(){ try{ const pos=await getPosition(); const here=[pos.coords.latitude,pos.coords.longitude]; userLocation=here; L.marker(here,{icon:iconWrap('#22c55e')}).addTo(map).bindPopup(`<b>Vị trí của bạn</b><br/>±${Math.round(pos.coords.accuracy)}m`).openPopup(); map.setView(here,16); return true; }catch(err){ if(err && err.message==='timeout') showGeoHelp('Quá thời gian chờ khi lấy vị trí.'); else showGeoHelp('Không lấy được vị trí: '+(err?.message||'unknown')); return false; } }
-    async function checkAndLocate(){ if(!('geolocation' in navigator)){ alert('Trình duyệt không hỗ trợ định vị.'); return; } const isSecure=window.isSecureContext||location.hostname==='localhost'; if(!isSecure) console.warn('Khuyến nghị chạy HTTPS/localhost để định vị ổn định.'); if(navigator.permissions&&navigator.permissions.query){ try{ const status=await navigator.permissions.query({name:'geolocation'}); if(status.state==='granted'||status.state==='prompt') await locateOnce(); else showGeoHelp('Bạn đã chặn quyền vị trí cho trang này.'); status.onchange=()=>{ if(status.state==='granted') locateOnce(); }; return; }catch(_){} } await locateOnce(); }
+    function iconWrap(color){
+      return L.divIcon({
+        html:`<div class="marker-icon-wrap"><i class="fa-solid fa-location-dot" style="font-size:20px;color:${color}"></i></div>`,
+        iconSize:[38,38],
+        className:''
+      });
+    }
+    function showGeoHelp(msg){
+      alert((msg||'Không lấy được vị trí.')+'\n\nCách khắc phục:\n- Cho phép Location trong Site settings\n- Dùng HTTPS hoặc localhost\n- Shift+Click bản đồ để đặt vị trí thủ công');
+    }
+    map.on('click',(e)=>{
+      if(!e.originalEvent.shiftKey) return;
+      userLocation=[e.latlng.lat,e.latlng.lng];
+      L.marker(userLocation,{icon:iconWrap('#22c55e')})
+        .addTo(map)
+        .bindPopup('<b>Vị trí của bạn (đặt thủ công)</b>')
+        .openPopup();
+      map.setView(userLocation,16);
+    });
+    function getPosition(opts={}) {
+      return new Promise((res,rej)=>{
+        const t=setTimeout(()=>rej(new Error('timeout')),opts.timeout||10000);
+        navigator.geolocation.getCurrentPosition(
+          p=>{clearTimeout(t);res(p)},
+          e=>{clearTimeout(t);rej(e)},
+          {enableHighAccuracy:true,maximumAge:5000,timeout:10000,...opts}
+        );
+      });
+    }
+    async function locateOnce(){
+      try{
+        const pos=await getPosition();
+        const here=[pos.coords.latitude,pos.coords.longitude];
+        userLocation=here;
+        L.marker(here,{icon:iconWrap('#22c55e')})
+          .addTo(map)
+          .bindPopup(`<b>Vị trí của bạn</b><br/>±${Math.round(pos.coords.accuracy)}m`)
+          .openPopup();
+        map.setView(here,16);
+        return true;
+      }catch(err){
+        if(err && err.message==='timeout')
+          showGeoHelp('Quá thời gian chờ khi lấy vị trí.');
+        else
+          showGeoHelp('Không lấy được vị trí: '+(err?.message||'unknown'));
+        return false;
+      }
+    }
+
+    // ROUTE: gọi OSRM để vẽ đường đi gần nhất
+    async function drawRouteTo(lat, lng) {
+      if (!userLocation) {
+        alert('Vui lòng bật "Vị trí của tôi" hoặc Shift+click lên bản đồ để đặt vị trí trước.');
+        return;
+      }
+      const [uLat, uLng] = userLocation;
+      const url = `https://router.project-osrm.org/route/v1/driving/${uLng},${uLat};${lng},${lat}?overview=full&geometries=geojson`;
+
+      try {
+        const res = await fetch(url);
+        const data = await res.json();
+        if (!data.routes || !data.routes.length) {
+          alert('Không tìm được đường đi phù hợp.');
+          return;
+        }
+
+        const coords = data.routes[0].geometry.coordinates.map(c => [c[1], c[0]]);
+
+        if (routeLayer) {
+          map.removeLayer(routeLayer);
+          routeLayer = null;
+        }
+
+        routeLayer = L.polyline(coords, {
+          color: '#22c55e',
+          weight: 5,
+          opacity: 0.9
+        }).addTo(map);
+
+        map.fitBounds(routeLayer.getBounds(), { padding: [40, 40] });
+      } catch (err) {
+        console.error('Lỗi khi gọi OSRM:', err);
+        alert('Lỗi khi tính đường đi. Thử lại sau.');
+      }
+    }
+
+    // Hàm dùng cho nút "Đi đến đây"
+    async function goToDestination(lat, lng) {
+      selectedDestination = { lat, lng };
+      // Nếu chưa có vị trí thì xin vị trí trước
+      if (!userLocation) {
+        await checkAndLocate();
+      }
+      // Sau khi có vị trí rồi thì vẽ route
+      if (userLocation) {
+        await drawRouteTo(lat, lng);
+      }
+    }
+
+    // Khi bấm "Vị trí của tôi": lấy lại vị trí + nếu đã chọn ATM thì vẽ route
+    async function checkAndLocate(){
+      if(!('geolocation' in navigator)){
+        alert('Trình duyệt không hỗ trợ định vị.');
+        return;
+      }
+      const isSecure=window.isSecureContext||location.hostname==='localhost';
+      if(!isSecure) console.warn('Khuyến nghị chạy HTTPS/localhost để định vị ổn định.');
+      let ok = false;
+      if(navigator.permissions&&navigator.permissions.query){
+        try{
+          const status=await navigator.permissions.query({name:'geolocation'});
+          if(status.state==='granted'||status.state==='prompt')
+            ok = await locateOnce();
+          else
+            showGeoHelp('Bạn đã chặn quyền vị trí cho trang này.');
+          status.onchange=()=>{
+            if(status.state==='granted') locateOnce();
+          };
+        }catch(_){
+          ok = await locateOnce();
+        }
+      } else {
+        ok = await locateOnce();
+      }
+
+      // nếu đặt vị trí xong và đã chọn 1 ATM thì vẽ đường luôn
+      if (ok && selectedDestination) {
+        await drawRouteTo(selectedDestination.lat, selectedDestination.lng);
+      }
+    }
 
     // ====== events ======
     document.addEventListener('click',(e)=>{
       if(e.target.closest('#ds-collapse')){
-        const btn=e.target.closest('#ds-collapse'); const box=btn.closest('.data-search');
-        box.classList.toggle('collapsed'); const icon=btn.querySelector('i');
-        icon.className=box.classList.contains('collapsed')?'fa-solid fa-magnifying-glass':'fa-solid fa-chevron-left';
+        const btn=e.target.closest('#ds-collapse');
+        const box=btn.closest('.data-search');
+        box.classList.toggle('collapsed');
+        const icon=btn.querySelector('i');
+        icon.className=box.classList.contains('collapsed')
+          ? 'fa-solid fa-magnifying-glass'
+          : 'fa-solid fa-chevron-left';
       }
       if(e.target.closest('#btn-reset')) map.setView(CT_CENTER,12);
       if(e.target.closest('#btn-locate')) checkAndLocate();
+
+      // click nút route (Google Maps)
       if(e.target.closest('.btn-gmap')){
-        const btn=e.target.closest('.btn-gmap'); const lat=btn.dataset.lat,lng=btn.dataset.lng;
-        const url=userLocation?`https://www.google.com/maps/dir/?api=1&origin=${userLocation[0]},${userLocation[1]}&destination=${lat},${lng}`:`https://www.google.com/maps/dir/?api=1&destination=${lat},${lng}`; window.open(url,'_blank');
+        const btn=e.target.closest('.btn-gmap');
+        const lat=parseFloat(btn.dataset.lat);
+        const lng=parseFloat(btn.dataset.lng);
+
+        const url = userLocation
+          ? `https://www.google.com/maps/dir/?api=1&origin=${userLocation[0]},${userLocation[1]}&destination=${lat},${lng}`
+          : `https://www.google.com/maps/dir/?api=1&destination=${lat},${lng}`;
+        window.open(url,'_blank');
       }
+
+      // click nút "Đi đến đây" -> tính đường gần nhất trên bản đồ
+      if(e.target.closest('.btn-route')){
+        const btn=e.target.closest('.btn-route');
+        const lat=parseFloat(btn.dataset.lat);
+        const lng=parseFloat(btn.dataset.lng);
+        goToDestination(lat, lng);
+      }
+
       if(e.target.closest('.btn-share')){
-        const btn=e.target.closest('.btn-share'); const lat=btn.dataset.lat,lng=btn.dataset.lng;
-        const url=`https://www.google.com/maps/search/?api=1&query=${lat},${lng}`; navigator.clipboard?.writeText(url); alert('Đã copy link: '+url);
+        const btn=e.target.closest('.btn-share');
+        const lat=btn.dataset.lat,lng=btn.dataset.lng;
+        const url=`https://www.google.com/maps/search/?api=1&query=${lat},${lng}`;
+        navigator.clipboard?.writeText(url);
+        alert('Đã copy link: '+url);
       }
     });
 
     document.getElementById('btn-stats-toggle').onclick=()=>{
-      const panel=document.getElementById('stats-panel'); panel.classList.toggle('collapsed');
-      document.querySelector('#btn-stats-toggle i').className = panel.classList.contains('collapsed')?'fa-solid fa-angles-left':'fa-solid fa-angles-right';
+      const panel=document.getElementById('stats-panel');
+      panel.classList.toggle('collapsed');
+      document.querySelector('#btn-stats-toggle i').className =
+        panel.classList.contains('collapsed')
+          ? 'fa-solid fa-angles-left'
+          : 'fa-solid fa-angles-right';
     };
     document.getElementById('btn-refresh').onclick=()=>fetchAndRender();
     document.getElementById('chk-visible').onchange = ()=>renderChart();
     document.getElementById('chk-choropleth').onchange = (e) => {
-      if (e.target.checked) { highlightSelectedRegion(); } else { unhighlightAll(); clearSelectedRegion(); }
-      renderChart(); ensureChoropleth();
+      if (e.target.checked) {
+        highlightSelectedRegion();
+      } else {
+        unhighlightAll();
+        clearSelectedRegion();
+      }
+      renderChart();
+      ensureChoropleth();
     };
     document.getElementById('paletteSelect').onchange=()=>{
       if (document.getElementById('chk-choropleth')?.checked){
@@ -639,12 +877,24 @@
     };
 
     map.on('contextmenu', () => {
-      if (selectedRegionLayer) { clearSelectedRegion(); unhighlightAll(); renderChart(); colorizeChoropleth(); }
+      if (selectedRegionLayer) {
+        clearSelectedRegion();
+        unhighlightAll();
+        renderChart();
+        colorizeChoropleth();
+      }
+      if (routeLayer) {
+        map.removeLayer(routeLayer);
+        routeLayer = null;
+      }
     });
     map.on('moveend zoomend', () => { renderChart(); });
 
     // ====== init ======
-    map.whenReady(()=>{ loadBoundaries(); fetchAndRender(); });
+    map.whenReady(()=>{
+      loadBoundaries();
+      fetchAndRender();
+    });
     setInterval(fetchAndRender, 60000);
   </script>
 </body>
