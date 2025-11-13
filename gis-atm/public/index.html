@@ -33,7 +33,8 @@
     .ds-input{flex:1;height:42px;padding:0 44px 0 40px;border:1px solid rgba(148,163,184,.25);border-radius:12px;background:linear-gradient(180deg,#0b1220,#0a111e);color:#e5e7eb;font-size:14px}
     .ds-input::placeholder{color:#64748b}
     .ds-icon{position:absolute;left:20px;top:50%;transform:translateY(-50%);color:#94a3b8;pointer-events:none}
-    .ds-clear{position:absolute;right:118px;top:50%;transform:translateY(-50%);width:28px;height:28px;display:grid;place-items:center;border-radius:8px;border:1px solid rgba(148,163,184,.2);background:#0b1220;color:#cbd5e1;cursor:pointer;visibility:hidden;opacity:0;transition:.15s}
+    /* đẩy nút clear vào trong một chút vì thêm 1 nút mới */
+    .ds-clear{position:absolute;right:154px;top:50%;transform:translateY(-50%);width:28px;height:28px;display:grid;place-items:center;border-radius:8px;border:1px solid rgba(148,163,184,.2);background:#0b1220;color:#cbd5e1;cursor:pointer;visibility:hidden;opacity:0;transition:.15s}
     .ds-clear.show{visibility:visible;opacity:1}
     .ds-btn{width:36px;height:36px;border:none;border-radius:10px;background:linear-gradient(180deg,#0f172a,#0c1424);color:#e5e7eb;display:grid;place-items:center;cursor:pointer;border:1px solid rgba(148,163,184,.25);transition:.15s}
     .ds-btn:hover{background:rgba(99,102,241,.2);border-color:rgba(99,102,241,.4)}
@@ -48,25 +49,25 @@
     .data-search.collapsed{width:46px;height:46px;padding:6px;display:flex;align-items:center;justify-content:center}
     .data-search.collapsed .ds-wrap,.data-search.collapsed .ds-list{display:none}
 
-.marker-icon-wrap{
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  width:42px;
-  height:42px;
-  border-radius:999px;
-  background:radial-gradient(circle at 30% 25%, #ffffff, #e5e7eb 45%, #cbd5e1 75%);
-  border:2px solid rgba(15,23,42,.75);
-  box-shadow:0 8px 16px rgba(15,23,42,.6);
-  overflow:hidden;
-}
+    .marker-icon-wrap{
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      width:42px;
+      height:42px;
+      border-radius:999px;
+      background:radial-gradient(circle at 30% 25%, #ffffff, #e5e7eb 45%, #cbd5e1 75%);
+      border:2px solid rgba(15,23,42,.75);
+      box-shadow:0 8px 16px rgba(15,23,42,.6);
+      overflow:hidden;
+    }
 
-.marker-icon-wrap img{
-  width:78%;
-  height:78%;
-  object-fit:contain;
-  border-radius:999px; /* để logo cũng bo tròn theo khung */
-}
+    .marker-icon-wrap img{
+      width:78%;
+      height:78%;
+      object-fit:contain;
+      border-radius:999px; /* để logo cũng bo tròn theo khung */
+    }
 
     .gm-popup{width:310px;font-family:system-ui,sans-serif}
     .gm-header{padding-bottom:6px;border-bottom:1px solid #e2e8f0}
@@ -128,6 +129,7 @@
     map.getPane("choro").style.pointerEvents = "auto";
 
     const colorOther= '#eab308';
+    const NEARBY_RADIUS_KM = 5; // ATM gần tôi trong 5km
 
     function setScopeLabel(text){ const el=document.getElementById('scopeLabel'); if(el) el.innerHTML=text||''; }
     function clearSelectedRegion(){ selectedRegionLayer=null; selectedRegionCount=0; setScopeLabel(''); }
@@ -276,11 +278,7 @@
         return true;
       }
 
-      const text = [p.name, p.bank, p.operator, p.brand, p['operator:en']]
-        .filter(Boolean)
-        .join(' ')
-        .toLowerCase();
-
+      const text = [p.name, p.bank, p.operator, p.brand, p['operator:en']].filter(Boolean).join(' ').toLowerCase();
       if (/\batm\b/.test(text)) return true;
 
       return false;
@@ -327,7 +325,6 @@
                 <i class="fa-solid fa-share-nodes"></i>
               </div>
             </div>
-            <!-- Nút mới: Đi đến đây (tính đường trên bản đồ) -->
             <div class="gm-act">
               <button class="gm-act-btn btn-route" data-lat="${lat}" data-lng="${lng}"
                    style="background:#3b82f6;border:none;border-radius:9999px;padding:0 12px;height:36px;display:flex;align-items:center;gap:6px;color:#fff;font-size:12px;cursor:pointer;white-space:nowrap;">
@@ -342,9 +339,9 @@
     let boundaryLayer=null, boundaries=null;
     let pointsLoaded=false, boundariesLoaded=false, firstLoad=true;
 
-    // ROUTE: layer & điểm đích hiện tại
-    let routeLayer = null;
-    let selectedDestination = null; // {lat, lng}
+    // ROUTE
+    let routeLayer=null;
+    let selectedDestination=null;
 
     function renderMarkersFromGeoJSON(gj){
       if (geoLayer) map.removeLayer(geoLayer);
@@ -362,11 +359,12 @@
           const icon = L.divIcon({
             html: `
               <div class="marker-icon-wrap" title="${bankName}">
-                <img src="${imgSrc}" width="32" height="32"
+                <img src="${imgSrc}"
                      onerror="this.onerror=null; this.src='${fallbackSrc}'"
                      alt="${bankName}">
               </div>`,
-            iconSize:[38,38], className:''
+            iconSize:[42,42],
+            className:''
           });
 
           const m = L.marker(latlng, { icon });
@@ -402,7 +400,7 @@
       }catch(e){ console.error("Không tải được /api/atm", e); }
     }
 
-    // ====== search ======
+    // ====== search control ======
     const SearchControl = L.Control.extend({
       options:{position:'topleft'},
       onAdd:function(){
@@ -414,6 +412,7 @@
             <input id="ds-input" class="ds-input" placeholder="Tìm (tên/brand/địa chỉ)">
             <button id="ds-clear" class="ds-clear">&times;</button>
             <button id="btn-reset" class="ds-btn" title="Reset"><i class="fa-solid fa-rotate-right"></i></button>
+            <button id="btn-nearby" class="ds-btn" title="ATM gần tôi (≤5km)"><i class="fa-solid fa-location-dot"></i></button>
             <button id="btn-locate" class="ds-btn" title="Vị trí của tôi"><i class="fa-solid fa-location-crosshairs"></i></button>
           </div>
           <button id="ds-collapse" class="ds-collapse-btn" title="Thu gọn/Mở rộng"><i class="fa-solid fa-chevron-left"></i></button>
@@ -678,7 +677,7 @@
     function iconWrap(color){
       return L.divIcon({
         html:`<div class="marker-icon-wrap"><i class="fa-solid fa-location-dot" style="font-size:20px;color:${color}"></i></div>`,
-        iconSize:[38,38],
+        iconSize:[42,42],
         className:''
       });
     }
@@ -724,7 +723,7 @@
       }
     }
 
-    // ROUTE: gọi OSRM để vẽ đường đi gần nhất
+    // ROUTE qua OSRM
     async function drawRouteTo(lat, lng) {
       if (!userLocation) {
         alert('Vui lòng bật "Vị trí của tôi" hoặc Shift+click lên bản đồ để đặt vị trí trước.');
@@ -761,20 +760,83 @@
       }
     }
 
-    // Hàm dùng cho nút "Đi đến đây"
     async function goToDestination(lat, lng) {
       selectedDestination = { lat, lng };
-      // Nếu chưa có vị trí thì xin vị trí trước
       if (!userLocation) {
         await checkAndLocate();
       }
-      // Sau khi có vị trí rồi thì vẽ route
       if (userLocation) {
         await drawRouteTo(lat, lng);
       }
     }
 
-    // Khi bấm "Vị trí của tôi": lấy lại vị trí + nếu đã chọn ATM thì vẽ route
+    // ATM gần tôi ≤ 5km
+    async function handleNearbyClick(){
+      if (!featuresIndex.length){
+        alert('Chưa có dữ liệu ATM.');
+        return;
+      }
+      if (!userLocation){
+        await checkAndLocate();
+      }
+      if (!userLocation) return;
+
+      const [uLat,uLng] = userLocation;
+      const center = turf.point([uLng, uLat]);
+      const near = [];
+
+      for (const f of featuresIndex){
+        if (!f.isATM) continue;
+        const pt = turf.point([f.latlng.lng, f.latlng.lat]);
+        const d = turf.distance(center, pt, {units:'kilometers'});
+        if (d <= NEARBY_RADIUS_KM){
+          near.push({...f, distance: d});
+        }
+      }
+
+      if (!near.length){
+        alert(`Không có ATM nào trong bán kính ${NEARBY_RADIUS_KM} km quanh bạn.`);
+        return;
+      }
+
+      near.sort((a,b)=>a.distance - b.distance);
+      const markers = near.map(n => n.marker);
+      const grp = L.featureGroup(markers);
+      map.fitBounds(grp.getBounds(), {padding:[40,40]});
+
+      const box = document.querySelector('.data-search');
+      if (box){
+        box.classList.remove('collapsed');
+        const icon = document.querySelector('#ds-collapse i');
+        if (icon) icon.className = 'fa-solid fa-chevron-left';
+      }
+
+      const list = document.getElementById('ds-list');
+      const input = document.getElementById('ds-input');
+      const clear = document.getElementById('ds-clear');
+      if (input){ input.value=''; if (clear) clear.classList.remove('show'); }
+
+      if (list){
+        list.innerHTML = `<div style="font-size:12px;color:#cbd5e1;margin-bottom:4px;">
+          ATM gần bạn trong bán kính ${NEARBY_RADIUS_KM} km
+        </div>`;
+        near.slice(0,50).forEach(({p, latlng, marker, bankName, distance})=>{
+          const row = document.createElement('div');
+          row.className = 'ds-item';
+          row.innerHTML = `
+            <i class="fa-solid fa-location-dot"></i>
+            <div>
+              <b>${p.name||bankName||p.bank||'ATM'}</b>
+              <small>${buildAddress(p)||''}</small>
+              <small>Cách khoảng ${distance.toFixed(2)} km</small>
+            </div>`;
+          row.onclick = ()=>{ map.setView(latlng,17); marker.openPopup(); };
+          list.appendChild(row);
+        });
+      }
+    }
+
+    // định vị
     async function checkAndLocate(){
       if(!('geolocation' in navigator)){
         alert('Trình duyệt không hỗ trợ định vị.');
@@ -800,7 +862,6 @@
         ok = await locateOnce();
       }
 
-      // nếu đặt vị trí xong và đã chọn 1 ATM thì vẽ đường luôn
       if (ok && selectedDestination) {
         await drawRouteTo(selectedDestination.lat, selectedDestination.lng);
       }
@@ -819,20 +880,18 @@
       }
       if(e.target.closest('#btn-reset')) map.setView(CT_CENTER,12);
       if(e.target.closest('#btn-locate')) checkAndLocate();
+      if(e.target.closest('#btn-nearby')) handleNearbyClick();
 
-      // click nút route (Google Maps)
       if(e.target.closest('.btn-gmap')){
         const btn=e.target.closest('.btn-gmap');
         const lat=parseFloat(btn.dataset.lat);
         const lng=parseFloat(btn.dataset.lng);
-
         const url = userLocation
           ? `https://www.google.com/maps/dir/?api=1&origin=${userLocation[0]},${userLocation[1]}&destination=${lat},${lng}`
           : `https://www.google.com/maps/dir/?api=1&destination=${lat},${lng}`;
         window.open(url,'_blank');
       }
 
-      // click nút "Đi đến đây" -> tính đường gần nhất trên bản đồ
       if(e.target.closest('.btn-route')){
         const btn=e.target.closest('.btn-route');
         const lat=parseFloat(btn.dataset.lat);
